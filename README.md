@@ -1,6 +1,8 @@
 # else-heart-break-chinese
 游戏Else Heart.Break()的汉化，由GPT3.5翻译
 
+下载：https://github.com/1PercentSync/else-heart-break-chinese/releases/download/release/English.zip
+
 使用方法：
 先备份游戏目录下\ElseHeartbreak_Data\InitData\Translations\English（备份到其他位置，原地备份疑似有问题
 用仓库中的English文件夹替代原来的
