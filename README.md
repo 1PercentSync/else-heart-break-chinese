@@ -1,5 +1,5 @@
 # else-heart-break-chinese
-游戏Else Heart.Break()的汉化，由GPT3.5翻译
+游戏Else Heart.Break()的汉化，由GPT3.5翻译，已经过校对
 
 下载：https://github.com/1PercentSync/else-heart-break-chinese/releases/download/release/English.zip
 
