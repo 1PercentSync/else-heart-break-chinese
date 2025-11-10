@@ -1,0 +1,8 @@
+
+void AddUser(string name, number level)
+	SaveValue(name, level)
+end
+
+number GetLevel(string name)
+	return GetValueWithDefault(name, -1)
+end

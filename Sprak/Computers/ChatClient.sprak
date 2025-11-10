@@ -1,0 +1,4 @@
+Print("Enter message: / 输入消息：")
+string s = Input("")
+Connect("TestComputer2")
+RemotePrint(s)

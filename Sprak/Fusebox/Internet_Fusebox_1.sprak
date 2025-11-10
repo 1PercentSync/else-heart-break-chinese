@@ -1,0 +1,3 @@
+Connect("Hotel_Room1_FuseBox")
+Connect("Heart")
+Slurp()

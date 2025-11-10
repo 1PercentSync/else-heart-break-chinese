@@ -1,0 +1,65 @@
+
+ClearText()
+
+Print("---")
+Print("MINISTRY OPERATING SYSTEM / 部门操作系统")
+Print("---")
+Print("")
+
+loop
+    var command = Input("> ")
+    Dispatch(command)
+end
+
+void Dispatch(string command)
+    if command == "h" or command == "H" or command == "help"
+        Print("calc - Calculator / 计算器")
+        Print("net - Web browser / 网络浏览器")
+        Print("sort - sort numbers / 排序数字")
+    else if command == "calc"
+        number a = Input("Enter nr a:  / 输入数字 a：")
+        number b = Input("Enter nr b:  / 输入数字 b：")
+        Print("a = " + a + ", b = " + b)
+        Print("a + b = " + (a + b))
+        Print("a - b = " + (a - b))
+        Print("a * b = " + (a * b))
+        Print("a / b = " + (a / b))
+    else if command == "net"
+        string connectionName = Input("Connect to:  / 连接到：")
+        var id = Connect(connectionName)
+        string function = Input("Function:  / 函数：")
+        if id > -1
+            RemoteFunctionCall(id, function, [])
+        else
+            Print("No connection. / 没有连接。")
+        end
+    else if command == "sort"
+        array a = [2,6,3,7,1,5,4,9,8]
+        Print("Unsorted: " + a + " / 未排序：" + a)
+        Sort(a)
+        Print("Sorted: " + a + " / 已排序：" + a)
+    else
+        Print("Can't understand command '" + command + "' / 无法理解命令 '" + command + "'")
+        Print("Enter 'h' for help / 输入 'h' 获取帮助")
+    end
+end
+
+
+# Bubble sort
+# 冒泡排序
+void Sort(array xs)
+    loop
+        bool didFlip = false
+        loop i from 0 to Count(xs) - 2
+            if xs[i] > xs[i + 1]
+                var temp = xs[i]
+                xs[i] = xs[i + 1]
+                xs[i + 1] = temp
+                didFlip = true
+            end
+        end
+        if didFlip == false
+            break
+        end
+    end
+end

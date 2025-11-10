@@ -1,0 +1,47 @@
+
+Print("I AM MINDREADER / 我是读心者")
+Sleep(1)
+Print("THINK OF A NUMBER / 想一个数字")
+Print("BETWEEN 1 AND 100 / 在 1 到 100 之间")
+
+var low = 0
+var high = 100
+
+loop
+  var middle = Mid(low, high)
+  var answer = Input("IS IT HIGHER THAN " + middle + "? (y/n) / 比 " + middle + " 大吗？(y/n) ")
+  answer = ToLowercase(answer)
+  if answer == "y" or answer == "yes"
+    low = middle
+  else if answer == "n" or answer == "no"
+    high = middle
+  else
+    Print("Huh? / 嗯？")
+  end
+  if (high - low) < 2
+    Print("YOU'RE THINKING OF " + (low + 1) + ", RIGHT?! / 你想的是 " + (low + 1) + "，对吧？！")
+    break
+  end
+end
+
+
+number Mid(number low, number high)
+    return Round(low + (high - low) / 2)
+end
+
+
+var ToLowercase(var text)
+    var res = ""
+    loop c in text
+        if IsUppercase(c)
+            res += IntToChar(CharToInt(c) + 32)
+        else
+            res += c
+        end
+    end
+    return res
+end
+
+bool IsUppercase(var c)
+    return CharToInt(c) >= -32 && CharToInt(c) <= -7
+end

@@ -1,0 +1,8 @@
+
+ClearText()
+Print("I am farseer. / 我是预言家。")
+Print("Ask me anything:  / 问我任何问题：")
+string q = Input("")
+var hugin = Connect("Hugin")
+hugin.OnMessage(q)
+Print("Thank you. / 谢谢。")

@@ -1,0 +1,151 @@
+#####################################
+# SPRAK PROGRAMMING LANGUAGE MANUAL #
+# SPRAK 编程语言手册 #
+#####################################
+
+Chapter 4 --- Functions
+# 第 4 章 --- 函数
+=======================
+
+Functions are the main tool for abstraction
+# 函数是编程中抽象和简化的主要工具。
+and simplification in programming. Basically
+# 基本上，它通过将某些东西变成一个自包含的单元并对其进行参数化，
+it gives your code super powers by making
+# 从而赋予你的代码超能力。
+something a self contained unit and parameterizing
+# (此为上一句的延续)
+it. This all sounds very abstract and perhaps
+# 这一切听起来很抽象，也许本身并没有什么用，
+not very useful in itself, so let's check out
+# 所以让我们看一些例子。
+some examples.
+# (此为上一句的延续)
+
+First of all, here's how you CALL a function:
+# 首先，这是你如何调用一个函数：
+
+Print("Hello!")
+
+This will make the computer print the text "Hello!"
+# 这将使计算机在屏幕上打印文本“Hello!”
+(without the quotes) to the screen - if it is a 
+# （不带引号）——如果它是一台带显示器的电脑的话！
+computer with a monitor, that is!
+# (此为上一句的延续)
+
+In that case the name of the function was Print
+# 在那种情况下，函数的名称是Print，
+and the parameter was "Hello!". By using different
+# 参数是“Hello!”。通过使用不同的
+parameters we can make the function behave
+# 参数，我们可以让函数在每次调用时表现不同。
+differently each time we call it.
+# (此为上一句的延续)
+
+This function might seem a bit strange, at least 
+# 这个函数可能看起来有点奇怪，至少
+if you're used to functions in math. The weird thing
+# 如果你习惯了数学中的函数。奇怪的是
+is that it doesn't return anything! Functions
+# 它不返回任何东西！在SPRAK中，函数
+in SPRAK don't need to do that, so that's totally fine.
+# 不需要这样做，所以这完全没问题。
+
+We often want to use functions that return 
+# 不过，我们经常想要使用返回值
+values though, so here's how:
+# 的函数，所以方法如下：
+
+number x = Max(13, 10)
+
+This will assign the return value from the function Max
+# 这将把函数Max的返回值赋给
+to the variable 'x'. Max takes two parameters and returns
+# 变量'x'。Max接受两个参数并返回
+whichever one is the largest. In this case it is 13 so
+# 两者中较大的一个。在这种情况下，它是13，所以
+'x' will get that value.
+# 'x'将得到那个值。
+
+We could also use variables or other functions as
+# 我们也可以使用变量或其他函数作为
+parameters to the Max function, like this:
+# Max函数的参数，像这样：
+
+number x = Max(Random(), 0.5)
+
+The Random function doesn't take any parameters and
+# Random函数不接受任何参数，
+returns a random value between 0.0 and 1.0. This random
+# 并返回一个0.0到1.0之间的随机值。这个随机
+value is compared to 0.5 and the biggest one is selected
+# 值与0.5进行比较，并选择最大的一个
+and assigned to 'x'.
+# 赋给'x'。
+
+Writing your own functions is pretty simple and
+# 编写自己的函数非常简单，
+looks a bit like defining variables. You could even
+# 看起来有点像定义变量。你甚至可以说
+say that a function is a variable containing a piece
+# 一个函数是一个包含一段代码的变量，
+of code, so it makes sense to think about it that way.
+# 所以这样想是合理的。
+
+Here's my attempt at writing my own function for
+# 这是我尝试编写自己的函数来
+calculating the area of a circle:
+# 计算圆的面积：
+
+number AreaOfCircle(number radius)
+    return radius * radius * 3.1415
+end
+
+There are many different parts to this code so let's
+# 这段代码有很多不同的部分，所以让我们
+pull it all apart. The first line explains what kind
+# 把它全部分开来看。第一行解释了函数将返回
+of value the function will return (a number), the name of
+# 什么类型的值（一个数字），函数本身的名称
+the function itself ('AreaOfCircle') and finally what
+# （'AreaOfCircle'），最后是它接受什么
+parameters it accepts (a single number called 'radius').
+# 参数（一个名为'radius'的数字）。
+
+The names used for the parameter is only known inside 
+# 用于参数的名称只在函数内部知道
+the function - someone using the AreaOfCircle function does 
+# ——使用AreaOfCircle函数的人不需要
+not need to know anything about it.
+# 知道任何关于它的事情。
+
+Inside the function, between the first line and the last
+# 在函数内部，在第一行和最后一行
+one containing the final 'end', we have the code that
+# 包含最终'end'的行之间，我们有当这个函数
+will run when this function is called. In this particular
+# 被调用时将运行的代码。在这个特定的
+case we multiply 'radius' with itself and with Pi, 
+# 情况下，我们将'radius'与自身和Pi相乘，
+then return that particular result to the caller.
+# 然后将该特定结果返回给调用者。
+
+To use this function we could do something like this:
+# 要使用这个函数，我们可以这样做：
+
+number a = AreaOfCircle(3.0)
+
+The variable 'a' would now contain the value 
+# 变量'a'现在将包含
+of 3.0 * 3.0 * 3.1415, which is something like 28.27
+# 3.0 * 3.0 * 3.1415的值，大约是28.27
+
+If you want to see if an object has a certain function
+# 如果你想查看一个对象是否具有某个函数，
+you can use the function HasFunction(), like this:
+# 你可以使用HasFunction()函数，像这样：
+
+if HasFunction("Print")
+    Print("Hello")
+end

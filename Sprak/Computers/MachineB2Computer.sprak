@@ -1,0 +1,11 @@
+
+ClearText()
+Print("- MACHINE B2 -  /  - 机器 B2 - ")
+Print("Will attempt to convert goods / 将尝试转换货物")
+Print("Press enter to start / 按回车键开始")
+Input("")
+
+var machine = Connect("MachineB2")
+string result = machine.Convert()
+
+Print("Result: " + result + " / 结果：" + result)

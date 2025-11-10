@@ -1,0 +1,14 @@
+
+void Ping(string sender)
+    Sleep(1)
+
+    # Connect to sender
+    # 连接到发送者
+    var id = Connect(sender)
+
+    # Send ping message
+    # to that computer
+    # 向该计算机发送 ping 消息
+    id.Ping(Name())
+end
+

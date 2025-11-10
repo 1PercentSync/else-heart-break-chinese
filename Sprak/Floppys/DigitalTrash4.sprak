@@ -1,0 +1,12 @@
+<html>
+<head>
+<title>MY HOME PAGE</title>
+</head>
+<body>
+<h1>Welcome to Nini's personal web site</h1>
+<p>
+My name is Nini and I work at the shoe shop in Dorisburg.
+<img src="pony.gif">
+</p>
+</body>
+</html>

@@ -1,0 +1,7 @@
+
+if GetUser() == "CasinoGuard1" or GetUser() == "CasinoGuard2"
+    # let through / 放行
+else
+    Say("Access denied / 拒绝访问")
+    Grill()
+end

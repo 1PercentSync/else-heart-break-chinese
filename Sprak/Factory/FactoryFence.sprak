@@ -1,0 +1,21 @@
+# Access central computer / 访问中央计算机
+var centralComputer = Connect("FactoryAccessComputer")
+
+# Check for authorization / 检查授权
+var canEnter = centralComputer.HasAccess(GetUser())
+Say("Can enter: / 可以进入：" + canEnter)
+
+# Get the two log computers / 获取两台日志计算机
+var fenceLogger1 = Connect("FenceLogger1")
+var fenceLogger2 = Connect("FenceLogger2")
+
+# Log and potentially let through / 记录并可能放行
+if canEnter
+    # do nothing to let through / 什么都不做，直接放行
+    fenceLogger1.LogNormal(GetUser())
+    fenceLogger2.LogNormal(GetUser())
+else
+	Grill()
+    fenceLogger1.LogIntruder(GetUser())
+    fenceLogger2.LogIntruder(GetUser())
+end

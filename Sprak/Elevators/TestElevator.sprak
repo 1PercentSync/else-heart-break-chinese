@@ -1,0 +1,6 @@
+
+void OnButtonPressed(number x)
+
+	Say("U pressed / 您按了 " + x)
+
+end

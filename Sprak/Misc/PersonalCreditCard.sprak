@@ -1,0 +1,18 @@
+
+void CheckBalance()
+	var computer = Connect("FinanceComputer")
+	var balance = computer.GetBalanceForPerson(GetNameOfCardOwner())
+	Print("Balance: / 余额： " + balance)
+end
+
+void MakeTransaction(number amount)
+	var computer = Connect("FinanceComputer")
+    var sign = "+"
+    var displayAmount = amount
+    if amount < 0
+        sign = "-"
+        displayAmount = amount * -1
+    end
+	Print(sign + " $" + displayAmount)
+	computer.ChangeBalance(GetNameOfCardOwner(), amount)
+end

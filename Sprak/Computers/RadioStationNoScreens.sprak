@@ -1,0 +1,11 @@
+# For the T-boards
+# 用于 T 板
+
+loop n from 1 to 2
+    var id = Connect("RadioStation_Channel" + n)
+    # Calibrate
+    # 校准
+    id.SetPitch(1.0)
+    #id.SetResonance(0.0)
+    #id.SetCutoff(5000.0)
+end

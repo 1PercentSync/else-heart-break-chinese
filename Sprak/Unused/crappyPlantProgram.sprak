@@ -1,0 +1,86 @@
+## INSTRUCTION SET / 指令集
+## FOR USE BY GENOME MONKEY / 供基因组猴子使用
+## AUTHOR J / 作者 J
+#######################
+# LEAF MAX LEVEL IS 6 / 叶子最大等级为6
+# LEAF GROW IF THEY HAVE 200% water / 如果叶子有200%的水分，它们就会生长
+# MONKEY KEEPS POSITION BETWEEN RUNS / 猴子在两次运行之间保持位置
+# DEAD LEAFS DON'T PRODUCE SUGAR / 枯叶不产生糖分
+# ROOT SYSTEM PROVIDE WATER / 根系提供水分
+# SUGAR AND WATER IS PRODUCED BETWEEN PROGRAM RUNS / 糖和水在程序运行之间产生
+### STARTING VALUES ## / ### 起始值 ##
+# LEAF_BASE_COST = 10; / LEAF_BASE_COST = 10;
+# BRANCH_BASE_COST = 100; / BRANCH_BASE_COST = 100;
+# SUGAR_PER_TRUNK_METER = 3000; / SUGAR_PER_TRUNK_METER = 3000;
+# TRUNK_COST = 100; / TRUNK_COST = 100;
+# STARTING_SUGAR = 800; / STARTING_SUGAR = 800;
+# TARGET LEAF SIZE 2.0 / 目标叶子大小 2.0
+void WalkToTop()
+	loop
+		if(BranchCount() == 0) 
+			break
+		else 
+			MoveToBranch(0) 
+		end
+	end
+end
+void AddLeafs()
+	AddLeaf(1.0)
+	AddLeaf(0.8)
+	AddLeaf(0.7)
+end
+void BuildSet()
+	AddBranch(1.0)
+	WalkToTop()
+	AddLeafs()
+end
+number WaterUndercut()
+	number sum =0
+	number leafCount = (LeafCount() - 1)
+	if(leafCount <= 0)
+		return 0
+	end
+	loop from 0 to leafCount
+		number wantedLevel = LeafWaterConsumtion(@)
+		if( LeafSize(@) < 0.5 )
+			wantedLevel = wantedLevel * 2
+		end
+		number currentLevel = LeafWaterLevel(@)
+		sum = sum + currentLevel - wantedLevel
+	end
+	return sum
+end
+
+WalkToTop()
+
+if(CurrentLevel() == 0 && LeafCount() == 0)
+	AddLeafs()
+end
+#Water the leafs / 给叶子浇水
+number level = WaterLevel()
+number lc = LeafCount() - 1
+if(lc >= 0)
+	loop from 0 to lc
+		LeafGiveWater(@, level)
+	end
+end
+# See for growth needs / 查看增长需求
+number n = WaterUndercut() + WaterProduction()
+if( n < 0)
+	GrowRoots(SugarLevel())
+else
+	if(SugarLevel() > 130)
+		if(BranchLength() > 0.2)
+			BuildSet()
+		else
+			GrowBranch(SugarLevel())
+		end
+	end
+end
+
+
+
+
+
+
+

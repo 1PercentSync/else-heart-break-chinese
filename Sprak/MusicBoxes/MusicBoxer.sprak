@@ -1,0 +1,9 @@
+﻿# This program runs when the button is pressed / 按下按钮时运行此程序
+
+loop x from 1 to 8
+    PlaySound("ThereminSound")
+    SetPitch(0.5 + 0.25 * x)
+    Sleep(1)
+end
+
+Stop()

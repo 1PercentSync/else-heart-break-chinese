@@ -1,0 +1,11 @@
+
+Foo(Random() * 3)
+
+void Foo(number t)
+    Sleep(t)
+    var target = GetRandomComputer()
+    var id = Connect(target)
+    var t2 = Random() * 3
+    Print("Calling Foo on " + target + " with t " + t2 + " / 在 " + target + " 上调用 Foo，t 为 " + t2)
+    id.Foo(t2)
+end

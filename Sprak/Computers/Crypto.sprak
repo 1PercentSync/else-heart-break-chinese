@@ -1,0 +1,30 @@
+
+ClearText()
+
+string s = Input("Enter key:  / 输入密钥：")
+number k = CharToInt(s[0])
+
+Print("Enter message: / 输入消息：")
+string message = Input("")
+
+string encrypted = ""
+
+loop c in message
+    if c == " "
+        encrypted += " "
+    else
+        var sum = Mod(k + CharToInt(c), 26)
+        #Print("sum for " + c + " = " + sum)
+        # c 的总和 = " + sum
+
+        var c2 = IntToChar(sum)
+        encrypted += c2
+    end
+end
+
+Print("Encrypted: / 已加密：")
+Print("------------")
+Print(encrypted)
+Print("------------")
+
+

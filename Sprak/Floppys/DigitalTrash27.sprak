@@ -1,0 +1,37 @@
+
+They're on to mee....--- / 他们盯上我了…---
+
+They know what I have stolen, but they don't 
+/ 他们知道我偷了什么，但他们不知道
+know how I managed to make it work! I think they're coming. 
+/ 我是怎么让它工作的！我想他们要来了。
+I need to run! The "thing" is hidden where the wind 
+/ 我得跑！那个“东西”藏在风
+always blows and then you need to go inside.
+/ 总是吹的地方，然后你需要进去。
+
+It wasn't safe to put the 
+/ 把它们放在同一个地方不安全
+two of them in the same place...
+/ …
+
+If i don't make it, remember to keep fighting!
+/ 如果我没能成功，记住要继续战斗！
+
+SetWorldPosition("Hotel_Exterior", 41, 35)
+SetWorldPosition("Hotel_Lobby", 32, 15)
+SetWorldPosition("Hotel_Room1", 11, 10)
+SetWorldPosition("Plaza", 6, 43)
+SetWorldPosition("Lodge_Room2", 6, 43)
+SetWorldPosition("Lodge_Room1", 11, 22)
+SetWorldPosition("Ministry_Lobby", 6, -27)f
+SetWorldPosition("PoorDesolateBuilding1_Exterior", 24, 14)
+SetWorldPosition("Casino_Floor2", -3, 20)
+SetWorldPosition("FelixApartment", 4, -17)
+SetWorldPosition("TownHall", 32, 45)
+SetWorldPosition("Cafe_Exterior", 6, -7)
+SetWorldPosition("BetweenFelixAndLongson", -3, -7)
+
+
+-- Ratvader / -- 鼠王
+

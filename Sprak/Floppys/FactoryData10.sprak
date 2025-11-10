@@ -1,0 +1,8 @@
+
+loop from 1 to 9
+    Refine(@)
+    Sleep(1)
+    Refine(@)
+    Sleep(2)
+    Refine(@)
+end

@@ -1,0 +1,7 @@
+
+Connect("Internet_Internet_PoleComputer_2")
+Connect("Internet_Internet_PoleComputer_3")
+
+Connect("HarborEast_StreetLight1")
+
+Slurp()

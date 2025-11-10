@@ -1,0 +1,6 @@
+
+if IsPlaying()
+    Stop()
+else
+    PlayLoop("BlaKnuten")
+end

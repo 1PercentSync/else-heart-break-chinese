@@ -1,0 +1,7 @@
+if GetUser() == "Elsa"
+    Connect("FinanceComputer")
+    Connect("Ministry_Offices3_Diskette_Diskette5_5")
+    Slurp()
+else
+  Print("Hello " + GetUser() + ", you are not authorized. / 你好 " + GetUser() + "，你未经授权。")
+end

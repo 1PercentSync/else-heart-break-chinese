@@ -1,0 +1,98 @@
+#####################################
+# SPRAK PROGRAMMING LANGUAGE MANUAL #
+# SPRAK 编程语言手册 #
+#####################################
+
+Chapter 2 --- Variables
+# 第 2 章 --- 变量
+=======================
+
+Variables are used for naming things. This might
+# 变量用于给事物命名。这可能
+seem like a trivial task but do not be deceived,
+# 看起来像一个微不足道的任务，但不要被欺骗，
+the ability to name things is one
+# 命名事物的能力是
+of the most important things of all in programming.
+# 编程中最重要的事情之一。
+The reason for this is that it allows us to
+# 原因是它允许我们
+abstract and handle the components of our solution
+# 以符号化的方式抽象和处理我们解决方案的组件。
+in a symbolic way.
+# (此为上一句的延续)
+
+For example: instead of referring to your name as
+# 例如：与其将你的名字称为
+a string of characters like "Lisa" we can create
+# 像“Lisa”这样的字符串，我们可以创建一个
+a variable containing this value. The variable
+# 包含这个值的变量。这个变量
+might be called something like 'name' and could
+# 可能被称为'name'之类的东西，并且可以
+even refer to different names at different points
+# 在不同的时间点引用不同的名字，
+in time, depending on the needs of the program.
+# 这取决于程序的需求。
+
+Here are some examples of how to create variables:
+# 以下是一些如何创建变量的例子：
+
+number x = 10
+# 数字 x = 10
+string myName = "Simon"
+# 字符串 myName = "Simon"
+bool itIsChristmas = false
+# 布尔值 itIsChristmas = false
+
+Notice the words to the left, like 'number', 'string'
+# 注意左边的词，比如'number'，'string'
+and 'bool'. Those are TYPES and they describe what
+# 和'bool'。那些是类型，它们描述了我们
+kind of data we want to put inside the variable.
+# 想要放入变量中的数据类型。
+After that comes the variable name. This should be
+# 之后是变量名。这应该是一个
+something descriptive that explains what kind of thing
+# 描述性的东西，解释了我们
+we have put inside the variable.
+# 放入变量中的是什么样的东西。
+
+Next up is the equal sign, '='
+# 接下来是等号，'='
+This means that we set the value of the variable to
+# 这意味着我们将变量的值设置为
+whatever is on the right side.
+# 右边的任何东西。
+
+Variables can be re-set to other values by using the
+# 变量可以通过使用等号重新设置为其他值，
+equal sign, like this:
+# 像这样：
+
+x = 11
+myName = "Simone"
+itIsChristmas = true
+
+This requires the variables to have already been declared
+# 这要求变量已经在程序的
+earlier in the program using the syntax above with
+# 前面部分使用上面的语法声明过，
+a type and a name (like 'number x = 10' for example).
+# 带有类型和名称（例如'number x = 10'）。
+
+If a variable contains a number type it can be changed
+# 如果一个变量包含一个数字类型，它可以为了方便
+in some additional ways just for convenience, saving
+# 而以一些额外的方式改变，节省
+a few key strokes:
+# 几次按键：
+
+x++      # Increase by one
+# x++      # 增加一
+x += 10  # Increase by 10
+# x += 10  # 增加10
+x--      # Decrease by one
+# x--      # 减少一
+x -= 20  # Decrease by 20
+# x -= 20  # 减少20

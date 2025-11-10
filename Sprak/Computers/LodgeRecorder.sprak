@@ -1,0 +1,13 @@
+
+
+void OnIntruder(string name)
+    var yulianLogger = Connect("YulianLogger")
+    yulianLogger.LogIntruder(name)
+end
+
+
+
+void OnHack(string name)
+    var yulianLogger = Connect("YulianLogger")
+    yulianLogger.LogHacker(name)
+end

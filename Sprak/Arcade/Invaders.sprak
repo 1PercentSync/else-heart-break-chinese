@@ -1,0 +1,70 @@
+
+number shipX = 256
+number shipY = 200
+
+array shots = []
+
+void Shoot(number x, number y)
+    array shot
+    shot["x"] = x
+    shot["y"] = y
+    Append(shots, shot)
+    #Print("n: " + n + " shots: " + shots)
+    # 打印: "n: " + n + " shots: " + shots
+end
+
+number lastT = Time()
+
+loop
+    number deltaTime = Time() - lastT
+    lastT = Time()
+    GetInput(deltaTime)
+    ClampShip()
+    MoveShots(deltaTime)
+    ClearText()
+    DrawShip()
+    DrawShots()
+    FrameSync()
+end
+
+void GetInput(number deltaTime)
+    if(IsKeyPressed("left"))
+        shipX = shipX - 10 * deltaTime
+    else if(IsKeyPressed("right"))
+        shipX = shipX + 10 * deltaTime
+    else if(IsKeyPressed("space"))
+        Shoot(shipX, shipY)
+    end
+end
+
+void ClampShip()
+    if shipX < 5
+        shipX = 5
+    end
+    if shipX > 507
+        shipX = 507
+    end
+end
+
+void DrawShip()
+    Line(shipX, shipY, shipX + 5, shipY + 15)
+    Line(shipX, shipY, shipX - 5, shipY + 15)
+end
+
+void MoveShots(number deltaTime)
+    loop GetIndexes(shots)
+        var shot = shots[@]
+        shot[1] = shot[1] - (20 * deltaTime)
+        if shot[1] < 0
+            Remove(shots, @)
+        end
+    end
+end
+
+void DrawShots()
+    loop s in shots
+        var x = s["x"]
+        var y = s["y"]
+        Line(x, y, x, y + 5)
+    end
+end

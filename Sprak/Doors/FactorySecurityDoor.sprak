@@ -1,0 +1,8 @@
+
+string targetRoom = GetTargetRoom()
+number targetX = GetTargetX()
+number targetY = GetTargetY()
+
+if(GetUser() != "Sebastian")
+	TeleportUser(targetRoom, targetX, targetY)
+end

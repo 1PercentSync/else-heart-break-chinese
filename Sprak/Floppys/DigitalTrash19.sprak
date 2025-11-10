@@ -1,0 +1,6 @@
+The Three Monad Laws / 三个Monad定律
+====================
+
+return a >>= k  ==  k a
+m >>= return  ==  m
+m >>= (\x -> k x >>= h)  ==  (m >>= k) >>= h

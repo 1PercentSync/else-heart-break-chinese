@@ -1,0 +1,11 @@
+number financeComputer = Connect("FinanceComputer")
+
+loop
+    ClearText()
+    Print("Casino Cash Register / 赌场收银机")
+    number amount = Input("Enter amount:  / 输入金额：")
+
+    financeComputer.ChangeBalance("Casino", amount)
+    
+    Sleep(1)
+end

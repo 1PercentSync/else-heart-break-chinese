@@ -1,0 +1,8 @@
+
+loop x from 1 to 32
+  PlaySound("ThereminSound")
+  SetPitch(2 + 1 * Random())
+  Sleep(0.2)
+end
+
+Stop()

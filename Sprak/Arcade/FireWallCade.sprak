@@ -1,0 +1,451 @@
+#                                                                       
+#   _|_|_|_|  _|                      _|          _|            _|  _|  
+#   _|            _|  _|_|    _|_|    _|          _|    _|_|_|  _|  _|  
+#   _|_|_|    _|  _|_|      _|_|_|_|  _|    _|    _|  _|    _|  _|  _|  
+#   _|        _|  _|        _|          _|  _|  _|    _|    _|  _|  _|  
+#   _|        _|  _|          _|_|_|      _|  _|        _|_|_|  _|  _|  
+#
+
+
+# If the game is too fast on your machine, set cycleSpeedupThreshold to 1
+# 如果游戏在你的机器上运行太快，请将 cycleSpeedupThreshold 设置为 1
+
+
+###  With loooove from / 来自...的爱
+#     mistik - https://twitter.com/dalibormesaric
+#     pootzko - https://twitter.com/pootzko
+
+### Constants VARS - Trololol / 常量变量 - 恶作剧
+var keys = ["left", "right", "up", "down", "space"]
+var input = []
+var previousInput = []
+
+var firewallY = 236
+var canvasHeight = 255
+var firewallWidth = 48
+var firewallHeight = 10
+var packetWidth = 28
+var packetHeight = 20
+
+### Variable VARS / 可变变量
+var currentScreen = "splash"
+var selectedMenuItem = "newGame"
+
+# For each wave - [isLeftPacketMalware?, isRightPacketMalware?]
+# 对于每个波次 - [左侧数据包是恶意软件吗？, 右侧数据包是恶意软件吗？]
+var packetWaves = [[false, false]]
+
+# Each firewall has two properties - [defaultX, isOpen]
+# 每个防火墙有两个属性 - [默认X坐标, 是否打开]
+var firewalls = [[130, "closed"], [332, "closed"]]
+
+var malwareSpeed = 1
+var cycleSpeedupThreshold = 2
+var waveDistance = 100
+var waveCount = 1
+var waveEndDestination = 0
+var firstWaveY = 0
+var score = 0
+
+
+
+InitializeGame()
+
+void InitializeGame()
+    ClearText()
+    SetDefaultColor()
+    DisplayGraphics()
+    InitializeKeys()
+
+    loop
+        loop key in keys
+            input[key] = IsKeyPressed(key)
+        end
+
+        if (currentScreen == "gameOver")
+            break
+        else if (currentScreen != "game")
+            HandlePreGameKeyActions()
+            DisplayPreGameScreen()
+        else
+            ExecuteGameCycle()
+        end
+
+        loop key in keys
+            previousInput[key] = input[key]
+        end
+
+        DisplayGraphics()
+    end
+
+    GameOver()
+end
+
+void InitializeKeys()
+    loop key in keys
+        previousInput[key] = false
+    end
+end
+
+void KeyReleased(string key)
+    return input[key] == false && previousInput[key] == true
+end
+
+void HandlePreGameKeyActions()
+    if (currentScreen == "splash" || currentScreen == "about")
+        if (KeyReleased("space"))
+            ClearText()
+            currentScreen = "mainMenu"
+        end
+    else if (currentScreen == "mainMenu")
+        if (KeyReleased("up"))
+            ClearText()
+            selectedMenuItem = "newGame"
+        else if (KeyReleased("down"))
+            ClearText()
+            selectedMenuItem = "about"
+        else if (KeyReleased("space"))
+            ClearText()
+            if (selectedMenuItem == "newGame")
+                currentScreen = "game"
+            else
+                currentScreen = "about"
+            end
+        end
+    else if (currentScreen == "gameOver")
+        if (KeyReleased("space"))
+            ResetGame()
+            currentScreen = "game"
+        end
+    end
+end
+
+void ResetGame()
+    packetWaves = [[false, false]]
+    firewalls = [[130, "closed"], [332, "closed"]]
+    waveDistance = 100
+    waveCount = 1
+    waveEndDestination = 0
+    firstWaveY = 0
+    score = 0
+end
+
+void DisplayPreGameScreen()
+    if (currentScreen == "splash")
+        DisplaySplashScreen()
+    else if (currentScreen == "mainMenu")
+        if (selectedMenuItem == "newGame")
+            DisplayMenuNewGameSelected()
+        else
+            DisplayMenuAboutSelected()
+        end
+    else if (currentScreen == "about")
+        DisplayAboutScreen()
+    end
+    DisplayGraphics()
+end
+
+void DisplaySplashScreen()
+    Text(3, 3, " _|_|_|_|  _|_|_|  _|_|_|    _|_|_|_| ")
+    Text(3, 4, " _|          _|    _|    _|  _|       ")
+    Text(3, 5, " _|_|_|      _|    _|_|_|    _|_|_|   ")
+    Text(3, 6, " _|          _|    _|    _|  _|       ")
+    Text(3, 7, " _|        _|_|_|  _|    _|  _|_|_|_| ")
+
+    Text(3, 10, " _|          _|    _|_|    _|        _|        ")
+    Text(3, 11, " _|          _|  _|    _|  _|        _|        ")
+    Text(3, 12, " _|    _|    _|  _|_|_|_|  _|        _|        ")
+    Text(3, 13, "   _|  _|  _|    _|    _|  _|        _|        ")
+    Text(3, 14, "     _|  _|      _|    _|  _|_|_|_|  _|_|_|_|  ")
+
+    Text(3, 19, "Press (SPACE) to start / 按 (空格) 开始")
+    Text(3, 21, "by misticni & pootzko / 作者 misticni & pootzko")
+end
+
+void DisplayMenuNewGameSelected()
+    Text(20, 10, "-> New game / -> 新游戏")
+    Text(20, 12, "   About /   关于")
+end
+
+void DisplayMenuAboutSelected()
+    Text(20, 10, "   New game /   新游戏")
+    Text(20, 12, "-> About / -> 关于")
+end
+
+void DisplayAboutScreen()
+    Text(3, 3, "Firewall is a game where you control passthrough / 防火墙是一款控制信息包通过的游戏")
+    Text(3, 4, "of information packets. Some packets are useful, / 一些数据包是有用的，")
+    Text(3, 5, "other represent malware. Make sure that you close / 其他的则代表恶意软件。请确保您关闭")
+    Text(3, 6, "the ports when there is a malicious packet coming! / 端口，当有恶意数据包传来时！")
+    Text(3, 7, "Open the ports to allow the useful packets to / 打开端口以允许有用的数据包")
+    Text(3, 8, "pass through. / 通过。")
+
+    Text(3, 10, "Use the left and right arrow keys to control / 使用左右箭头键来控制")
+    Text(3, 11, "your left and right firewall ports. / 你的左右防火墙端口。")
+
+    Text(3, 16, "Press (SPACE) to go back / 按 (空格) 返回")
+end
+
+void ExecuteGameCycle()
+    SetDefaultColor()
+    SetScore()
+    DrawWall()
+    InitializeFirewallStates()
+    DrawFirewalls()
+    SetWaveEndDestination()
+    EnsureEnoughWavesExist()
+
+    loop index from 0 to (waveCount - 1)
+        DrawPackets(index)
+    end
+end
+
+void SetScore()
+    ClearText()
+    Print("Score: " + score + " / 分数: " + score)
+    #Print("Queue: " + waveCount)
+end
+
+void DrawWall()
+    Line(0, 235, 139, 235)
+    Line(169, 235, 341, 235)
+    Line(371, 235, 511, 235)
+end
+
+void InitializeFirewallStates()
+    if (KeyReleased("left"))
+        FlipFirewallState(firewalls[0])
+    end
+
+    if (KeyReleased("right"))
+        FlipFirewallState(firewalls[1])
+    end
+end
+
+void FlipFirewallState(array firewall)
+    if (firewall[1] == "open")
+        firewall[1] = "closed"
+    else
+        firewall[1] = "open"
+    end
+end
+
+void DrawFirewalls()
+    var firewall1x1 = GetFirewalX1Coordinate(0)
+    var firewall2x1 = GetFirewalX1Coordinate(1)
+
+    DrawFirewall(firewall1x1)
+    DrawFirewall(firewall2x1)
+end
+
+number GetFirewalX1Coordinate(number packetPosition)
+    var offset = -42
+
+    if (packetPosition == 1)
+        offset *= -1
+    end
+
+    var firewall = firewalls[packetPosition]
+    var isFirewallOpen = IsFirewallOpen(packetPosition)
+    if (isFirewallOpen)
+        return firewall[0] + offset
+    else
+        return firewall[0]
+    end
+end
+
+void DrawFirewall(number x1)
+    var y1 = firewallY
+    var x2 = x1 + firewallWidth
+    var y2 = y1 + firewallHeight
+
+    Rect(x1, y1, x2, y2)
+end
+
+void SetWaveEndDestination()
+    waveEndDestination = 0
+
+    loop
+        if (waveEndDestination >= canvasHeight)
+            waveEndDestination--
+            break
+        end
+
+        waveEndDestination += waveDistance
+    end
+end
+
+void EnsureEnoughWavesExist()
+    var lastWaveY = GetWaveY(waveCount - 1)
+    var isLastWavePastThreshold = lastWaveY >= waveDistance
+    var isFirstWaveActive = firstWaveY < canvasHeight
+    var waveDistanceSum = waveDistance * waveCount
+    var isWaveDistanceSumTooSmall = waveDistanceSum <= waveEndDestination
+
+    if (isLastWavePastThreshold && isFirstWaveActive && isWaveDistanceSumTooSmall)
+        CreateNewWave()
+    end
+end
+
+void CreateNewWave()
+    packetWaves[waveCount] = [true, true]
+    InitializeWaveMalwareness(waveCount)
+    waveCount++
+end
+
+void DrawPackets(number index)
+    var yPosition = GetWaveY(index)
+    OnPacketStart(yPosition, index)
+    DrawPacket(yPosition, index, 0, 140)
+    DrawPacket(yPosition, index, 1, 342)
+    OnFirewallReached(yPosition, index)
+    firstWaveY = firstWaveY + malwareSpeed
+    OnEndReached(yPosition, index)
+end
+
+void DrawPacket(number yPosition, number index, number packetPosition, number x1)
+    var y1 = yPosition
+    var x2 = x1 + packetWidth
+    var y2 = y1 + packetHeight
+
+    if (y1 > canvasHeight)
+        return
+    end
+
+    var wave = packetWaves[index]
+    var isMalware = wave[packetPosition]
+    if (isMalware)
+        SetRedColor()
+    else
+        SetGreenColor()
+    end
+
+    Rect(x1, y1, x2, y2)
+end
+
+void OnPacketStart(number yPosition, number index)
+    if (yPosition <= waveCount - 1)
+        InitializeWaveMalwareness(index)
+    end
+end
+
+void OnFirewallReached(number yPosition, number index)
+    var firewallYwithPadding = firewallY + waveCount
+    if (yPosition >= firewallY && yPosition < firewallYwithPadding)
+        var wave = packetWaves[index]
+        var isMalware1 = wave[0]
+        var isMalware2 = wave[1]
+        var isFirewallOpen1 = IsFirewallOpen(0)
+        var isFirewallOpen2 = IsFirewallOpen(1)
+
+        var isRightState1 = IsFirewallInRightState(isMalware1, isFirewallOpen1)
+        var isRightState2 = IsFirewallInRightState(isMalware2, isFirewallOpen2)
+
+        if (isRightState1 && isRightState2)
+            PlaySound ("Coin 1")
+            score++
+        else
+            currentScreen = "gameOver"
+        end
+    end
+end
+
+void OnEndReached(number yPosition, number index)
+    if (yPosition >= waveEndDestination)
+        if (index == 0)
+            firstWaveY = 0
+            waveDistance -= cycleSpeedupThreshold
+        end
+    end
+end
+
+void InitializeWaveMalwareness(number index)
+    var wave = packetWaves[index]
+    RandomizeMalwareness(wave, 0)
+    RandomizeMalwareness(wave, 1)
+end
+
+void RandomizeMalwareness(array wave, number packetPosition)
+    if (Random() > 0.5)
+        wave[packetPosition] = false
+    else
+        wave[packetPosition] = true
+    end
+end
+
+bool IsFirewallOpen(number packetPosition)
+    var firewall = firewalls[packetPosition]
+    return firewall[1] == "open"
+end
+
+bool IsFirewallInRightState(bool isMalware, bool isFirewallOpen)
+    if (isMalware && isFirewallOpen)
+        return false
+    else if (isMalware == false && isFirewallOpen == false)
+        return false
+    else
+        return true
+    end
+end
+
+number GetWaveY(number index)
+    var yPosition = firstWaveY - index * waveDistance
+
+    if (yPosition < 0)
+        yPosition = waveEndDestination + yPosition - 1
+    end
+
+    return yPosition
+end
+
+void GameOver()
+    ClearText()
+    DisplayGraphics()
+    PlaySound("Warning")
+    Sleep(1)
+    PlaySound("Lose")
+    DrawGameOverArt()
+end
+
+void DrawGameOverArt()
+    loop
+        ClearText()
+        loop i from 0 to 13
+            Print(" ")
+        end
+        Print("            Game Over! Press(CTRL + R) to restart / 游戏结束！按(CTRL + R)重新开始")
+
+
+        loop y from 0 to 16
+            loop x from 0 to 32
+                if (Random() > 0.7)
+                    SetRedColor()
+                    Rect(15 * x, 15 * y, 15 * x + 15, 15 * y + 15)
+                else
+                    SetBlackColor()
+                end
+            end
+        end
+        DisplayGraphics()
+    end
+end
+
+void SetDefaultColor()
+    SetOrangeColor()
+end
+
+void SetOrangeColor()
+    Color(0.80, 0.52, 0)
+end
+
+void SetGreenColor()
+    Color(0.29, 0.79, 0.28)
+end
+
+void SetRedColor()
+    Color(0.78, 0.25, 0.09)
+end
+
+void SetBlackColor()
+    Color(0, 0, 0)
+end

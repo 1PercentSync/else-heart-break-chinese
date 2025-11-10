@@ -1,0 +1,298 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BDF9756C-7027-4BFF-A049-D2D8823F2F80}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>UnityStandardAssets.Cameras</RootNamespace>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Assembly-CSharp-firstpass">
+      <HintPath>..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\ElseHeartbreak\ElseHeartbreak_Data\Managed\Assembly-CSharp-firstpass.dll</HintPath>
+    </Reference>
+    <Reference Include="Assembly-UnityScript-firstpass">
+      <HintPath>..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\ElseHeartbreak\ElseHeartbreak_Data\Managed\Assembly-UnityScript-firstpass.dll</HintPath>
+    </Reference>
+    <Reference Include="GameTypes">
+      <HintPath>..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\ElseHeartbreak\ElseHeartbreak_Data\Managed\GameTypes.dll</HintPath>
+    </Reference>
+    <Reference Include="GameWorld2">
+      <HintPath>..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\ElseHeartbreak\ElseHeartbreak_Data\Managed\GameWorld2.dll</HintPath>
+    </Reference>
+    <Reference Include="Grimm">
+      <HintPath>..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\ElseHeartbreak\ElseHeartbreak_Data\Managed\Grimm.dll</HintPath>
+    </Reference>
+    <Reference Include="ProgrammingLanguageNr1">
+      <HintPath>..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\ElseHeartbreak\ElseHeartbreak_Data\Managed\ProgrammingLanguageNr1.dll</HintPath>
+    </Reference>
+    <Reference Include="Relay">
+      <HintPath>..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\ElseHeartbreak\ElseHeartbreak_Data\Managed\Relay.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <HintPath>..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\ElseHeartbreak\ElseHeartbreak_Data\Managed\System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core">
+      <HintPath>..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\ElseHeartbreak\ElseHeartbreak_Data\Managed\System.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="TingTing">
+      <HintPath>..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\ElseHeartbreak\ElseHeartbreak_Data\Managed\TingTing.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\ElseHeartbreak\ElseHeartbreak_Data\Managed\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\ElseHeartbreak\ElseHeartbreak_Data\Managed\UnityEngine.UI.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AbstractTargetFollower.cs" />
+    <Compile Include="ActionMenu.cs" />
+    <Compile Include="ActionMenuItem.cs" />
+    <Compile Include="ActionMenuItemType.cs" />
+    <Compile Include="AnimatedTexture.cs" />
+    <Compile Include="AnimationHandler.cs" />
+    <Compile Include="Arpeggiator.cs" />
+    <Compile Include="ArrayExtensions.cs" />
+    <Compile Include="AudioProxy.cs" />
+    <Compile Include="BackButton.cs" />
+    <Compile Include="BaseEvent.cs" />
+    <Compile Include="BedShell.cs" />
+    <Compile Include="BlinkingLeds.cs" />
+    <Compile Include="Bootstrap.cs" />
+    <Compile Include="Bubble.cs" />
+    <Compile Include="BubbleCanvasController.cs" />
+    <Compile Include="BubbleOrientation.cs" />
+    <Compile Include="BubbleTester.cs" />
+    <Compile Include="BubbleTextColorForCharacter.cs" />
+    <Compile Include="BubbleType.cs" />
+    <Compile Include="ButtonShell.cs" />
+    <Compile Include="CameraFocusPoint.cs" />
+    <Compile Include="CharacterShell.cs" />
+    <Compile Include="CigaretteShell.cs" />
+    <Compile Include="CinematographicEvent.cs" />
+    <Compile Include="ClipboardHelper.cs" />
+    <Compile Include="CodeEditor.cs" />
+    <Compile Include="CodeEditorState.cs" />
+    <Compile Include="CodeEditorSuggestionMaker.cs" />
+    <Compile Include="CommandLine.cs" />
+    <Compile Include="ComputerInteractionState.cs" />
+    <Compile Include="ComputerShell.cs" />
+    <Compile Include="ComputerSoundMaker.cs" />
+    <Compile Include="Container.cs" />
+    <Compile Include="CreditCardShell.cs" />
+    <Compile Include="Curve.cs" />
+    <Compile Include="DayCycleSettings.cs" />
+    <Compile Include="DebugOut.cs" />
+    <Compile Include="DialogueSubstate.cs" />
+    <Compile Include="DiscoBallScript.cs" />
+    <Compile Include="DoorShell.cs" />
+    <Compile Include="DrinkShell.cs" />
+    <Compile Include="DrugShell.cs" />
+    <Compile Include="EasyAnimateTwo.cs" />
+    <Compile Include="EasyAnimState.cs" />
+    <Compile Include="EditableMesh.cs" />
+    <Compile Include="EditorSavesCreator.cs" />
+    <Compile Include="ExtractorShell.cs" />
+    <Compile Include="Fade.cs" />
+    <Compile Include="FastForwardState.cs" />
+    <Compile Include="FenceShell.cs" />
+    <Compile Include="FixNewCameraState.cs" />
+    <Compile Include="FlickeringLight.cs" />
+    <Compile Include="FloppyShell.cs" />
+    <Compile Include="FlowerPotShell.cs" />
+    <Compile Include="FountainShell.cs" />
+    <Compile Include="FryingPanShell.cs" />
+    <Compile Include="Function.cs" />
+    <Compile Include="FuseBoxShell.cs" />
+    <Compile Include="GameInputRouter.cs" />
+    <Compile Include="GameViewControls.cs" />
+    <Compile Include="GameViewState.cs" />
+    <Compile Include="GameViewStateHandler.cs" />
+    <Compile Include="GameWorldLoadingOnUpdate.cs" />
+    <Compile Include="GapBuffer.cs" />
+    <Compile Include="GenericInputMessage.cs" />
+    <Compile Include="GhostProjectorBehaviour.cs" />
+    <Compile Include="GoodsShell.cs" />
+    <Compile Include="GreatCamera.cs" />
+    <Compile Include="GreatCameraTester.cs" />
+    <Compile Include="GuiOrderEvent.cs" />
+    <Compile Include="HackdevButtonListener.cs" />
+    <Compile Include="HackdevShell.cs" />
+    <Compile Include="HackEffectFlyer.cs" />
+    <Compile Include="HackEffectSpawnPoint.cs" />
+    <Compile Include="HandHeldCam.cs" />
+    <Compile Include="HeartController.cs" />
+    <Compile Include="HideGroup.cs" />
+    <Compile Include="HideWhenPlaying.cs" />
+    <Compile Include="HoverExitArrow.cs" />
+    <Compile Include="IDisposable.cs" />
+    <Compile Include="IDoInput.cs" />
+    <Compile Include="IEasyAnimState.cs" />
+    <Compile Include="IInputFilter.cs" />
+    <Compile Include="IInputGenerator.cs" />
+    <Compile Include="IInputHandler.cs" />
+    <Compile Include="IInputMessage.cs" />
+    <Compile Include="ImplodeExplode.cs" />
+    <Compile Include="InsideComputerState.cs" />
+    <Compile Include="InsideLockerState.cs" />
+    <Compile Include="InteractEvent.cs" />
+    <Compile Include="InternetSentry.cs" />
+    <Compile Include="IntroDirector.cs" />
+    <Compile Include="InventoryState.cs" />
+    <Compile Include="IsInPlaymode.cs" />
+    <Compile Include="iTween.cs" />
+    <Compile Include="JewelleryShell.cs" />
+    <Compile Include="KeyboardInput.cs" />
+    <Compile Include="KeyShell.cs" />
+    <Compile Include="Label.cs" />
+    <Compile Include="LampShell.cs" />
+    <Compile Include="LerumBlinker.cs" />
+    <Compile Include="LightOnHover.cs" />
+    <Compile Include="LightRayAnimator.cs" />
+    <Compile Include="Line2D.cs" />
+    <Compile Include="LockerShell.cs" />
+    <Compile Include="LookAtMapState.cs" />
+    <Compile Include="LookAtMe.cs" />
+    <Compile Include="LookatTarget.cs" />
+    <Compile Include="MachineShell.cs" />
+    <Compile Include="MainMenu.cs" />
+    <Compile Include="MapShell.cs" />
+    <Compile Include="MathUtils.cs" />
+    <Compile Include="MemoryShell.cs" />
+    <Compile Include="MessageCollector.cs" />
+    <Compile Include="MimanHelper.cs" />
+    <Compile Include="MouseLook.cs" />
+    <Compile Include="MoveForward.cs" />
+    <Compile Include="MoveUpAndDown.cs" />
+    <Compile Include="MusicBoxShell.cs" />
+    <Compile Include="MysticalCubeShell.cs" />
+    <Compile Include="NavNodeShell.cs" />
+    <Compile Include="NetNode.cs" />
+    <Compile Include="NewCameraState.cs" />
+    <Compile Include="NotificationsPane.cs" />
+    <Compile Include="OLD_TextSurface.cs" />
+    <Compile Include="OnMouseOver.cs" />
+    <Compile Include="OptionsPanel.cs" />
+    <Compile Include="OrbitNewCameraState.cs" />
+    <Compile Include="PauseMenu.cs" />
+    <Compile Include="PauseMenuGuiController.cs" />
+    <Compile Include="PawnShell.cs" />
+    <Compile Include="PhysicalGuiButton.cs" />
+    <Compile Include="PID.cs" />
+    <Compile Include="PidVector3.cs" />
+    <Compile Include="PitchRandomizer.cs" />
+    <Compile Include="PlayerPauseMenu.cs" />
+    <Compile Include="PlayerRoamingState.cs" />
+    <Compile Include="PointShell.cs" />
+    <Compile Include="PolygonLinePainter.cs" />
+    <Compile Include="PortalShell.cs" />
+    <Compile Include="PostEffectFilter.cs" />
+    <Compile Include="ProbeController.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RadioShell.cs" />
+    <Compile Include="RainController.cs" />
+    <Compile Include="RobotShell.cs" />
+    <Compile Include="RoomChanger.cs" />
+    <Compile Include="RoomLightSettings.cs" />
+    <Compile Include="RoomToneController.cs" />
+    <Compile Include="RoomType.cs" />
+    <Compile Include="Rope.cs" />
+    <Compile Include="RunGameWorld.cs" />
+    <Compile Include="SafeShell.cs" />
+    <Compile Include="SaveData.cs" />
+    <Compile Include="Scaled.cs" />
+    <Compile Include="Screenshot.cs" />
+    <Compile Include="ScrewdriverShell.cs" />
+    <Compile Include="Seagull.cs" />
+    <Compile Include="SeagullState.cs" />
+    <Compile Include="SeagullZone.cs" />
+    <Compile Include="Seagull_Fly.cs" />
+    <Compile Include="Seagull_Glide.cs" />
+    <Compile Include="Seagull_Idle.cs" />
+    <Compile Include="Seagull_Turn.cs" />
+    <Compile Include="Seagull_Walk.cs" />
+    <Compile Include="SeatShell.cs" />
+    <Compile Include="SecretTurner.cs" />
+    <Compile Include="SendPipeShell.cs" />
+    <Compile Include="SerializableKeyValuePair.cs" />
+    <Compile Include="SetCameraDIrectionOnStart.cs" />
+    <Compile Include="Shell.cs" />
+    <Compile Include="ShellManager.cs" />
+    <Compile Include="ShrinkUvs.cs" />
+    <Compile Include="Sign.cs" />
+    <Compile Include="SinkShell.cs" />
+    <Compile Include="SlowRotate.cs" />
+    <Compile Include="SmartLamps.cs" />
+    <Compile Include="SnusShell.cs" />
+    <Compile Include="SoundDayCycleController.cs" />
+    <Compile Include="SoundDictionary.cs" />
+    <Compile Include="SoundRandomizer.cs" />
+    <Compile Include="SpeakEvent.cs" />
+    <Compile Include="SplineNode.cs" />
+    <Compile Include="StoveShell.cs" />
+    <Compile Include="StringEditor.cs" />
+    <Compile Include="Stroboscope.cs" />
+    <Compile Include="SubNodeButton.cs" />
+    <Compile Include="SubSpline.cs" />
+    <Compile Include="SuitcaseShell.cs" />
+    <Compile Include="SunController.cs" />
+    <Compile Include="SunSetting.cs" />
+    <Compile Include="SurveilanceCamera.cs" />
+    <Compile Include="TaserShell.cs" />
+    <Compile Include="TelephoneShell.cs" />
+    <Compile Include="TeleporterShell.cs" />
+    <Compile Include="TerminalButton.cs" />
+    <Compile Include="TerminalRenderer.cs" />
+    <Compile Include="TerminalWidget.cs" />
+    <Compile Include="Tester.cs" />
+    <Compile Include="TextEditorSidebar.cs" />
+    <Compile Include="TextGrid.cs" />
+    <Compile Include="TextSurface.cs" />
+    <Compile Include="TextureScale.cs" />
+    <Compile Include="ThereminShell.cs" />
+    <Compile Include="TitleSequence.cs" />
+    <Compile Include="TramController.cs" />
+    <Compile Include="TramGate.cs" />
+    <Compile Include="TramRideState.cs" />
+    <Compile Include="TramShell.cs" />
+    <Compile Include="TrashCanShell.cs" />
+    <Compile Include="TriggeredEventSound.cs" />
+    <Compile Include="TvShell.cs" />
+    <Compile Include="UnityHelper.cs" />
+    <Compile Include="UVScrambler.cs" />
+    <Compile Include="VendingMachineShell.cs" />
+    <Compile Include="WalkSoundManager.cs" />
+    <Compile Include="WidgetEvent.cs" />
+    <Compile Include="Wiggle.cs" />
+    <Compile Include="WorldLoadingState.cs" />
+    <Compile Include="WorldOwner.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,82 @@
+#####################################
+# SPRAK PROGRAMMING LANGUAGE MANUAL #
+# SPRAK 编程语言手册 #
+#####################################
+
+Chapter 7 --- Loops
+# 第 7 章 --- 循环
+===================
+
+Loops are used to make a block of code
+# 循环用于使代码块
+run over and over again, like this:
+# 一遍又一遍地运行，像这样：
+
+loop
+    Print("Hello!")
+end
+
+This will keep on printing "Hello!" forever
+# 这将永远不停地打印“Hello!”，
+and ever, or at least until someone turns off 
+# 或者至少直到有人关掉电脑，
+the computer, or something like that...
+# 或者类似的事情发生……
+
+A loop can also be interrupted from inside
+# 循环也可以从内部使用'break'关键字中断：
+using the 'break' keyword:
+# (此为上一句的延续)
+
+loop
+    if IsDone()
+        break
+    end
+end
+Print("Done!")
+
+This code will keep looping until the function
+# 这段代码将一直循环，直到'IsDone'函数
+'IsDone' returns true, upon which execution will
+# 返回true，然后执行将继续到循环下方，
+continue below the loop and the program 
+# 程序将打印“Done!”。
+will print "Done!".
+# (此为上一句的延续)
+
+A loop can also loop "through" an array. This is 
+# 循环也可以“遍历”一个数组。这非常简单，
+very simple, just add the array after the 'loop' keyword:
+# 只需在'loop'关键字后添加数组：
+
+loop [1, 2, 3, 4, 5]
+    # do something five times
+    # 做某事五次
+end
+
+Usually you want to access the elements in the array.
+# 通常你想要访问数组中的元素。
+Then you have to give it a name:
+# 那么你必须给它一个名字：
+
+array a = [1, 2, 3, 4, 5]
+
+loop x in a
+    Print(x)
+end
+
+This will print each thing that is stored in the array!
+# 这将打印数组中存储的每一项！
+If you want to loop through a range of numbers, say 0 up
+# 如果你想循环一个数字范围，比如说从0到100，
+to 100 you can do that with the 'from' ... 'to' keywords:
+# 你可以使用'from'...'to'关键字来做到这一点：
+
+loop x from 0 to 100
+    Print(x)
+end
+
+This is much more efficient than creating an array with
+# 这比创建一个包含所有这些数字的数组要高效得多。
+all those numbers in it.
+# (此为上一句的延续)

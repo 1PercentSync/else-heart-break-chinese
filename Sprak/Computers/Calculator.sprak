@@ -1,0 +1,13 @@
+
+ClearText()
+
+number a = Input("Enter nr a: / 输入数字 a：")
+number b = Input("Enter nr b: / 输入数字 b：")
+
+ClearText()
+Print("a = " + a + ", b = " + b)
+
+Print("a + b = " + (a + b))
+Print("a - b = " + (a - b))
+Print("a * b = " + (a * b))
+Print("a / b = " + (a / b))

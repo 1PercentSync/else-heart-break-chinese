@@ -1,0 +1,17 @@
+===================================
+THE BEGINNER'S GUIDE TO THE MODIFIER / 修饰符入门指南
+===================================
+
+*** Chapter 2: The Compiler *** / *** 第2章：编译器 ***
+
+A compiler is a program that takes / 编译器是一个程序，它接收
+source code in the form of / 文本形式的源代码
+text and transforms it into / 并将其转换为
+something that can be executed / 计算机可以执行的
+by the computer. / 东西。
+
+If any errors are discovered / 如果在编译步骤中
+during the compilation step / 发现任何错误
+they will be presented to the / 它们将被呈现给
+programmer in the "help area", / 程序员在“帮助区域”，
+the lower part of the modifier. / 即修改器的下部。

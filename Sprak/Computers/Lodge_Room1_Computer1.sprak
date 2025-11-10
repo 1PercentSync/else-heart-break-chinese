@@ -1,0 +1,9 @@
+Connect("Lodge_Room1_DoorToEntry")
+Connect("Lodge_Room1_DoorToRoom2")
+
+Print("I'm Computer1 / 我是计算机1")
+var conns = GetConnections()
+
+loop c in conns
+    Print(c)
+end

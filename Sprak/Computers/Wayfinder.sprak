@@ -1,0 +1,56 @@
+
+loop
+    ClearText()
+    Print("==========================")
+    Sleep(0.5)
+    Print("Hello and welcome to / 您好，欢迎使用")
+    Print("The Dorisburg Pedestrian OS / 多丽丝堡行人操作系统")
+    Sleep(0.5)
+    Print("Where do you want to walk to? / 您想走到哪里？")
+    Print("Please enter destination: / 请输入目的地：")
+    var dest = Input("")
+
+    string target = ""
+
+    if dest == "hotel" or dest == "Hotel"
+        target = "Hotel_Lobby_Point"
+    else if dest == "devotchka" or dest == "Devotchka"
+        target = "Hotel_Lobby_Point"
+    else if dest == "cafe" or dest == "Cafe"
+        target = "Cafe_Room1_Point"
+    else if dest == "park" or dest == "Park"
+        target = "DorisGardens_West_Trigger_1"
+    else if dest == "plaza" or dest == "Plaza"
+        target = "Plaza_Point"
+    else if dest == "mines" or dest == "Mines"
+        target = "Mines_Entry_Trigger_1"
+    else if dest == "bar" or dest == "Bar" or dest == "The Bar" or dest == "the bar"
+        target = "BarYvonne_Point1"
+    else if dest == "dot" or dest == "Dot"
+        target = "Mines_ClubDot_Point"
+    else if dest == "club" or dest == "Club" or dest == "the club" or dest == "The Club"
+        target = "Mines_ClubDot_Point"
+    else if dest == "wellspring" or dest == "Wellspring"
+        target = "SodaStorage_Point"
+    else if dest == "ministry" or dest == "Ministry"
+        target = "Ministry_Lobby_Point1"
+    else if dest == "shoe store" or dest == "Shoe Store"
+        target = "ShoeStore_Point"
+    else if dest == "harbour" or dest == "Harbour"
+        target = "HarborEast_Point"
+    end
+
+    Print("Please wait... / 请稍候...")
+    var path = FindPath(GetUser(), target)
+
+    Print("==========================")
+    Print("Suggested route: / 建议路线：")
+    number i = 1
+    loop room in path
+        Print(i + ". " + room)
+        i++
+    end
+    Print("==========================")
+    Input("Press enter to continue... / 按回车键继续...")
+end
+

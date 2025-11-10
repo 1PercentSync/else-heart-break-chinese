@@ -1,0 +1,128 @@
+#####################################
+# SPRAK PROGRAMMING LANGUAGE MANUAL #
+# SPRAK 编程语言手册 #
+#####################################
+
+Chapter 5 --- If statements
+# 第 5 章 --- If 语句
+===========================
+
+Time for some fun! The if statement is
+# 是时候找点乐子了！if语句是
+a central part of what makes computers
+# 计算机能够“思考”的核心部分。
+able to "think". It selects different paths 
+# 它根据某件事是否为真，
+through the code, depending on if 
+# 来选择代码的不同路径。
+something is true or not. Kind of like
+# 有点像一个铁路道岔，有个小家伙
+a railroad switch with a little guy 
+# 检查当前的火车应该走哪条路。
+checking which way the current train should go.
+# (此为上一句的延续)
+
+For example, let's say that we have a variable
+# 例如，假设我们有一个名为'SECRET'的变量，
+named 'SECRET', containing either the value 
+# 它包含'true'或'false'的值，我们不知道是哪个。
+'true' or 'false', we don't know which.
+# (此为上一句的延续)
+
+How can we find out?!
+# 我们怎么能找出来呢？！
+By using an if-statement of course:
+# 当然是使用if语句：
+
+if SECRET
+    Print("true!")
+end
+
+There are several interesting things to note
+# 这里有几个有趣的地方需要注意。
+here. First of all the use of the two words
+# 首先是'if'和'end'这两个词的使用。
+'if' and 'end'. These two go together like
+# 这两个词像一对一样一起出现。
+a pair. The 'end' word shows where the block
+# 'end'这个词显示了代码块的结束位置。
+of code ends. Everything in between will happen
+# 如果名为'SECRET'的变量包含值'true'，
+if the variable called 'SECRET' contains the 
+# 那么介于两者之间的所有事情都会发生。
+value 'true'. In this case it will print "true!".
+# 在这种情况下，它会打印“true!”。
+On the other hand, if the variable contains 
+# 另一方面，如果变量包含'false'，
+'false' nothing will happen at all.
+# 则什么都不会发生。
+
+What if we want to print something in that 
+# 如果我们也想在这种情况下打印些什么呢？
+case too? Here's one way to do it:
+# 这里有一种方法：
+
+if SECRET
+    Print("true!")
+else
+    Print("false!")
+end
+
+You could do several things in the block 
+# 你可以在'if'和'end'之间的代码块中做几件事。
+between 'if' and 'end'. Don't be confused by
+# 不要被文本向右移动了一点而感到困惑，
+the text being moved a bit to the right, that's
+# 那只是为了可读性。
+just for readability.
+# (此为上一句的延续)
+
+if SECRET
+    Print("The")
+    Print("SECRET")
+    Print("is")
+    Print("true!")
+end
+
+It is possible to have even more cases
+# 通过使用以下表示法，可以有更多的情况：
+by using the following notation:
+# (此为上一句的延续)
+
+if a
+    # do something
+    # 做某事
+else if b
+    # do something else
+    # 做别的事情
+else if c
+    # do this if c is true (but a and b are false)
+    # 如果c为真（但a和b为假），则执行此操作
+else
+    # do this if a, b and c are all false
+    # 如果a、b和c都为假，则执行此操作
+end
+
+
+Finally, several variables or expressions 
+# 最后，可以使用'and'和'or'这两个词
+containing logical values (true / false) 
+# 将包含逻辑值（true / false）的多个变量或表达式
+can be checked together using the word 'and'
+# 一起检查：
+and 'or':
+# (此为上一句的延续)
+
+if a and (b or c)
+    # this will happen if a and b
+    # 如果a和b为真，或者a和c为真，
+    # OR a and c are true
+    # 这将会发生
+end
+
+Don't worry if this seems confusing, just
+# 如果这看起来令人困惑，别担心，
+come back later and re-read any section
+# 稍后再回来重读任何第一次没有理解的部分。
+that didn't make sense the first time.
+# (此为上一句的延续)

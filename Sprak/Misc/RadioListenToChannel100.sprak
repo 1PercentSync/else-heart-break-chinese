@@ -1,0 +1,7 @@
+# Channel 100 / 频道 100
+
+var channel = 100
+DisconnectAll()
+Connect("RadioStation_Channel" + channel)
+SetChannel(channel)
+TurnOnSound()

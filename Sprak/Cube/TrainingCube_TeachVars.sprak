@@ -1,0 +1,6 @@
+
+var red = 0.1
+var green = 0.5
+var blue = 1.0
+
+SetColor(red, green, blue)

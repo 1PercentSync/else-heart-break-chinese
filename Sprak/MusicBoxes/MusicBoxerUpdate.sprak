@@ -1,0 +1,5 @@
+﻿
+# update code goes here... / 更新代码放在这里...
+
+SetResonance(5)
+SetCutoff(1000 + 500 * Sin(Time() / 100))

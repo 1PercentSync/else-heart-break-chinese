@@ -1,0 +1,46 @@
+PlaySound("Coin 1")
+Bar()
+Print("Aniara OS v 3.5.0.1 / 阿尼亚拉操作系统 v 3.5.0.1")
+Print("* * * * * * * * * *")
+Print("(C) J.L. et al, 1992 - now / (C) J.L. 等人, 1992 - 至今")
+Print("Released under The GNU / 在 GNU 下发布")
+Print("General Public License v3.0 / 通用公共许可证 v3.0")
+Bar()
+
+loop
+    string cmd = Input("> ")
+    string dir = "root"
+    number id = -1
+
+    if cmd == "cd"
+        Print("ROOT / 根目录")
+    else if cmd == "h" or cmd == "help"
+        Print("Available commands: / 可用命令：")
+        Print(" - connect / 连接")
+        Print(" - store / 存储")
+        Print(" - restore / 恢复")
+        Print(" - remoteCall / 远程调用")
+    else if cmd == "connect"
+        string connectionName = Input("Name: / 名称：")
+        id = Connect(connectionName)
+    else if cmd == "store"
+        string key = Input("Key: / 密钥：")
+        string data = Input("Data: / 数据：")
+        SaveMemory(key, data)
+        Print("Data was saved. / 数据已保存。")
+    else if cmd == "restore"
+        string key = Input("Key: / 密钥：")
+        Print(LoadMemory(key))
+    else if cmd == "remoteCall"
+        string fnName = Input("Function name: / 函数名称：")
+        RemoteFunctionCall(id, fnName, [])
+    else
+        Print("Can't understand command " + cmd + " / 无法理解命令 " + cmd)
+        Print("Enter h for help. / 输入 h 获取帮助。")
+    end
+    Sleep(1)
+end
+
+void Bar()
+    Print("===================")
+end

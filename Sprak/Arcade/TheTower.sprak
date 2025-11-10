@@ -1,0 +1,759 @@
+# variables
+# 变量
+number SI = 6 # player's Structural Integrity (health)
+# 玩家的结构完整性 (生命值)
+string environs # set to player's location
+# 设置为玩家的位置
+string choice # outcome of Reply()
+# Reply() 的结果
+
+
+ClearText()
+Message("")
+PlaySound("Hit 1")
+Message("---------------------------")
+PlaySound("Hit 2")
+Message("THE TOWER / 塔")
+PlaySound("Hit 1")
+Message("an interactive short story / 一个互动短篇故事")
+PlaySound("Hit 2")
+Message("by Maximilian Olbers / 作者 Maximilian Olbers")
+PlaySound("Hit 1")
+Message("---------------------------")
+PlaySound("Hit 2")
+Print("")
+Message("Press Enter to continue... / 按 Enter 继续...")
+Input("")
+
+ClearText()
+Print("")
+Message("You are a bell tower, newly-wrought from red brick / 你是一座钟楼，由红砖新制而成")
+Message("and black iron by the ascetic architecturalists / 和来自禁欲主义建筑师的黑铁")
+Message("of the far west. / 来自遥远的西部。")
+Print("")
+Message("As a young building, you must travel east. / 作为一座年轻的建筑，你必须向东旅行。")
+Message("You must journey to the City, and become part / 你必须前往城市，成为其中的一部分")
+Message("of the City. / 城市的一部分。")
+Print("")
+Message("Make your way over the jagged mountains, across the / 翻越锯齿状的山脉，穿过")
+Message("arid deserts and the wide plains while preserving / 干旱的沙漠和广阔的平原，同时保持")
+Message("your Structural Integrity (SI). / 你的结构完整性 (SI)。")
+Print("")
+PrintSI()
+ClearText()
+Print("")
+Message("You take your first, wobbly steps out of your / 你从脚手架上迈出了第一步，摇摇晃晃")
+Message("scaffolding, and the architecturalists who / 脚手架，以及那些建筑师们")
+Message("birthed you wave goodbye. / 生下你的建筑师们挥手告别。")
+Input("")
+Message("You... / 你...")
+Print("")
+Print("1 Chime your quarter bells / 1 敲响你的四分之一钟")
+Print("")
+Print("2 Let your great bell toll / 2 让你洪亮的钟声敲响")
+Print("")
+Print("3 Leave silently / 3 安静地离开")
+
+# Intro - choice
+# 介绍 - 选择
+
+loop
+	choice = Reply()
+	if choice == "1"
+		ClearText()
+		Print("")
+		Message("Your quarter bells chime a cheery farewell / 你的四分之一钟敲响了愉快的告别")
+		Message("to the architecturalists, whom you do not / 对那些你还不知道")
+		Message("yet know you will miss. / 你将会想念的建筑师们。")
+		Input("")
+		ClearText()
+		break
+	else if choice == "2"
+		ClearText()
+		Print("")
+		Message("Your great bell tolls once in reply. / 你的大钟敲响一次作为回应。")
+		PlaySound("Powerup 5")
+		PlaySound("Powerup 4")
+		PlaySound("Powerup 3")
+		PlaySound("Powerup 2")
+		PlaySound("Powerup 1")
+		Sleep(1.0)
+		Message("The architecturalists let out a cry of dismay. / 建筑师们发出一声沮丧的叫喊。")
+		Message("Unused to the weight of your great bell, / 由于不习惯你大钟的重量，")
+		Message("you have unwittingly unbalanced yourself / 你不知不觉地失去了平衡")
+		Message("and fallen badly. / 并且摔得很重。")
+		SI --
+		Print("")
+		Message("You quickly get back up, red-bricked and / 你迅速站起来，红砖砌成，")
+		Message("embarrassed, knowing that you are a now a little / 尴尬地，知道你现在有点")
+		Message("less structurally sound than you were a moment ago. / 不如刚才那么结构稳固了。")
+		PrintSI()
+		ClearText()
+		break
+	else if choice == "3"
+		ClearText()
+		Print("")
+		Message("Only the dry sound of shuffling bricks signals / 只有砖块拖动的干燥声音标志着")
+		Message("your departure. / 你的离开。")
+		Input("")
+		ClearText()
+		break
+	else
+		ClearText()
+		Print("")
+		Message("You... / 你...")
+		Print("")
+		Print("1 Chime your quarter bells / 1 敲响你的四分之一钟")
+		Print("")
+		Print("2 Let your great bell toll / 2 让你洪亮的钟声敲响")
+		Print("")
+		Print("3 Leave silently / 3 安静地离开")
+	end
+end
+
+# Intro - end of choice
+# 介绍 - 选择结束
+
+ClearText()
+
+environs = "mountains"
+
+Print("")
+Message("After some time, you find yourself at the slopes of the / 过了一段时间，你发现自己来到了世界尽头的山坡上")
+Message("mountains at the end of the world. To cross this range, / 世界尽头的山脉。他们说，要穿越这个山脉，")
+Message("they say, is to become real. / 就要成为真实。")
+Print("")
+Message("The mountains are as steep as they are tall; / 山脉既陡峭又高大；")
+Message("not very, but nigh-insurmountable to a building / 虽然不是很高，但对于像你这样的建筑来说几乎无法逾越")
+Message("such as yourself. / 像你这样的。")
+Print("")
+Message("How do you ascend? / 你如何攀登？")
+Print("")
+Print("1 Attempt to keep your balance, one step at a time / 1 试着保持平衡，一步一个脚印")
+Print("")
+Print("2 Loosen your quarter bells, use them to find purchase / 2 松开你的四分之一钟，用它们来找到支撑点")
+
+# MOUNTAINS -- first choice
+# 山脉 -- 第一个选择
+
+loop
+	choice = Reply()
+	if choice == "1"
+		ClearText()
+		Print("")
+		Message("Carefully arranging your foundations, you try your / 小心地布置你的地基，你尽力")
+		Message("best to keep upright. It is a difficult task, / 尽力保持直立。这是一项艰巨的任务，")
+		Message("and you fail frequently. However, the two steps / 而且你经常失败。然而，每前进一步退两步")
+		Message("back to each step forward eventually start growing / 的情况最终开始变得越来越短，不久你就到达了")
+		Message("shorter and shorter, and before long you have reached / 越来越短，不久你就到达了山顶。")
+		Message("the summit. / 山顶。")
+		Print("")
+		Message("Your young bricks are supple and your mortar not / 你的新砖很柔软，你的砂浆还没有")
+		Message("yet fully set, absorbing much of the damage your / 完全凝固，吸收了你频繁倾倒")
+		Message("frequent toppling would otherwise have inflicted. / 否则会造成的许多损害。")
+		Message("However, you do not escape completely unscathed, / 然而，你并没有完全毫发无损地逃脱，")
+		Message("and have lost 2 points of Structural Integrity. / 并且失去了 2 点结构完整性。")
+		SI -- 
+		SI -- # decreases SI by two total
+		# 总共减少 SI 两点
+		PrintSI()
+		break
+	else if choice == "2"
+		ClearText()
+		Print("")
+		Message("Reeling up two bell ropes, you extend your / 卷起两根钟绳，你伸出你的")
+		Message("quarter bells through open arches. / 四分之一钟穿过开放的拱门。")
+		Message("You reach out and place them over the stone jutting / 你伸出手，把它们放在从山壁伸出的石头上")
+		Message("out from the mountain walls, and reel yourself in. / 从山壁上伸出来，然后把自己拉进去。")
+		Message("It's not easy, but you progress steadily and the summit / 这并不容易，但你稳步前进，山顶")
+		Message("is soon within reach. Your bells are somewhat dented and / 很快就触手可及了。你的钟有些凹陷和")
+		Message("bruised, but a few careful taps against snowy rock / 擦伤，但对着雪岩小心地敲几下")
+		Message("largely restore their resonance. You remain mostly whole. / 在很大程度上恢复了它们的共鸣。你基本上保持完整。")
+		SI -- # decreases SI by one
+		# SI 减少 1
+		PrintSI()
+		break
+	else
+		ClearText()
+		Print("")
+		Message("How do you ascend? / 你如何攀登？")
+		Print("")
+		Print("1 Attempt to keep your balance, one step at a time / 1 试着保持平衡，一步一个脚印")
+		Print("")
+		Print("2 Loosen your quarter bells, use them to find purchase / 2 松开你的四分之一钟，用它们来找到支撑点")
+	end	
+end
+
+# MOUNTAINS -- end of first choice
+# 山脉 -- 第一个选择结束
+
+Input("")
+ClearText()
+Print("")
+Message("To the north and to the south, the sharp snow-crests / 向北和向南，陡峭的雪峰")
+Message("of the mountain range seem to go on forever. To the / 山脉似乎永无止境。向西")
+Message("west lies your birthplace, somewhere beneath the low / 是你的出生地，在低矮的云层之下")
+Message("clouds roiling just below the peaks. To the east, / 云在山峰下翻滚。向东，")
+Message("then, lies reality, or so they say. The foothills / 那么，就是现实，或者他们是这么说的。山脚下")
+Message("of the mountains at the end of the world soon give / 世界尽头的山脉很快就让位给了")
+Message("way to an arid steppe, then abruptly to a billowing / 干旱的草原，然后突然变成一片波涛汹涌的")
+Message("desert. Beyond the desert, you know, somehow, that / 沙漠。你知道，不知何故，沙漠之外")
+Message("there is a wide chasm, and a bridge, and beyond it, / 有一个宽阔的峡谷，一座桥，桥的那边，")
+Message("fields of green. / 绿色的田野。")
+
+# MOUNTAINS -- second choice
+# 山脉 -- 第二个选择
+
+Print("")
+Print("Now you must descend into the desert below. Do you... / 现在你必须下降到下面的沙漠。你是否...")
+Print("")
+Print("1 Cautiously, continuously, align your base to the / 1 小心地，持续地，将你的基地对准")
+Print("angles of the mountain, brick by brick, step by step / 山的角度，一砖一瓦，一步一步")
+Print("")
+Print("2 Find a suitable snow-covered slope and slide down / 2 找一个合适的雪坡滑下去")
+
+loop
+	choice = Reply()
+	if choice == "1"
+		ClearText()
+		Print("")
+		Message("The descent is easier than the ascent. The contours on / 下降比上升容易。这边的轮廓")
+		Message("this side of the mountain-face are better-suited to the / 山面的这一侧更适合")
+		Message("size and shape of your brickwork. Your footing is steady. / 你的砖砌结构的尺寸和形状。你的立足点很稳。")
+		Input("")
+		break
+	else if choice == "2"
+		ClearText()
+		Print("")
+		Message("What at first seemed like a pleasant, shallow curve / 起初看起来像一条宜人、平缓的曲线")
+		Message("snaking its way down sharp cliffs soon turns treacherous / 蜿蜒而下，陡峭的悬崖很快变得险恶")
+		Message("as you are thrown violently off-course. / 当你被猛烈地抛离航线时。")
+		Message("You tumble down the mountain in a flurry of snow, / 你在一阵雪花中从山上滚下来，")
+		Message("and come to rest at its base. / 并在它的底部停下来。")
+		Message("Much of your ornamental metalworks have been completely / 你的许多装饰性金属制品已经完全")
+		Message("destroyed, and your Structural Integrity goes down by 2. / 被摧毁，你的结构完整性下降了 2。")
+		Input("")
+		SI --
+		SI -- 
+		PrintSI()
+		break
+	else
+		ClearText()
+		Print("")
+		Print("Now you must descend into the desert below. Do you... / 现在你必须下降到下面的沙漠。你是否...")
+		Print("")
+		Print("1 Cautiously, continuously, align your base to the / 1 小心地，持续地，将你的基地对准")
+		Print("  angles of the mountain, brick by brick, step by step /   山的角度，一砖一瓦，一步一步")
+		Print("")
+		Print("2 Find a suitable snow-covered slope and slide down / 2 找一个合适的雪坡滑下去")
+	end
+end
+
+environs = "desert"
+
+ClearText()
+Print("")
+Message("The snow on the mountains never melts, / 山上的雪永不融化，")
+Message("and the thin strip of grassland on the other / 另一边的狭长草地")
+Message("side of them is a perpetual dried-out yellow. / 它们的一面是永久的干枯黄色。")
+Message("Beyond this thin strip, you begin your journey / 越过这片狭长的地带，你开始了你的旅程")
+Message("through the desert. / 穿越沙漠。")
+Print("")
+Message("Featureless and completely barren, it seems / 毫无特色，完全贫瘠，它似乎")
+Message("to stretch on forever. The heat hardens / 永远延伸下去。热量使")
+Message("your mortar and makes your bricks brittle. / 你的砂浆变硬，使你的砖块变脆。")
+Input("")
+SI -- # lose 1 SI
+# 失去 1 SI
+PrintSI()
+
+ClearText()
+Print("")
+Message("A black line detaches itself from the horizon. / 一条黑线从地平线上脱离出来。")
+Message("The bottomless chasm comes, and a gust of wind / 无底的鸿沟来了，一阵风")
+Message("through your belfry sounds a sigh of apprehension. / 穿过你的钟楼，发出一声忧虑的叹息。")
+Print("")
+Message("The rickety suspension bridge is dead ahead, / 摇摇欲坠的吊桥就在正前方，")
+Message("twisting in the hot updrafts from the abyss. / 在深渊的热气流中扭曲。")
+
+# DESERT - only choice
+# 沙漠 - 唯一的选择
+
+Print("")
+Message("Do you... / 你是否...")
+Print("")
+Print("1 Run across, as fast as your hundreds of bricks / 1 跑过去，用你数百块砖头能达到的最快速度")
+Print("  can carry you /   能带你走")
+Print("")
+Print("2 Creep slowly across the suspension bridge, / 2 慢慢爬过吊桥，")
+Print("  swinging your great bell to balance yourself /   摆动你的大钟来保持平衡")
+Print("")
+Print("3 Ignore the bridge, attempt to cross the chasm / 3 忽略桥，试图穿过峡谷")
+Print("  by means of some invisible walkway /   通过某种看不见的人行道")
+
+loop
+	choice = Reply()
+	if choice == "1"
+		ClearText()
+		Print("")
+		Message("You run like you've never ran before. / 你以前所未有的速度奔跑。")
+		Message("The bridge sways under your thundering / 桥在你雷鸣般的脚步下摇晃")
+		Message("brickfalls, but you make it. / 砖块落下，但你成功了。")
+		Print("")
+		Message("You make it and on the other side one / 你成功了，在另一边，你的一块砖")
+		Message("of your bricks catches on something and / 你的砖块被什么东西绊住了")
+		Message("you fall. / 你摔倒了。")
+		SI -- # lose 1 SI
+		# 失去 1 SI
+		PrintSI()
+		break
+	else if choice == "2"
+		ClearText()
+		Print("")
+		Message("Your bell tolls as you slowly make your / 当你慢慢地走过桥时，你的钟声敲响了")
+		Message("way across the bridge. The weight of your / 过桥。你的重量")
+		Message("great brass bell proves to be more than / 巨大的铜钟证明了它不仅仅是")
+		Message("enough to counteract the swinging of the / 足以抵消桥的摆动")
+		Message("bridge that would otherwise deposit you / 否则会把你扔进")
+		Message("into the endless abyss. / 无尽的深渊。")
+		break
+	else if choice == "3"
+		ClearText()
+		Print("")
+		Message("You fall. / 你摔倒了。")
+		Print("")
+		Message("You keep falling, forever. / 你不停地坠落，永远。")
+		Input("")
+		ClearText()
+		Print("")
+		Print("")
+		Print("")
+		Print("")
+		Print("Press CTRL+R to restart. / 按 CTRL+R 重新启动。")
+		loop
+			Sleep(60.0)
+		end
+	else
+		ClearText()
+		Print("")
+		Message("Do you... / 你是否...")
+		Print("")
+		Print("1 Run across, as fast as your hundreds of bricks / 1 跑过去，用你数百块砖头能达到的最快速度")
+		Print("  can carry you /   能带你走")
+		Print("")
+		Print("2 Creep slowly across the suspension bridge, / 2 慢慢爬过吊桥，")
+		Print("  using your great bell to balance yourself /   用你的大钟来保持平衡")
+		Print("")
+		Print("3 Ignore the bridge, attempt to cross the chasm / 3 忽略桥，试图穿过峡谷")
+		Print("  by means of some invisible walkway /   通过某种看不见的人行道")
+	end
+end
+
+# DESERT - end of choice
+# 沙漠 - 选择结束
+
+Input("")
+
+environs = "plains"
+
+ClearText()
+Print("")
+Message("Much like the desert, the plains seem to stretch / 就像沙漠一样，平原似乎延伸")
+Message("on forever. They are green with grass and perfectly, / 永远。它们绿草如茵，完美无瑕，")
+Message("unnaturally, flat. / 不自然地，平坦。")
+Print("")
+Message("They are plains and not a plain, for a network of narrow / 它们是平原而不是一个平原，因为一个狭窄的沟渠网络")
+Message("ditches filled with gravel criss-cross the expanse, / 充满砾石的沟渠纵横交错，")
+Message("dividing the grasslands into vast but neat triangles, / 将草原分割成巨大而整齐的三角形，")
+Message("each one a slightly different shade of green. / 每一种都是略有不同的绿色。")
+Input("")
+ClearText()
+Print("")
+Message("On the eastern horizon you can see the sky darken, and / 在东方的地平线上，你可以看到天空变暗，而且")
+Message("you instinctively recognize the smog of the City. / 你本能地认出了城市的烟雾。")
+Print("")
+Message("However, something juts up on the southern horizon, / 然而，南方的地平线上有什么东西凸出来，")
+Message("breaking the perfect joining of land and sky. / 打破了陆地和天空的完美结合。")
+Print("")
+Message("Do you... / 你是否...")
+Print("")
+Print("1 Continue east, to the City / 1 继续向东，去城市")
+Print("2 Range south to investigate / 2 向南调查")
+
+# Plains choice
+# 平原选择
+
+loop
+	choice = Reply()
+	if choice == "1"
+		ClearText()
+		Print("")
+		Message("You continue. / 你继续。")
+		break
+	else if choice == "2"
+		NewCityEnding()
+	else
+		ClearText()
+		Message("Do you... / 你是否...")
+		Print("")
+		Print("1 Continue east, to the City / 1 继续向东，去城市")
+		Print("2 Range south to investigate / 2 向南调查")
+	end
+end
+
+# Plains choice end
+# 平原选择结束
+
+environs = "city_outskirts"
+
+Input("")
+ClearText()
+Print("")
+Message("As you near the City, you start spotting other / 当你靠近城市时，你开始发现其他")
+Message("buildings dotted around the landscape; barns, silos, / 建筑物点缀在景观中；谷仓、筒仓，")
+Message("even houses and smaller shacks. / 甚至是房屋和更小的棚屋。")
+
+# City outskirts choice
+# 城市郊区选择
+
+Message("You even see what looks like a tower some ways away. / 你甚至看到远处有一座看起来像塔的建筑。")
+Message("Something about its silhouette reminds you of / 它的轮廓让你想起了")
+Message("yourself, of home. / 你自己，家。")
+Print("")
+Print("Do you... / 你是否...")
+Print("")
+Print("1 Focus harder, try to identify some architecturalist / 1 更专注，试着找出一些建筑师的")
+Print("  hallmarks in the tower's design /   塔设计中的标志")
+Print("")
+Print("2 Ignore it, continue towards the City / 2 忽略它，继续向城市前进")
+
+loop
+	choice = Reply()
+	if choice == "1"
+		ClearText()
+		Print("")
+		Message("You strain the mystical senses housed in your / 你 напрягаешь мистические чувства, заключенные в твоей")
+		Message("belfry, trying to make out any typical metal / колокольне, пытаясь разглядеть какой-нибудь типичный металл")
+		Message("scrollwork or brick patterns. / завитки или кирпичные узоры.")
+		Print("")
+		Message("Unfortunately, you fail to pay equal attention to where / 不幸的是，你没有同样注意你")
+		Message("you are going. The writhing railroad track before you / 你要去哪里。你面前扭动的铁轨")
+		Message("completely escapes your notice - until you step on it. / 完全没有引起你的注意——直到你踩到它。")
+		Print("")
+		Message("It wriggles madly beneath your foundations, its two long / 它在你的地基下疯狂地扭动，它的两条长长的")
+		Message("metal spines breaking bricks, pulverizing mortar and / 金属刺穿砖块，粉碎砂浆和")
+		Message("damaging concrete. / 损坏混凝土。")
+		SI --
+		SI --
+		PrintSI()
+		ClearText()
+		Print("")
+		Message("You move off the poor thing as quickly as you can, / 你尽快离开那个可怜的东西，")
+		Message("and watch it slither away. / 然后看着它溜走。")
+		Print("")
+		Message("You can no longer see the other tower. / 你再也看不到另一座塔了。")
+		Message("Perhaps it, too, has yet to finish its journey. / 也许它也还没有完成它的旅程。")
+		break
+	else if choice == "2"
+		ClearText()
+		Print("")
+		Message("The origin of the other tower matters little / 另一座塔的起源无关紧要")
+		Message("to you. You must get to the city. / 对你来说。你必须去城市。")
+		Message("You wait for a railroad track to snake past / 你等着一条铁轨蜿蜒而过")
+		Message("and then proceed into the urban sprawl. / 然后进入城市蔓延区。")
+		break
+	else
+		ClearText()
+		Print("")
+		Print("1 Focus harder, try to identify some architecturalist / 1 更专注，试着找出一些建筑师的")
+		Print("  hallmarks in the tower's design /   塔设计中的标志")
+		Print("")
+		Print("2 Ignore it, continue to the City / 2 忽略它，继续前往城市")
+	end
+end
+
+Input("")
+ClearText()
+Print("")
+Message("The outskirts of the City are themselves starting / 城市郊区本身也开始")
+Message("to become heavily urbanized. You tread on rural roads / 变得高度城市化。你走在乡村道路上")
+Message("that joined the outskirts of the City in ages past, / 很久以前连接城市郊区的道路，")
+Message("while new houses scuffle to replace their brethren, worn / 而新房子则争先恐后地取代它们破旧的同类，")
+Message("down by unfathomable age. / 被深不可测的岁月磨损。")
+Print("")
+Message("It does not occur to you to wonder why, / 你不会去想为什么，")
+Message("why this all is, why the City is, / 这一切是为什么，城市是为什么，")
+Message("or why it is taking so long to complete itself. / 或者为什么它需要这么长时间才能完成。")
+Message("You are a bell tower, and you press on into / 你是一座钟楼，你继续前进")
+Message("the city center. / 市中心。")
+Input("")
+
+environs = "city"
+
+ClearText()
+Message("Wide dirt roads are replaced by their narrower / 宽阔的土路被更窄的")
+Message("cobblestone cousins, and you tower over / 鹅卵石表亲，你高耸于")
+Message("buildings that threaten shut out / 威胁要关闭的建筑物")
+Message("all sunlight from street level. / 所有来自街道的阳光。")
+Message("These streets all converge in a central square. / 这些街道都汇集在一个中心广场。")
+Print("")
+Message("At the far end of the square, you see the grand / 在广场的尽头，你看到了宏伟的")
+Message("City Hall, old and dead. / 市政厅，古老而死寂。")
+Message("There is something unnerving about it, / 它有些令人不安，")
+Message("necrotic tissue not yet excised / 坏死的组织尚未切除")
+Message("from healthy flesh. You do not / 从健康的肉体。你不知道")
+Message("know what flesh is, and the nonsensical / 知道肉是什么，而这荒谬的")
+Message("thought is soon washed away by a fresh / 想法很快就被一股新鲜的")
+Message("wave of euphoria. This is it. / 欣快感。就是这样。")
+Print("")
+Message("This is the City. / 这就是城市。")
+Input("")
+
+ClearText()
+Print("")
+Message("You settle into a vacant spot in the square / 你在广场上找了个空位坐下")
+Message("that you intuit is meant for you. / 你直觉那是为你准备的。")
+Message("As the poles below your foundation burrow into / 当你地基下的柱子钻入")
+Message("the clay loam, new knowledge wells up from the earth. / 粘土壤土，新的知识从大地涌出。")
+Print("")
+Input("")
+Print("")
+Message("Soon the first Citizens will come. / 很快第一批市民就会到来。")
+Input("")
+ClearText()
+Print("")
+Message("The End. / 结束。")
+Print("")
+Message("Press CTRL+R to restart. / 按 CTRL+R 重新启动。")
+loop
+	Sleep(60.0)
+end
+
+void NewCityEnding()
+	ClearText()
+	Print("")
+	Message("The journey south is more difficult than anticipated. / 南下的旅程比预期的要困难。")
+	Message("The ditches are not as regular as they first appeared, / 沟渠不像最初看起来那么规则，")
+	Message("or perhaps they just become more irregular the further / 或者也许它们越往南越不规则")
+	Message("south you go. Some ditches have expanded into waterlogged / 你往南走。有些沟渠已经扩大成积水的")
+	Message("trenches that are proving difficult to cross safely. / 壕沟，安全 عبور 变得困难。")
+	Message("You fear you may have lost a brick or two to the / 你担心你可能已经失去了一两块砖到")
+	Message("muddy waters. / 浑水。")
+	SI --
+	PrintSI()
+	ClearText()
+	Print("")
+	Message("The plain has now completely lost its strange geometrical / 平原现在完全失去了它奇怪的几何形状")
+	Message("cuts, and clumps of trees dot new, low hills. / 切割，一丛丛树木点缀着新的低矮山丘。")
+	Print("")
+	Message("It is here that you find the aberration in the horizon. / 你就是在这里发现地平线上的异常的。")
+	Print("")
+	Message("Though short next to your towering self, the grand hall / 虽然与你高耸的身躯相比，它很矮小，但这座宏伟的大厅")
+	Message("is massive and imposing. / 巨大而雄伟。")
+	Print("")
+	Message("It is also old, and tired. The columns at the top of its / 它也很旧，很累。它顶部的柱子")
+	Message("wide stairs seem to sag almost, and one corner of the / 宽阔的楼梯似乎几乎要下陷，而其中一个角落")
+	Message("great structure looks bound to slowly sink through / 巨大的结构似乎注定要慢慢沉入")
+	Message("the earth. / 地球。")
+	Input("")
+	ClearText()
+	Print("")
+	Message("It has no way of acknowledging your presence, / 它无法承认你的存在，")
+	Message("but you sense that it does. / 但你感觉到它确实如此。")
+	Print("")
+	Message("You can no longer see the City's distant smog-cloud. / 你再也看不到城市遥远的烟雾云了。")
+	Message("The other building - a city hall, you now understand -  / 另一栋建筑——一个市政厅，你现在明白了——")
+	Message("will never make it there. And neither, most likely, / 永远也到不了那里。而且，很可能，")
+	Message("would you. / 你愿意吗？")
+	Print("")
+	Message("You move away from the other building somewhat / 你稍微离开另一栋楼")
+	Message("before settling down. This way your shadow will / 在安顿下来之前。这样你的影子就会")
+	Message("only briefly, gently, flow over its front columns / 白天只短暂地、轻柔地流过它的前柱")
+	Message("during the day. The other building seems to / 白天。另一栋楼似乎")
+	Message("understand your intent and straightens up, / 了解你的意图并挺直身子，")
+	Message("its white plaster cracking and flaking slightly / 它的白色石膏在正午的阳光下轻微开裂和剥落")
+	Message("under the midday sun. / 在正午的阳光下。")
+	Print("")
+	Message("This is a good spot. You arrange your foundations / 这是个好地方。你安排好你的地基")
+	Message("and burrow the poles you carry into the firm earth / 然后把你携带的杆子挖入坚实的土地")
+	Message("for stability. / 为了稳定。")
+	Input("")
+	ClearText()
+	Print("")
+	Message("Some time passes. / 一段时间过去了。")
+	Print("")
+	Message("Your bells ring at the appointed hours, / 你的钟在指定的时间敲响，")
+	Message("half and quarter too. / 一半和四分之一也是。")
+	Print("")
+	Message("You soon lose track. As a bell tower you note the passage / 你很快就失去了方向。作为一座钟楼，你记录着时间的流逝")
+	Message("of time, but the implications of its unyielding march / 时间的流逝，但它不屈不挠地前进的含义")
+	Message("towards the future are abstract and distant to you. / 对你来说，未来是抽象而遥远的。")
+	Print("")
+	Message("A cobblestone road slithers over the southern hills, / 一条鹅卵石路蜿蜒在南方的山丘上，")
+	Message("the hiss of its rolling stones waking you from your / 滚石的嘶嘶声把你从你的")
+	Message("reverie. It pauses, observing the two buildings / 遐想。它停下来，观察着两座建筑")
+	Message("on the plain. / 在平原上。")
+	Print("")
+	Message("Your great bell tolls several times as the road waits, / 当路在等待时，你的大钟敲响了几次，")
+	Message("each ringing fit more awkward than the last. / 每一次响起的合奏都比上一次更尴尬。")
+	Print("")
+	Message("Eventually the road seems to come to some conclusion. / 最终，这条路似乎得出了某种结论。")
+	Message("It rolls in, anchoring its tail at the marble steps of / 它滚进来，把尾巴固定在大理石台阶上")
+	Message("city hall and curving around your base before coming / 市政厅，在你的基地周围弯曲，然后来到")
+	Message("to rest. With the road in place, some circuit has / 休息。随着道路的就位，一些电路已经")
+	Message("been completed, some switch flipped, and you know. / 已完成，某个开关已拨动，你知道的。")
+	Input("")
+	ClearText()
+	Print("")
+	Message("This will be the second City, once the Citizens come. / 这将是第二座城市，一旦市民到来。")
+	Print("")
+
+	Input("")
+	ClearText()
+	Print("")
+	Message("The End. / 结束。")
+	Print("")
+	Message("Press CTRL+R to restart. / 按 CTRL+R 重新启动。")
+	loop
+		Sleep(60.0)
+	end
+end
+
+# # # # # # # # # # # # # # # # # # # 
+# # # # # # # # # # # # # # # # # # # 
+# # # # # # # # # # # # # # # # # # # 
+
+# Checks player's SI, prints it if positive, sends them to Death() if zero or less
+# 检查玩家的 SI，如果为正数则打印，如果为零或更少则发送到 Death()
+void PrintSI()
+	string outcome
+	if SI <= 0
+		outcome = "dead"
+		Print("")
+		Message("You have no structural integrity remaining. / 你没有剩余的结构完整性了。")
+		Print("")
+		Input("")
+		Death()
+	else
+		Print("")
+		Message("Your Structural Integrity is currently at " + SI + " out of 6. / 你的结构完整性目前为 " + SI + " / 6。")
+		outcome = "You're not dead yet. / 你还没死。"
+		Input("")
+		return
+	end
+end
+
+# Text printer, blatantly ripped off from Text Adventure on the Secret Arcade github and modified
+# 文本打印机，公然抄袭自 Secret Arcade github 上的 Text Adventure 并进行了修改
+void Message(string text)
+#	PlaySound("Hit 2")
+	Print(text)
+	Sleep(0.5)
+end
+
+# Checks player's input and returns a correct value.
+# 检查玩家的输入并返回一个正确的值。
+# This could probably be redone, better
+# 这可能可以重做，做得更好
+void Reply()
+	loop
+		string initreply
+		string answer
+		Print("")
+		initreply = Input("Enter a number:  / 输入一个数字：")
+		if initreply == "1"
+			return initreply
+		else if initreply == "2"
+			return initreply
+		else if initreply == "3"
+			return initreply
+		else
+			answer = "invalid"
+			return answer
+		end
+	end
+end
+
+# The player goes here to die.
+# 玩家到这里来死。
+void Death()
+	if environs == "mountains"
+		ClearText()
+		Print("")
+		Message("You died in the mountains, somehow. / 你不知何故死在了山里。")
+		Input("")
+		ClearText()
+		Print("")
+		Message("GAME OVER / 游戏结束")
+		Print("")
+		Print("Press CTRL+R to restart. / 按 CTRL+R 重新启动。")
+		loop
+			Sleep(60.0)
+		end
+	else if environs == "desert"
+		ClearText()
+		Print("")
+		Message("Things fall apart. / 事情分崩离析。")
+		Print("")
+		Message("Your bricks dry out under the blistering sun, / 你的砖块在烈日下干涸，")
+		Message("but it is your mortar that first breaks down / 但首先分解的是你的砂浆")
+		Message("and joins the sand. / 并加入沙子。")
+		Input("")
+		ClearText()
+		Print("")
+		Message("GAME OVER / 游戏结束")
+		Print("")
+		Print("Press CTRL+R to restart. / 按 CTRL+R 重新启动。")
+		loop
+			Sleep(60.0)
+		end
+	else if environs == "plains"
+		ClearText()
+		Print("")
+		Message("You are brought down on the plains, / 你被带到平原上，")
+		Message("and can go no further. / 并且不能再往前走了。")
+		Print("")
+		Message("Ages pass, and you disintegrate. / 岁月流逝，你分崩离析。")
+		Message("Your great bell rusts and sinks / 你的大钟生锈并沉入")
+		Message("into the soft loam. / 柔软的壤土中。")
+		Input("")
+		ClearText()
+		Print("")
+		Message("GAME OVER / 游戏结束")
+		Print("")
+		Print("Press CTRL+R to restart. / 按 CTRL+R 重新启动。")
+		loop
+			Sleep(60.0)
+		end
+	else if environs == "city_outskirts"
+		ClearText()
+		Print("")
+		Message("Your very structure fails you, / 你的结构让你失望了，")
+		Message("and you never make it into the City proper. / 而且你永远也进不了真正的城市。")
+		Print("")
+		Message("An unfortunate end. Eventually the architecturalists / 一个不幸的结局。最终，建筑师们")
+		Message("will build another bell tower, and send it on its way. / 会再建一座钟楼，然后送它上路。")
+		Input("")
+		ClearText()
+		Print("")
+		Message("GAME OVER / 游戏结束")
+		Print("")
+		Print("Press CTRL+R to restart. / 按 CTRL+R 重新启动。")
+		loop
+			Sleep(60.0)
+		end
+	else
+		ClearText()
+		Print("")
+		Message("You died mysteriously.")
+		Input("")
+		ClearText()
+		Print("")
+		Message("GAME OVER")
+		Print("")
+		Print("Press CTRL+R to restart.")
+		loop
+			Sleep(60.0)
+		end
+	end
+end

@@ -1,0 +1,4 @@
+
+Lock("Lodge_Room1_DoorToRoom2")
+Unlock("Lodge_Room1_DoorToEntry")
+Print("Hmm? / 嗯？")

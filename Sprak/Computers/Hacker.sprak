@@ -1,0 +1,35 @@
+DisconnectAll()
+ClearText()
+
+Print("")
+Print("*******************")
+Print("Enter target door:  / 输入目标门：")
+var target = Input("")
+
+var id = Connect(target)
+
+if id < 0
+    Print("Failed to connect / 连接失败")
+    return
+end
+
+loop x from 0 to 99999
+    Print("Trying code:  / 正在尝试代码：" + x)
+    var success = id.Unlock(x)
+    if success
+        Print("Unlocked! / 已解锁！")
+        Print("*******************")
+        break
+    end
+end
+
+# Good targets
+# ------------
+#  * TownHall_DoorToLongsonOffice
+#  * Factory_Corridor_DoorToOffice
+#  * Hotel_Office_DoorToBasement
+# 好目标
+# ------------
+#  * TownHall_DoorToLongsonOffice
+#  * Factory_Corridor_DoorToOffice
+#  * Hotel_Office_DoorToBasement

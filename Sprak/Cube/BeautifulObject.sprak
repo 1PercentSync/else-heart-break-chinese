@@ -1,0 +1,9 @@
+
+loop
+    number r = 0.5 + 0.5 * Sin(Time())
+    number g = 0.5 + 0.5 * Sin(Time() + 1)
+    number b = 0.5 + 0.5 * Sin(Time() + 2)
+    SetColor(r, g, b)
+    PlaySound("Coin " + (1 + Int(Random() * 4)))
+    Sleep(0.1)
+end

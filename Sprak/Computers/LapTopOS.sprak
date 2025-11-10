@@ -1,0 +1,34 @@
+
+ClearText()
+
+Print("*******************************************************")
+Print("")
+Print("R A N D O M   M O V I E   T I T L E   G E N E R A T O R / 随机电影标题生成器")
+Print("")
+Print("*******************************************************")
+Print("")
+
+array word1 = ["Way / 道路", "Lord / 领主", "Master / 大师", "Return / 回归", "Story / 故事", "Saga / 传说", "Fish / 鱼"]
+array word2 = ["Magical / 魔法的", "Fantastic / 奇妙的", "Thunder / 雷霆", "Mysterious / 神秘的", "Dear / 亲爱的", "Wonderful / 精彩的", "Evil / 邪恶的"]
+array word3 = ["Mrs. X / X夫人", "Cats / 猫", "Ring / 戒指", "Ninja / 忍者", "Prince / 王子", "Mystery / 谜团", "Princess / 公主", "Lady / 女士", "Hero / 英雄"]
+
+string Pick(array a)
+    number i = Int(Count(a) * Random())
+    return a[i]
+end
+
+loop
+    #Sleep(2)
+    Print("Press return to / 按回车键")
+    Print("generate title / 生成标题")
+    Input("")
+    #ClearText()
+    Print("")
+    string w1 = Pick(word1)
+    string w2 = Pick(word2)
+    string w3 = Pick(word3)
+    Print("'The " + w1 + " of the " + w2 + " " + w3 + "'")
+    Print("")
+    Print("")
+    Print("")
+end

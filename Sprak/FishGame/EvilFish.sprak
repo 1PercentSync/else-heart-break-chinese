@@ -1,0 +1,16 @@
+
+void Ai()
+	var nr = GetMoveNr()
+	var mod = Modulus(nr, 3)
+
+	if CanMove()
+		Move()
+	else
+		TurnRight()
+		TurnRight()
+	end
+end
+
+void Restart()
+	Reset()
+end

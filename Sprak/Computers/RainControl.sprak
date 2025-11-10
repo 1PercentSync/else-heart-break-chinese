@@ -1,0 +1,2 @@
+var a = Input("Enter rain amount: / 输入雨量：")
+SetRain(a)

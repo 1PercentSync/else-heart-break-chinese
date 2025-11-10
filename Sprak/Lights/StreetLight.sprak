@@ -1,0 +1,18 @@
+﻿
+var red = RandomBetween(0.1, 0.7)
+var green = 1.0
+var blue = 0.9
+
+SetColor(red, green, blue)
+
+
+
+
+
+
+# Helper function for generating random / 用于生成随机数的辅助函数
+# numbers between 'low' and 'high' / 介于“低”和“高”之间的数字
+
+number RandomBetween(number low, number high)
+    return low + Random() * (high - low)
+end

@@ -1,0 +1,14 @@
+
+void LogIntruder(string name, string location)
+    Print(" - Logging intruder -  /  - 记录入侵者 - ")
+    Print(name + " at " + location)
+end
+
+void LogHack(string name, string location)
+    Print(" - Logging hacker -  /  - 记录黑客 - ")
+    Print(name + " at " + location)
+end
+
+void OnMessage(string msg, number priority)
+    Print("Message: " + msg + " (priority " + priority + ") / 消息: " + msg + " (优先级 " + priority + ")")
+end

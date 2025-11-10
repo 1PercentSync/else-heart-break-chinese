@@ -1,0 +1,71 @@
+I don't even know why they thought it was Rouven. / 我甚至不知道他们为什么认为是鲁文。
+It'd take a totally different kind of character   / 这需要一个完全不同类型的人
+to dish out freebies like that... Only a true friend / 才能像那样分发免费赠品…只有一个真正的朋友
+looks out for you even in the darkest of times.   / 即使在最黑暗的时候也会照顾你。
+Old habits die hard.  A good gun will never "Rust". / 旧习难改。一把好枪永远不会“生锈”。
+
+Ehe 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+fn main() {
+    let program = "+ + * - /";
+    let mut accumulator = 0i;
+
+    for token in program.chars() {
+        match token {
+            '+' => accumulator += 1,
+            '-' => accumulator -= 1,
+            '*' => accumulator *= 2,
+            '/' => accumulator /= 2,
+            _ => { /* ignore everything else */ }
+        }
+    }
+
+    println!("The program \"{}\" calculates the value {}",
+              program, accumulator);
+}

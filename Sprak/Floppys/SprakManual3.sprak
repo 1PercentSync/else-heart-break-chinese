@@ -1,0 +1,108 @@
+#####################################
+# SPRAK PROGRAMMING LANGUAGE MANUAL #
+# SPRAK 编程语言手册 #
+#####################################
+
+Chapter 3 --- Math
+# 第 3 章 --- 数学运算
+==================
+
+Don't let this chapter scare you! You don't
+# 别让这一章吓到你！你不需要
+need to be a math whiz to do programming.
+# 是个数学奇才才能编程。
+Curiosity and logical thinking will take you
+# 好奇心和逻辑思维会带你
+much further, trust me.
+# 走得更远，相信我。
+
+Still, it is often very useful to perform
+# 尽管如此，在你的代码中执行
+different kinds of math operations in your
+# 不同种类的数学运算通常是非常有用的。
+code.
+# (此为上一句的延续)
+
+The basic ones are:
+# 基本的运算有：
+
++  # plus
+# +  # 加
+-  # minus
+# -  # 减
+*  # multiplication
+# *  # 乘
+/  # division
+# /  # 除
+
+These operations can be used in the
+# 这些运算可以以下列方式使用：
+following manner:
+# (此为上一句的延续)
+
+number x = 10 + 20
+number y = x * 2
+number z = y - 1
+
+Now x will have the value 30, y will be 60
+# 现在 x 的值是 30，y 是 60
+and z will be 59. Make sure you understand
+# z 是 59。确保你理解了
+why this is and how each variable depends
+# 为什么会这样，以及每个变量是如何依赖
+on the one defined before it.
+# 于在它之前定义的变量的。
+
+You can also construct more complex, compound
+# 你也可以构建更复杂的复合
+math statements like the following one:
+# 数学语句，如下所示：
+
+x = 10 / y * z + 1
+
+The operators follow regular operator precedence,
+# 运算符遵循常规的运算符优先级，
+which means that  the * and / will be calculated
+# 这意味着 * 和 / 会在 + 和 - 之前计算。
+before + and - .
+# (此为上一句的延续)
+
+To change this, parenthesis can be used:
+# 要改变这一点，可以使用括号：
+
+x = 10 / y * (z + 1)
+
+Different computer systems might have other math 
+# 不同的计算机系统可能有其他可用的数学
+operations available as FUNCTIONS (see Chapter 5).
+# 运算作为函数（见第5章）。
+
+There are some more math operators that are quite
+# 还有一些非常有用的数学运算符，
+handy, like the following ones:
+# 如下所示：
+
+<   # less than
+# <   # 小于
+<=  # less than or equal
+# <=  # 小于或等于
+>   # greater than
+# >   # 大于
+>=  # greater than or equal
+# >=  # 大于或等于
+==  # equal
+# ==  # 等于
+!=  # not equal
+# !=  # 不等于
+
+They are used similarly to +, -, * and / but
+# 它们的用法类似于 +、-、* 和 /，但是
+return true or false as their result:
+# 它们返回 true 或 false 作为结果：
+
+30 < 20  # false
+# 30 < 20  # false (假)
+5 <= 5   # true
+# 5 <= 5   # true (真)
+100 != 0 # true
+# 100 != 0 # true (真)

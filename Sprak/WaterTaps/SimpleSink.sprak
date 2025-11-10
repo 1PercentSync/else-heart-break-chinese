@@ -1,0 +1,8 @@
+
+SetLiquidAmount(100)
+
+ClearCode()
+AppendCode("Drink(25)")
+AppendCode("")
+AppendCode("# Refilled by " + GetName())
+# / 由 " + GetName() + " 重新填充

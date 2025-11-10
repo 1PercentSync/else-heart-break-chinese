@@ -1,0 +1,9 @@
+
+#Connect("Internet_Internet_PoleComputer_1")
+Connect("Internet_Internet_PoleComputer_2")
+
+var arcade = Connect("ArcadeMachine_ArcadeMachine")
+
+arcade.Connect(Name()) # connect back to this computer
+
+Slurp()

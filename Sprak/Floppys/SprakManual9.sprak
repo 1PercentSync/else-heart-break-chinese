@@ -1,0 +1,65 @@
+#####################################
+# SPRAK PROGRAMMING LANGUAGE MANUAL #
+# SPRAK 编程语言手册 #
+#####################################
+
+Chapter 9 --- Objects and methods
+# 第 9 章 --- 对象和方法
+=================================
+
+This is the final and perhaps most exciting
+# 这是本手册的最后一章，也许是最激动人心的一章。
+chapter of this whole manual. We have now
+# 我们现在已经达到了Sprak最强大的构造，
+reached the most powerful construct of
+# 点运算符。
+Sprak, the dot operator.
+# (此为上一句的延续)
+
+The dot operator is used to call functions
+# 点运算符用于调用其他对象中的函数。
+in OTHER objects. These functions are usually
+# 这些函数通常被称为方法，以区别于
+called methods to differentiate them from
+# 普通函数。
+normal functions. 
+# (此为上一句的延续)
+
+Since such a method can do things to
+# 由于这样的方法可以对其所附加的对象做一些事情，
+the object it is attached to, and even call
+# 甚至可以调用其他对象中的其他方法，
+other methods in other objects, the power
+# 所以点运算符带来的力量是巨大的。
+that comes with the dot operator is immense.
+# (此为上一句的延续)
+
+Please wield it carefully and try not to make a mess.
+# 请小心使用它，尽量不要弄得一团糟。
+
+Here's how you use it. First connect to
+# 这是你如何使用它。首先连接到
+another object:
+# 另一个对象：
+
+var o = Connect("HomeComputer")
+
+Then use the connection
+# 然后使用连接
+(stored in the variable 'o' in this case)
+# （在这种情况下存储在变量'o'中）
+together with the dot operator to call a method:
+# 与点运算符一起调用一个方法：
+
+o.Print("Hello at home!")
+
+This will make the computer that you connected
+# 这将使你连接的计算机
+to print the message "Hello at home!" on its
+# 在其显示器上打印消息“Hello at home!”。
+monitor. 
+# (此为上一句的延续)
+
+This requires access to the internet, naturally.
+# 当然，这需要接入互联网。
+

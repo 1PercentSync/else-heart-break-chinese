@@ -1,0 +1,4 @@
+
+loop i from 1 to 10000
+    Unlock(i)
+end

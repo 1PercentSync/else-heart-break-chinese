@@ -1,0 +1,3 @@
+
+var id = Connect("FactoryMachineA")
+Send(id)

@@ -1,0 +1,15 @@
+===================================
+THE BEGINNER'S GUIDE TO THE MODIFIER / 修饰符入门指南
+===================================
+
+*** Chapter 11: Comments *** / *** 第11章：注释 ***
+
+A comment in the code is ignored / 代码中的注释会被编译器忽略
+by the compiler. You can create / 。你可以通过输入#号来创建
+a comment by typing the # sign. / 注释。
+
+Any text on the line to the right / #号右侧的任何文本
+of the # sign will be ignored. / 都将被忽略。
+
+Be helpful to your future self / 帮助未来的自己
+and others - comment your code! / 和他人——注释你的代码！

@@ -1,0 +1,4 @@
+
+Connect("Internet_Internet_PoleComputer_1")
+Slurp()
+ClearText()

@@ -1,0 +1,14 @@
+
+# Check for authorization / 检查授权
+var canEnter = HasAccess(GetUser())
+Say("Can enter: / 可以进入：" + canEnter)
+
+if canEnter
+    # do nothing / 什么都不做
+else
+    Grill()
+end
+
+bool HasAccess(string name)
+    return true
+end

@@ -1,0 +1,17 @@
+TYPES / 类型
+=====
+["ore", "gold", "silver", "crystal", "iron"] / [“矿石”、“黄金”、“白银”、“水晶”、“铁”]
+
+QUALITY / 质量
+=======
+0 - 3 Abysmal / 0 - 3 极差
+4 - 5 Rough / 4 - 5 粗糙
+6 - 8 OK / 6 - 8 一般
+9     Great / 9     优秀
+10    Perfect / 10    完美
+
+
+
+# - MEMORY KEYS - / # - 记忆钥匙 -
+# W311SPRNG
+# MONADOOR

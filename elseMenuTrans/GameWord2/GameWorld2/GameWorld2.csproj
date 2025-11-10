@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8DC11B82-A62A-406E-BE37-6A5697E8E121}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>GameWorld2</RootNamespace>
+    <AssemblyName>GameWorld2</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="GameTypes">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\ElseHeartbreak\ElseHeartbreak_Data\Managed\GameTypes.dll</HintPath>
+    </Reference>
+    <Reference Include="Grimm">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\ElseHeartbreak\ElseHeartbreak_Data\Managed\Grimm.dll</HintPath>
+    </Reference>
+    <Reference Include="ProgrammingLanguageNr1">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\ElseHeartbreak\ElseHeartbreak_Data\Managed\ProgrammingLanguageNr1.dll</HintPath>
+    </Reference>
+    <Reference Include="Relay">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\ElseHeartbreak\ElseHeartbreak_Data\Managed\Relay.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\ElseHeartbreak\ElseHeartbreak_Data\Managed\System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\ElseHeartbreak\ElseHeartbreak_Data\Managed\System.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="TingTing">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\ElseHeartbreak\ElseHeartbreak_Data\Managed\TingTing.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApproximateSqrt.cs" />
+    <Compile Include="ArcadeMachineAPI.cs" />
+    <Compile Include="Bathtub.cs" />
+    <Compile Include="Battery.cs" />
+    <Compile Include="Bed.cs" />
+    <Compile Include="Behaviour_BeAtPosition.cs" />
+    <Compile Include="Behaviour_BeAtTing.cs" />
+    <Compile Include="Behaviour_BeInRoom.cs" />
+    <Compile Include="Behaviour_Dj.cs" />
+    <Compile Include="Behaviour_Drink.cs" />
+    <Compile Include="Behaviour_Fika.cs" />
+    <Compile Include="Behaviour_Guard.cs" />
+    <Compile Include="Behaviour_GuideTo.cs" />
+    <Compile Include="Behaviour_Interact.cs" />
+    <Compile Include="Behaviour_Party.cs" />
+    <Compile Include="Behaviour_Photograph.cs" />
+    <Compile Include="Behaviour_PlayTrumpet.cs" />
+    <Compile Include="Behaviour_RefineGoods.cs" />
+    <Compile Include="Behaviour_RunStory.cs" />
+    <Compile Include="Behaviour_Sell.cs" />
+    <Compile Include="Behaviour_ServeDrinks.cs" />
+    <Compile Include="Behaviour_Sit.cs" />
+    <Compile Include="Behaviour_Sleep.cs" />
+    <Compile Include="Behaviour_Smoke.cs" />
+    <Compile Include="Behaviour_WorkWithModifier.cs" />
+    <Compile Include="Boat.cs" />
+    <Compile Include="Button.cs" />
+    <Compile Include="Character.cs" />
+    <Compile Include="Cigarette.cs" />
+    <Compile Include="Computer.cs" />
+    <Compile Include="ConnectionAPI.cs" />
+    <Compile Include="ConnectionAPI_Optimized.cs" />
+    <Compile Include="CreditCard.cs" />
+    <Compile Include="Door.cs" />
+    <Compile Include="DoorAPI.cs" />
+    <Compile Include="Drink.cs" />
+    <Compile Include="Drug.cs" />
+    <Compile Include="ElevatorAPI.cs" />
+    <Compile Include="Extractor.cs" />
+    <Compile Include="Fence.cs" />
+    <Compile Include="FileHelper.cs" />
+    <Compile Include="Floppy.cs" />
+    <Compile Include="FloppyAPI.cs" />
+    <Compile Include="FlowerPot.cs" />
+    <Compile Include="Fountain.cs" />
+    <Compile Include="FryingPan.cs" />
+    <Compile Include="FuseBox.cs" />
+    <Compile Include="Goods.cs" />
+    <Compile Include="GraphicsAPI.cs" />
+    <Compile Include="Hackdev.cs" />
+    <Compile Include="HeartAPI.cs" />
+    <Compile Include="IExit.cs" />
+    <Compile Include="InitialSaveFileCreator.cs" />
+    <Compile Include="InteractionHelper.cs" />
+    <Compile Include="InternetAPI.cs" />
+    <Compile Include="IReturnValueReceiver.cs" />
+    <Compile Include="Jewellery.cs" />
+    <Compile Include="Key.cs" />
+    <Compile Include="Lamp.cs" />
+    <Compile Include="LampAPI.cs" />
+    <Compile Include="Locker.cs" />
+    <Compile Include="Machine.cs" />
+    <Compile Include="Map.cs" />
+    <Compile Include="Memory.cs" />
+    <Compile Include="MemoryAPI.cs" />
+    <Compile Include="MimanGrimmApiDefinitions.cs" />
+    <Compile Include="MimanPath.cs" />
+    <Compile Include="MimanPathfinder2.cs" />
+    <Compile Include="MimanPathfinder_DEPRECATED.cs" />
+    <Compile Include="MimanPathStatus.cs" />
+    <Compile Include="MimanTing.cs" />
+    <Compile Include="MimanTingConcrete.cs" />
+    <Compile Include="MimanTingRunner.cs" />
+    <Compile Include="MockProgram.cs" />
+    <Compile Include="MusicBox.cs" />
+    <Compile Include="MysticalCube.cs" />
+    <Compile Include="NavNode.cs" />
+    <Compile Include="Node.cs" />
+    <Compile Include="Pawn.cs" />
+    <Compile Include="Point.cs" />
+    <Compile Include="Portal.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="ProgramRunner.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Radio.cs" />
+    <Compile Include="Robot.cs" />
+    <Compile Include="RoomGroup.cs" />
+    <Compile Include="RoomGroupNode.cs" />
+    <Compile Include="RoomNetwork.cs" />
+    <Compile Include="RoomNode.cs" />
+    <Compile Include="Screwdriver.cs" />
+    <Compile Include="Seat.cs" />
+    <Compile Include="SendPipe.cs" />
+    <Compile Include="Sink.cs" />
+    <Compile Include="SmartWalkBehaviour.cs" />
+    <Compile Include="Snus.cs" />
+    <Compile Include="SourceCode.cs" />
+    <Compile Include="SourceCodeDispenser.cs" />
+    <Compile Include="Stove.cs" />
+    <Compile Include="Suitcase.cs" />
+    <Compile Include="Taser.cs" />
+    <Compile Include="Telephone.cs" />
+    <Compile Include="Teleporter.cs" />
+    <Compile Include="Theremin.cs" />
+    <Compile Include="Timetable.cs" />
+    <Compile Include="TimetableBehaviour.cs" />
+    <Compile Include="TimetableRunner.cs" />
+    <Compile Include="TimetableSpan.cs" />
+    <Compile Include="TingrunnerAPI.cs" />
+    <Compile Include="TingWithButton.cs" />
+    <Compile Include="Tram.cs" />
+    <Compile Include="Translator.cs" />
+    <Compile Include="TrapAPI.cs" />
+    <Compile Include="TrashCan.cs" />
+    <Compile Include="Tv.cs" />
+    <Compile Include="UnreachablePathCacheItem.cs" />
+    <Compile Include="Vehicle.cs" />
+    <Compile Include="VehicleTurningDirection.cs" />
+    <Compile Include="VendingMachine.cs" />
+    <Compile Include="VoiceAPI.cs" />
+    <Compile Include="WeatherAPI.cs" />
+    <Compile Include="World.cs" />
+    <Compile Include="WorldSettings.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

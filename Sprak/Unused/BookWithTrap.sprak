@@ -1,0 +1,9 @@
+OnIntruder(string name)
+	if(name == "Sebastian")
+		MovePerson(name, "HarborEast_Point")
+	end
+end
+
+void OnHack(string name)
+     
+end

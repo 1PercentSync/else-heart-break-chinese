@@ -1,0 +1,13 @@
+# A nested loop is / # 嵌套循环是
+# a loop inside a loop. / # 循环中的循环。
+
+# This is an example of / # 这是一个
+# a simple program for / # 用于
+# refining a piece of / # 精炼一块
+# mineral or similar. / # 矿物或类似物的简单程序。
+
+loop / 循环
+    loop from 0 to 10 / 从0到10循环
+        Refine(@) / 精炼（@）
+    end / 结束
+end / 结束

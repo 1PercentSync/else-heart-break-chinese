@@ -1,0 +1,10 @@
+
+var names = GetPeople()
+
+var name = Input("Enter name to look up:  / 输入要查找的姓名：")
+
+loop names
+	if @ == name
+		Print(GetPosition(name))
+	end
+end

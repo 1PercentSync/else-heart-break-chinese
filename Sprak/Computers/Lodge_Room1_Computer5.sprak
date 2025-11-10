@@ -1,0 +1,5 @@
+
+# Change this to unlock other doors in the room:
+# 更改此项以解锁房间中的其他门：
+
+Unlock("Lodge_Room1_DoorToEntry")

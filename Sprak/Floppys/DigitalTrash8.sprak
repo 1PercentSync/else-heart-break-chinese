@@ -1,0 +1,18 @@
+# Bubble sort
+
+var a = [5, 4, 7, 2, 1, 6, 3]
+
+loop
+    bool didFlip = false
+    loop i from 0 to Count(a) - 2
+        if a[i] > a[i + 1]
+            var temp = a[i]
+            a[i] = a[i + 1]
+            a[i + 1] = temp
+            didFlip = true
+        end
+    end
+    if didFlip == false
+        break
+    end
+end

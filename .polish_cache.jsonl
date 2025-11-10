@@ -1,0 +1,526 @@
+{"key": "Tjena\u0001Hey 嘿", "value": "Sounds exciting 听起来令人兴奋"}
+{"key": "Läget?\u0001How's it going? 最近怎么样？", "value": "Haha, OK 哈，好的"}
+{"key": "Jag är seg i skallen\u0001My brain's sluggish 脑子有点转不动", "value": "Abstract... 挺抽象的……"}
+{"key": "Läste en grym bok om funktionell komposition i går när jag skulle sova\u0001I read an awesome book on functional composition last night when I was supposed to sleep 我昨晚该睡的时候在看一本讲函数式组合的好书", "value": "Nonsense, yeah! 胡说八道，没错！"}
+{"key": "Kunde inte lägga ner den, så jag är lite trött idag\u0001Couldn't put it down, so I'm a little busted today 爱不释手，所以今天有点累", "value": "Hehe 嘿嘿"}
+{"key": "Låter spännande\u0001Sounds exciting 听起来令人兴奋", "value": "Hey 嘿"}
+{"key": "Haha, OK\u0001Hah, OK 哈，好的", "value": "How's it going? 最近怎么样？"}
+{"key": "Abstrakt...\u0001Abstract... 挺抽象的……", "value": "My brain's sluggish 脑子有点转不动"}
+{"key": "Nonsens, ja!\u0001Nonsense, yeah! 胡说八道，是的！", "value": "I read an awesome book on functional composition last night when I was supposed to sleep 我昨晚该睡的时候在读一本讲函数式组合的好书"}
+{"key": "Hehe\u0001Heh", "value": "Couldn't put it down, so I'm a little busted today 爱不释手，所以今天有点累"}
+{"key": "Jaha..?\u0001Oh...?", "value": "Oh...?"}
+{"key": "Kleislipilar, om det säger dig något?\u0001Kleisli arrows, if that rings a bell? Kleisli 箭（范畴论）听起来熟吗？", "value": "Kleisli arrows, if that rings a bell? Kleisli 箭头听起来熟悉吗？"}
+{"key": "Ehm\u0001Um 嗯", "value": "Um 嗯"}
+{"key": "Njae...\u0001Nah... 不……", "value": "Nah... 不……"}
+{"key": "Jaså, du har börjat lära dig om sånt?\u0001Oh, you're finally learning that stuff? 哦，你终于开始学那些东西了吗？", "value": "Oh, you've started learning about that stuff? 哦，你已经开始学那些东西了吗？"}
+{"key": "Mm\u0001Mm 嗯", "value": "Mm 嗯"}
+{"key": "Vad gör du då?\u0001What are you up to, then? 那你在忙什么呢？", "value": "What are you up to, then? 那你在忙什么呢？"}
+{"key": "Har du pratat med Pixie efter det som hände med Ivan?\u0001Did you talked to Pixie after that thing with Ivan? 在那件事之后，你和 Pixie 说过话吗？", "value": "Did you talk to Pixie after that thing with Ivan? 在那件事之后，你和 Pixie 说过话吗？"}
+{"key": "Nej, inte direkt\u0001No, not really 不，实际上没有", "value": "No, not really 不，实际上没有"}
+{"key": "OK...\u0001OK... 好吧……", "value": "OK... 好吧……"}
+{"key": "Hon verkar helt förstörd!\u0001She seems devastated! 她看起来很沮丧！", "value": "She seems devastated! 她看起来很沮丧！"}
+{"key": "Mm\u0001Mm 嗯", "value": "Mm 嗯"}
+{"key": "Men borde vi inte göra något?!\u0001But shouldn't we do something?! 但我们不应该做点什么吗？！", "value": "But shouldn't we do something?! 但我们不应该做点什么吗？！"}
+{"key": "Jo...\u0001Yeah... 是的……", "value": "Yeah... 是的……"}
+{"key": "Du verkar väldigt lugn?\u0001You seem very calm? 你看起来很平静？", "value": "You seem very calm? 你看起来很平静？"}
+{"key": "Jag vet inte hur vi ska fixa allting bara\u0001I just don't know how we're supposed to fix things 我只是不知道我们应该如何解决问题", "value": "I was hoping things were getting better... 我希望情况会好转……"}
+{"key": "Det är ju jävlarna på ministeriet som ställt till med allt det här\u0001The fuckers at the ministry screwed it all up 部里那帮混蛋把一切都搞砸了", "value": "Damn it 该死"}
+{"key": "Självklart måste vi göra någonting\u0001I mean of course we have to do something 我的意思是，我们当然得做点什么", "value": "We need some drastic measures 我们需要一些激烈的措施"}
+{"key": "Jag vet bara inte vad!\u0001I just don't know what! 我只是不知道做什么！", "value": "Yes! 是的！"}
+{"key": "Vi har kämpat här i flera år, och nu händer det här\u0001We've been fighting the good fight for years, and then this happens 我们已经英勇地战斗这么多年，然后就发生了这种事", "value": "Exactly 的确"}
+{"key": "Jag hoppades att saker höll på att förbättras...\u0001I was hoping things were getting better... 我希望情况会好转……", "value": "I just don't know how we're supposed to fix things 我只是不知道我们该如何解决一切"}
+{"key": "Fan\u0001Damn it 该死", "value": "The fuckers at the ministry screwed it all up 部里那帮混蛋把一切都搞砸了"}
+{"key": "Det behövs drastiska åtgärder\u0001We need some drastic measures 我们需要一些激烈的措施", "value": "I mean of course we have to do something 我是说我们当然得做点什么"}
+{"key": "Ja!\u0001Yes! 是的！", "value": "I just don't know what! 我只是不知道做什么！"}
+{"key": "Exakt\u0001Exactly 的确", "value": "We've been fighting the good fight for years, and then this happens 我们已经奋战多年，现在却发生这种事"}
+{"key": "Vad vet du om spöken förresten?\u0001What do you know about ghosts, by the way? 对了，你对鬼魂了解多少？", "value": "Do you? 真的？"}
+{"key": "Jag letar efter någon som vet något om spöken\u0001I'm looking for someone who knows about ghosts 我在找一个了解鬼魂的人", "value": "What do you mean by ghosts? 你说的鬼是什么意思？"}
+{"key": "Mhm?\u0001Mhm? 嗯？", "value": "Kinda like spectres...but square 有点像幽灵……但是方形的"}
+{"key": "Det var någonting på mitt rum\u0001There was something in my room 我房间里有什么东西", "value": "In different colors 有不同的颜色"}
+{"key": "Det såg ut som ett spöke\u0001Looked like a ghost 看起來像鬼魂", "value": "Sort of transparent 还有点透明"}
+{"key": "Gör du det?\u0001Do you? 真的？", "value": "```json"}
+{"key": "Vad menar du med spöken?\u0001What do you mean by ghosts? 你说的鬼是什么意思？", "value": "["}
+{"key": "Lite som vålnader... fast fyrkantiga\u0001Kinda like spectres...but square 有点像幽灵……但是方形的", "value": "\"What do you know about ghosts, by the way? 对了，你对鬼魂了解多少？\","}
+{"key": "Med olika färger\u0001In different colors 有不同的颜色", "value": "\"I'm looking for someone who knows about ghosts 我在找一个了解鬼魂的人\","}
+{"key": "Lite genomskinliga nästan\u0001Sort of transparent 还有点透明", "value": "\"Mhm? 嗯？\","}
+{"key": "Blinkande saker, som ett skimmer runt sig\u0001Flashing things, with a kind of halo around them 一闪一闪的，周围有一种光环", "value": "Flashing things, with a kind of halo around them 一闪一闪的，周围有一种光环"}
+{"key": "Har du varit inne på internet?\u0001Have you been on the internet? 你上过网吗？", "value": "Have you been on the internet? 你上过网吗？"}
+{"key": "Jag vet inte... har jag?\u0001I don't know... have I? 我不知道……我有？", "value": "I don't know... have I? 我不知道……我有？"}
+{"key": "Ja\u0001Yes 是的", "value": "Yes 是的"}
+{"key": "Nej\u0001No 不", "value": "No 不"}
+{"key": "Det du beskriver låter som 'corruption'\u0001What you're describing sounds like 'corruption' 你所描述的听起来像腐化", "value": "What you're describing sounds like 'corruption' 你所描述的听起来像'腐化'"}
+{"key": "Jag har drabbats av det när jag varit ute på internet för länge\u0001Happened to me, when I'd been on the internet for too long 当我在网上呆得太久时就会发生在我身上", "value": "Happened to me when I'd been on the internet for too long 当我在网上待得太久时就会发生在我身上"}
+{"key": "Det brukar hjälpa att ta det lite lugnt sen, så går det över\u0001Taking it easy helps, it passes after a while 放松会有帮助，过一段时间就好了", "value": "Taking it easy helps, it passes after a while 放松一下会有帮助，过段时间就好了"}
+{"key": "Jaha..?\u0001Oh...? 哦……？", "value": "Oh...? 哦……？"}
+{"key": "Jo men det har jag råkat ut för faktiskt\u0001Yeah that has happened to me actually 是的，我已经遇到过这种情况", "value": "Yeah that has actually happened to me 是的，这确实在我身上发生过"}
+{"key": "Att sova är bra, eller att dricka något sött\u0001Sleeping's good, so is drinking something sweet 睡觉很重要，喝点甜的也不错", "value": "Sleeping's good, so is drinking something sweet 睡觉很重要，喝点甜的也不错"}
+{"key": "OK, det ska jag komma ihåg\u0001OK, I'll remember that 好的，我会记住的", "value": "OK, I'll remember that 好的，我会记住的"}
+{"key": "Vad brukar du göra på nätet?\u0001What do you usually do on the net? 你通常上网做什么？", "value": "What do you usually do on the net? 你通常上网做什么？"}
+{"key": "En stor del av mitt jobb är att hålla oss dolda från Ministeriet\u0001An important part of my job is keeping us hidden from the Ministry 我工作的一个重要部分就是不让部门发现我们", "value": "An important part of my job is keeping us hidden from the Ministry 我工作的一个重要部分就是不让部委发现我们"}
+{"key": "De försöker hålla så mycket som möjligt av nätverket under kontroll\u0001They try to control as much of the network as possible 他们试图控制尽可能多的网络", "value": "They try to control as much of the network as possible 他们试图控制尽可能多的网络"}
+{"key": "Men de kan inte övervaka allting samtidigt, som tur är\u0001But luckily they can't monitor everything all the time 但幸运的是，他们无法始终监控一切", "value": "But luckily they can't monitor everything at once 但幸运的是，他们无法同时监控一切"}
+{"key": "Så jag ser till att våra datorer inte drar någon uppmärksamhet till sig\u0001So I make sure our computers don't attract any attention 所以我会确保我们的电脑不会引起任何注意", "value": "So I make sure our computers don't attract any attention 所以我会确保我们的电脑不会引起任何注意"}
+{"key": "Coolt\u0001Cool 酷", "value": "Cool 酷"}
+{"key": "Aha...\u0001Aha... 啊哈……", "value": "Aha... 啊哈……"}
+{"key": "Hur kommer man ut på nätet egentligen?\u0001How do you get online anyway? 你到底怎么上网的？", "value": "How do you get online anyway? 你到底怎么上网的？"}
+{"key": "Å, det finns flera sätt\u0001Oh, there are several ways to do it 哦，有几种方法可以做到这一点", "value": "Oh, there are several ways to do it 哦，有几种方法可以做到这一点"}
+{"key": "Du måste hitta någonting som kan koppla upp sig mot andra saker\u0001You have to find something that can connect to other things 你必须找到可以连接到其他事物的东西", "value": "You have to find something that can connect to other things 你必须找到可以连接到其他事物的东西"}
+{"key": "Connect() heter funktionen\u0001The function is called Connect() 该功能被称为 Connect()", "value": "The function is called Connect() 这个函数叫做 Connect()"}
+{"key": "Vilka saker kan det?\u0001What things can do that? 什么东西可以做到这个？", "value": "What things can do that? 什么东西能做到这个？"}
+{"key": "De flesta datorer såklart...\u0001Most computers, of course... 大多数计算机，当然……", "value": "Most computers, of course... 大多数电脑，当然……"}
+{"key": "Ja nästan allting\u0001Well, almost everything 嗯，几乎所有东西", "value": "Well, almost everything 嗯，几乎所有东西"}
+{"key": "Aha\u0001Aha 啊哈", "value": "Aha 啊哈"}
+{"key": "Ja... och sen måste du anropa Slurp() då\u0001Yeah... and then you have to call Slurp() too 是的……然后你也要调用 Slurp() 函数", "value": "Yeah... and then you have to call Slurp() too 是的……然后你也需要调用 Slurp()"}
+{"key": "Slurp?\u0001Slurp?", "value": "Slurp?"}
+{"key": "Mm\u0001Mm 对", "value": "Mm 对"}
+{"key": "Vad gör den?\u0001What's that do? 那是做什么的？", "value": "What's that do? 那是做什么的？"}
+{"key": "Slurp-funktionen tar dig ut på internet\u0001The Slurp function gets you online, onto the internet Slurp 功能可以让你接入网络", "value": "The Slurp function gets you online, onto the internet Slurp 功能可以让你接入网络"}
+{"key": "Sen beror det på vad du är uppkopplad mot\u0001Beyond that, depends on what you're connected to 除此之外，取决于你连接的是什么", "value": "Beyond that, depends on what you're connected to 除此之外，取决于你连接的是什么"}
+{"key": "Med många kopplingar kan du nå många andra platser\u0001If you have a lot connections you can reach many other places 如果你有很多的连接，你就能够到达许多其他地方", "value": "If you have a lot of connections you can reach many other places 如果你有很多连接，就能到达许多其他地方"}
+{"key": "Wow\u0001Wow 哇", "value": "Wow 哇"}
+{"key": "OK, jag förstår\u0001OK, I get it 好的，我明白了", "value": "OK, I get it 好的，我明白了"}
+{"key": "Jag måste testa det här!\u0001I have to try this out! 我必须试试！", "value": "I have to try this out! 我必须试试！"}
+{"key": "Var försiktig i så fall\u0001In that case, be careful 那样的话小心点", "value": "In that case, be careful 那样的话小心点"}
+{"key": "Ministeriet har extremt hög säkerhet kring de delar av internet som leder in i deras system\u0001The Ministry has extremely tight security around the parts of the internet that connect to their systems 部委在与他们的系统相连的网络部分周围有极其严密的安全措施", "value": "The Ministry has extremely tight security around the parts of the internet that connect to their systems 部委在与他们的系统相连的网络部分周围有极其严密的安全措施"}
+{"key": "Vi har i princip inte hittat några kryphål\u0001We've found no loopholes, basically 我们基本上找不到漏洞", "value": "We've found no loopholes, basically 我们基本上找不到漏洞"}
+{"key": "Vilket är den största anledningen till att vi inte vet mer om deras organisation\u0001Which is the main reason we don't know more about their organization 这也是我们不了解他们组织更多内幕的主要原因", "value": "Which is the main reason we don't know more about their organization 这也是我们不了解他们组织更多内幕的主要原因"}
+{"key": "Jaha, oj\u0001Wow, OK 哇，好的", "value": "Wow, OK 哇，好的"}
+{"key": "Jag förstår\u0001I understand 我明白", "value": "I understand 我明白"}
+{"key": "Jag tror jag måste försöka utforska internet\u0001I think I have to go explore the internet 我想我得上网看看了", "value": "I think I have to go explore the internet 我想我得上网看看了"}
+{"key": "OK\u0001OK 好的", "value": "OK 好的"}
+{"key": "Du får säga till om du hittar på något av intresse\u0001Let me know if you find anything interesting 如果你发现什么有趣的，告诉我", "value": "Let me know if you find anything interesting 如果你发现什么有趣的，告诉我"}
+{"key": "Ta det lugnt bara\u0001Just take it easy 别紧张", "value": "Just take it easy 别紧张"}
+{"key": "Corruption är inte att leka med\u0001Corruption is no laughing matter 腐化不是闹着玩的", "value": "Corruption is no laughing matter 腐化不是闹着玩的"}
+{"key": "Yulian säger att han ibland inte kunnat ta sig ut ur internet\u0001Yulian says that he hasn't been able to leave the internet sometimes Yulian 说他有时候无法离开网络", "value": "Yulian says that he hasn't been able to leave the internet sometimes Yulian 说他有时候无法离开网络"}
+{"key": "På grund av corruption?\u0001Because of corruption? 因为腐化？", "value": "Because of corruption? 因为腐化？"}
+{"key": "Ja...\u0001Yes... 是的……", "value": "Yes... 是的……"}
+{"key": "Precis\u0001Exactly 确实", "value": "Exactly 确实"}
+{"key": "Oj\u0001Wow 哇", "value": "Wow 哇"}
+{"key": "Läbbigt!\u0001Creepy! 好可怕！", "value": "Creepy! 好可怕！"}
+{"key": "Värre än så\u0001It's worse than that 更糟", "value": "It's worse than that 更糟"}
+{"key": "Kan vi ta det lite senare, är du snäll?\u0001Could we deal with this later, please? 我们可以稍后讨论这件事吗？", "value": "Could we deal with this later, please? 我们可以稍后讨论这件事吗？"}
+{"key": "Har du sett Yulian?\u0001Have you seen Yulian? 你看到 Yulian 了吗？", "value": "Have you seen Yulian? 你看到 Yulian 了吗？"}
+{"key": "Japp, han är på sitt kontor\u0001Yeah, he's in his office 他在办公室", "value": "Yeah, he's in his office 他在办公室"}
+{"key": "Nej...\u0001No... 不……", "value": "No... 不……"}
+{"key": "Hmm, tror inte det\u0001Hmm, don't think so 嗯，我不这么认为", "value": "Hmm, don't think so 嗯，我不这么认为"}
+{"key": "Ja han var här i närheten nyss\u0001Yeah, he was here just a second ago 是的，他就在一秒钟前还在这里", "value": "```json"}
+{"key": "OK, tack\u0001OK, thanks 好的，谢谢", "value": "["}
+{"key": "Ja?\u0001Yes? 是的？", "value": "\"Yeah, he was here just a second ago 是的，他刚刚还在这里\","}
+{"key": "Kände du Albert som jobbade här förut?\u0001Did you know Albert, the guy who used to work here? 你知道 Albert 吗，他以前在这儿工作过吗？", "value": "\"OK, thanks 好的，谢谢\","}
+{"key": "Inte direkt, jag började här efter att han försvann\u0001Not really, I started here after he went missing 不，他失踪后我才来的", "value": "\"Yes? 什么事？\","}
+{"key": "Vad tror du hände honom?\u0001What do you think happened to him? 你觉得发生了什么事情？", "value": "What do you think happened to him? 你觉得他发生了什么？"}
+{"key": "Jag är osäker\u0001I'm not sure 我不确定", "value": "I'm not sure 我不确定"}
+{"key": "Men det var inte bra\u0001But it sure wasn't anything good 但肯定不是什么好事", "value": "But it sure wasn't anything good 但肯定不是什么好事"}
+{"key": "Jaha...\u0001Oh... 哦……", "value": "Oh... 哦……"}
+{"key": "Han bodde i en lägenhet uppe i Burrows\u0001He lived in an apartment up in Burrows 他住在 Burrows 区的公寓里", "value": "He lived in an apartment up in Burrows 他住在 Burrows 区的公寓里"}
+{"key": "Du kanske kan snoka runt där och se om du hittar något\u0001Maybe you can look around there and see if you find anything 也许你可以四处看看，看看能不能找到什么", "value": "Maybe you can look around there and see if you find anything 也许你可以在那里四处看看，找找有什么发现"}
+{"key": "Om du nu tror att han är viktig på något sätt?\u0001If you think he's important in any way? 你觉得他有什么重要意义吗？", "value": "If you think he's important in any way? 如果你觉得他有什么重要性的话？"}
+{"key": "Ja... jag tror det\u0001Yeah... I think so actually 是的……我觉得是的", "value": "Yeah... I think so 是的……我觉得是"}
+{"key": "OK, bra tips\u0001OK, good tip 好的，不错的建议", "value": "OK, good tip 好的，好建议"}
+{"key": "Tack, det ska jag göra!\u0001Thanks, I'll do that! 谢谢，我会这样做！", "value": "Thanks, I'll do that! 谢谢，我会照做的！"}
+{"key": "Hungrig?\u0001Hungry? 饿了吗？", "value": "Hungry? 饿了吗？"}
+{"key": "Nej det är bra\u0001No, I'm good 不，我很好", "value": "No, I'm good 不，我很好"}
+{"key": "Vi ses!\u0001See you! 再见！", "value": "See you! 再见！"}
+{"key": "Mhm\u0001Mhm 嗯", "value": "Mhm 嗯"}
+{"key": "Tjena\u0001Sounds exciting 听起来令人兴奋", "value": "```json"}
+{"key": "Läget?\u0001Haha, OK 哈，好的", "value": "["}
+{"key": "Jag är seg i skallen\u0001Abstract... 挺抽象的……", "value": "{\"index\": 0, \"rhs\": \"Maybe you can look around there and see if you find anything 也许你可以在那里四处看看，找找有什么发现\"},"}
+{"key": "Läste en grym bok om funktionell komposition i går när jag skulle sova\u0001Nonsense, yeah! 胡说八道，没错！", "value": "{\"index\": 1, \"rhs\": \"If you think he's important in any way? 如果你觉得他有什么重要性的话？\"},"}
+{"key": "Kunde inte lägga ner den, så jag är lite trött idag\u0001Hehe 嘿嘿", "value": "{\"index\": 2, \"rhs\": \"Yeah... I think so 是的……我觉得是\"},"}
+{"key": "Låter spännande\u0001Hey 嘿", "value": "{\"index\": 3, \"rhs\": \"OK, good tip 好的，好建议\"},"}
+{"key": "Haha, OK\u0001How's it going? 最近怎么样？", "value": "{\"index\": 4, \"rhs\": \"Thanks, I'll do that! 谢谢，我会照做的！\"}"}
+{"key": "Abstrakt...\u0001My brain's sluggish 脑子有点转不动", "value": "]"}
+{"key": "Nonsens, ja!\u0001I read an awesome book on functional composition last night when I was supposed to sleep 我昨晚该睡的时候在读一本讲函数式组合的好书", "value": "```"}
+{"key": "Hehe\u0001Couldn't put it down, so I'm a little busted today 爱不释手，所以今天有点累", "value": "Sounds exciting 听起来令人兴奋"}
+{"key": "Jaha..?\u0001Oh...?", "value": "Haha, OK 哈，好的"}
+{"key": "Kleislipilar, om det säger dig något?\u0001Kleisli arrows, if that rings a bell? Kleisli 箭头听起来熟悉吗？", "value": "Abstract... 挺抽象的……"}
+{"key": "Ehm\u0001Um 嗯", "value": "Nonsense, yeah! 胡说八道，没错！"}
+{"key": "Njae...\u0001Nah... 不……", "value": "Hehe 嘿嘿"}
+{"key": "Jaså, du har börjat lära dig om sånt?\u0001Oh, you've started learning about that stuff? 哦，你已经开始学那些东西了吗？", "value": "Hey 嘿"}
+{"key": "Mm\u0001Mm 嗯", "value": "How's it going? 最近怎么样？"}
+{"key": "Vad gör du då?\u0001What are you up to, then? 那你在忙什么呢？", "value": "My brain's sluggish 脑子有点转不动"}
+{"key": "Har du pratat med Pixie efter det som hände med Ivan?\u0001Did you talk to Pixie after that thing with Ivan? 在那件事之后，你和 Pixie 说过话吗？", "value": "I read an awesome book on functional composition last night when I was supposed to sleep 我昨晚该睡的时候在读一本讲函数式组合的好书"}
+{"key": "Nej, inte direkt\u0001No, not really 不，实际上没有", "value": "Couldn't put it down, so I'm a little busted today 爱不释手，所以今天有点累"}
+{"key": "OK...\u0001OK... 好吧……", "value": "Kleisli arrows, if that rings a bell? Kleisli 箭头听起来熟悉吗？"}
+{"key": "Hon verkar helt förstörd!\u0001She seems devastated! 她看起来很沮丧！", "value": "Oh, you've started learning about that stuff? 哦，你已经开始学那些东西了吗？"}
+{"key": "Mm\u0001Mm 嗯", "value": "Did you talk to Pixie after that thing with Ivan? 在那件事之后，你和 Pixie 说过话吗？"}
+{"key": "Men borde vi inte göra något?!\u0001But shouldn't we do something?! 但我们不应该做点什么吗？！", "value": "I was hoping things were getting better... 我希望情况会好转……"}
+{"key": "Jo...\u0001Yeah... 是的……", "value": "Damn it 该死"}
+{"key": "Du verkar väldigt lugn?\u0001You seem very calm? 你看起来很平静？", "value": "We need some drastic measures 我们需要一些激烈的措施"}
+{"key": "Jag vet inte hur vi ska fixa allting bara\u0001I was hoping things were getting better... 我希望情况会好转……", "value": "Yes! 是的！"}
+{"key": "Det är ju jävlarna på ministeriet som ställt till med allt det här\u0001Damn it 该死", "value": "Exactly 的确"}
+{"key": "Självklart måste vi göra någonting\u0001We need some drastic measures 我们需要一些激烈的措施", "value": "I just don't know how we're supposed to fix things 我只是不知道我们该如何解决一切"}
+{"key": "Jag vet bara inte vad!\u0001Yes! 是的！", "value": "The fuckers at the ministry screwed it all up 部里那帮混蛋把一切都搞砸了"}
+{"key": "Vi har kämpat här i flera år, och nu händer det här\u0001Exactly 的确", "value": "I mean of course we have to do something 我是说我们当然得做点什么"}
+{"key": "Jag hoppades att saker höll på att förbättras...\u0001I just don't know how we're supposed to fix things 我只是不知道我们该如何解决一切", "value": "I just don't know what! 我只是不知道做什么！"}
+{"key": "Fan\u0001The fuckers at the ministry screwed it all up 部里那帮混蛋把一切都搞砸了", "value": "We've been fighting the good fight for years, and then this happens 我们已经奋战多年，现在却发生这种事"}
+{"key": "Det behövs drastiska åtgärder\u0001I mean of course we have to do something 我是说我们当然得做点什么", "value": "Do you? 真的？"}
+{"key": "Ja!\u0001I just don't know what! 我只是不知道做什么！", "value": "What do you mean by ghosts? 你说的鬼是什么意思？"}
+{"key": "Exakt\u0001We've been fighting the good fight for years, and then this happens 我们已经奋战多年，现在却发生这种事", "value": "Kinda like spectres...but square 有点像幽灵……但是方形的"}
+{"key": "Vad vet du om spöken förresten?\u0001Do you? 真的？", "value": "In different colors 有不同的颜色"}
+{"key": "Jag letar efter någon som vet något om spöken\u0001What do you mean by ghosts? 你说的鬼是什么意思？", "value": "Sort of transparent 还有点透明"}
+{"key": "Mhm?\u0001Kinda like spectres...but square 有点像幽灵……但是方形的", "value": "```json"}
+{"key": "Det var någonting på mitt rum\u0001In different colors 有不同的颜色", "value": "["}
+{"key": "Det såg ut som ett spöke\u0001Sort of transparent 还有点透明", "value": "\\\"What do you know about ghosts, by the way? 对了，你对鬼魂了解多少？\\\","}
+{"key": "Gör du det?\u0001```json", "value": "\\\"I'm looking for someone who knows about ghosts 我在找一个了解鬼魂的人\\\","}
+{"key": "Vad menar du med spöken?\u0001[", "value": "\\\"Mhm? 嗯？\\\","}
+{"key": "Lite som vålnader... fast fyrkantiga\u0001\\\"What do you know about ghosts, by the way? 对了，你对鬼魂了解多少？\\\",", "value": "What you're describing sounds like 'corruption' 你所描述的听起来像'腐化'"}
+{"key": "Med olika färger\u0001\\\"I'm looking for someone who knows about ghosts 我在找一个了解鬼魂的人\\\",", "value": "Happened to me when I'd been on the internet for too long 当我在网上待得太久时就会发生在我身上"}
+{"key": "Lite genomskinliga nästan\u0001\\\"Mhm? 嗯？\\\",", "value": "Taking it easy helps, it passes after a while 放松一下会有帮助，过段时间就好了"}
+{"key": "Blinkande saker, som ett skimmer runt sig\u0001Flashing things, with a kind of halo around them 一闪一闪的，周围有一种光环", "value": "Yeah that has actually happened to me 是的，这确实在我身上发生过"}
+{"key": "Har du varit inne på internet?\u0001Have you been on the internet? 你上过网吗？", "value": "An important part of my job is keeping us hidden from the Ministry 我工作的一个重要部分就是不让部委发现我们"}
+{"key": "Jag vet inte... har jag?\u0001I don't know... have I? 我不知道……我有？", "value": "But luckily they can't monitor everything at once 但幸运的是，他们无法同时监控一切"}
+{"key": "Ja\u0001Yes 是的", "value": "The function is called Connect() 这个函数叫做 Connect()"}
+{"key": "Nej\u0001No 不", "value": "What things can do that? 什么东西能做到这个？"}
+{"key": "Du kanske kan snoka runt där och se om du hittar något\u0001Maybe you can look around there and see if you find anything 也许你可以在那里四处看看，找找有什么发现", "value": "```json"}
+{"key": "Om du nu tror att han är viktig på något sätt?\u0001If you think he's important in any way? 如果你觉得他有什么重要性的话？", "value": "["}
+{"key": "Ja... jag tror det\u0001Yeah... I think so 是的……我觉得是", "value": "{\"index\": 0, \"rhs\": \"Hey 嘿\"},"}
+{"key": "OK, bra tips\u0001OK, good tip 好的，好建议", "value": "{\"index\": 1, \"rhs\": \"How's it going? 最近怎么样\"},"}
+{"key": "Tack, det ska jag göra!\u0001Thanks, I'll do that! 谢谢，我会照做的！", "value": "{\"index\": 2, \"rhs\": \"My brain's sluggish 脑子有点转不动\"},"}
+{"key": "Tjena\u0001```json", "value": "```json"}
+{"key": "Läget?\u0001[", "value": "["}
+{"key": "Abstrakt...\u0001]", "value": "["}
+{"key": "Nonsens, ja!\u0001```", "value": "{\\\"index\\\": 0, \\\"rhs\\\": \\\"Maybe you can look around there and see if you find anything 也许你可以在那里四处看看，找找有什么发现\\\"},"}
+{"key": "Hehe\u0001Sounds exciting 听起来令人兴奋", "value": "{\\\"index\\\": 1, \\\"rhs\\\": \\\"If you think he's important in any way? 如果你觉得他有什么重要性的话？\\\"},"}
+{"key": "Jaha..?\u0001Haha, OK 哈，好的", "value": "```json"}
+{"key": "Kleislipilar, om det säger dig något?\u0001Abstract... 挺抽象的……", "value": "["}
+{"key": "Ehm\u0001Nonsense, yeah! 胡说八道，没错！", "value": "{\"index\": 0, \"rhs\": \"I hoped things were getting better... 我希望事情正在好转\"},"}
+{"key": "Njae...\u0001Hehe 嘿嘿", "value": "{\"index\": 1, \"rhs\": \"Damn 该死\"},"}
+{"key": "Jaså, du har börjat lära dig om sånt?\u0001Hey 嘿", "value": "{\"index\": 2, \"rhs\": \"We need drastic measures 我们需要采取极端措施\"},"}
+{"key": "Mm\u0001How's it going? 最近怎么样？", "value": "{\"index\": 3, \"rhs\": \"Yes! 是的！\"},"}
+{"key": "Vad gör du då?\u0001My brain's sluggish 脑子有点转不动", "value": "{\"index\": 4, \"rhs\": \"Exactly 正是\"},"}
+{"key": "Har du pratat med Pixie efter det som hände med Ivan?\u0001I read an awesome book on functional composition last night when I was supposed to sleep 我昨晚该睡的时候在读一本讲函数式组合的好书", "value": "{\"index\": 5, \"rhs\": \"What do you know about ghosts, by the way? 对了，你对鬼魂了解多少？\"},"}
+{"key": "Nej, inte direkt\u0001Couldn't put it down, so I'm a little busted today 爱不释手，所以今天有点累", "value": "{\"index\": 6, \"rhs\": \"I'm looking for someone who knows something about ghosts 我正在找了解鬼魂的人\"},"}
+{"key": "OK...\u0001Kleisli arrows, if that rings a bell? Kleisli 箭头听起来熟悉吗？", "value": "{\"index\": 7, \"rhs\": \"Mhm? 嗯？\"},"}
+{"key": "Hon verkar helt förstörd!\u0001Oh, you've started learning about that stuff? 哦，你已经开始学那些东西了吗？", "value": "```json"}
+{"key": "Mm\u0001Did you talk to Pixie after that thing with Ivan? 在那件事之后，你和 Pixie 说过话吗？", "value": "["}
+{"key": "Men borde vi inte göra något?!\u0001I was hoping things were getting better... 我希望情况会好转……", "value": "{\"index\": 0, \"rhs\": \"If you have a lot of connections you can reach many other places 如果你有很多连接，就能到达许多其他地方\"},"}
+{"key": "Jo...\u0001Damn it 该死", "value": "{\"index\": 1, \"rhs\": \"```json\"},"}
+{"key": "Du verkar väldigt lugn?\u0001We need some drastic measures 我们需要一些激烈的措施", "value": "{\"index\": 2, \"rhs\": \"[\"},"}
+{"key": "Jag vet inte hur vi ska fixa allting bara\u0001Yes! 是的！", "value": "{\"index\": 3, \"rhs\": \"\\\\\\\\\\\\\\\"Yeah, he was here just a second ago 是的，他刚刚还在这里\\\\\\\\\\\\\\\",\"},"}
+{"key": "Det är ju jävlarna på ministeriet som ställt till med allt det här\u0001Exactly 的确", "value": "{\"index\": 4, \"rhs\": \"\\\\\\\\\\\\\\\"OK, thanks 好的，谢谢\\\\\\\\\\\\\\\",\"},"}
+{"key": "Självklart måste vi göra någonting\u0001I just don't know how we're supposed to fix things 我只是不知道我们该如何解决一切", "value": "{\"index\": 5, \"rhs\": \"\\\\\\\\\\\\\\\"Yes? 什么事？\\\\\\\\\\\\\\\",\"},"}
+{"key": "Jag vet bara inte vad!\u0001The fuckers at the ministry screwed it all up 部里那帮混蛋把一切都搞砸了", "value": "{\"index\": 6, \"rhs\": \"What do you think happened to him? 你觉得他发生了什么？\"},"}
+{"key": "Vi har kämpat här i flera år, och nu händer det här\u0001I mean of course we have to do something 我是说我们当然得做点什么", "value": "{\"index\": 7, \"rhs\": \"```json\"},"}
+{"key": "Jag hoppades att saker höll på att förbättras...\u0001I just don't know what! 我只是不知道做什么！", "value": "```json"}
+{"key": "Fan\u0001We've been fighting the good fight for years, and then this happens 我们已经奋战多年，现在却发生这种事", "value": "["}
+{"key": "Det behövs drastiska åtgärder\u0001Do you? 真的？", "value": "{\"index\": 0, \"rhs\": \"Oh..? 哦……？\"},"}
+{"key": "Ja!\u0001What do you mean by ghosts? 你说的鬼是什么意思？", "value": "{\"index\": 1, \"rhs\": \"Kleisli arrows, if that rings a bell? Kleisli 箭头听起来熟悉吗？\"},"}
+{"key": "Exakt\u0001Kinda like spectres...but square 有点像幽灵……但是方形的", "value": "{\"index\": 2, \"rhs\": \"Ehm 呃\"},"}
+{"key": "Vad vet du om spöken förresten?\u0001In different colors 有不同的颜色", "value": "{\"index\": 3, \"rhs\": \"Well... 这个嘛……\"},"}
+{"key": "Jag letar efter någon som vet något om spöken\u0001Sort of transparent 还有点透明", "value": "{\"index\": 4, \"rhs\": \"Oh, you've started learning about that stuff? 哦，你开始学这些东西了？\"},"}
+{"key": "Mhm?\u0001```json", "value": "{\"index\": 5, \"rhs\": \"Mm 嗯\"},"}
+{"key": "Det var någonting på mitt rum\u0001[", "value": "{\"index\": 6, \"rhs\": \"What are you up to? 你在做什么呢？\"},"}
+{"key": "Det såg ut som ett spöke\u0001\\\\\\\"What do you know about ghosts, by the way? 对了，你对鬼魂了解多少？\\\\\\\",", "value": "{\"index\": 7, \"rhs\": \"My brain's sluggish 脑子有点转不动\"},"}
+{"key": "Gör du det?\u0001\\\\\\\"I'm looking for someone who knows about ghosts 我在找一个了解鬼魂的人\\\\\\\",", "value": "```json"}
+{"key": "Vad menar du med spöken?\u0001\\\\\\\"Mhm? 嗯？\\\\\\\",", "value": "["}
+{"key": "Lite som vålnader... fast fyrkantiga\u0001What you're describing sounds like 'corruption' 你所描述的听起来像'腐化'", "value": "{\"index\": 0, \"rhs\": \"Oh, you've started learning about that stuff? 哦，你已经开始学那些东西了吗\"},"}
+{"key": "Med olika färger\u0001Happened to me when I'd been on the internet for too long 当我在网上待得太久时就会发生在我身上", "value": "{\"index\": 1, \"rhs\": \"Did you talk to Pixie after that thing with Ivan? 在那件事之后，你和 Pixie 说过话吗\"},"}
+{"key": "Lite genomskinliga nästan\u0001Taking it easy helps, it passes after a while 放松一下会有帮助，过段时间就好了", "value": "{\"index\": 2, \"rhs\": \"I was hoping things were getting better... 我希望情况会好转……\"},"}
+{"key": "Blinkande saker, som ett skimmer runt sig\u0001Yeah that has actually happened to me 是的，这确实在我身上发生过", "value": "{\"index\": 3, \"rhs\": \"Damn it 该死\"},"}
+{"key": "Har du varit inne på internet?\u0001An important part of my job is keeping us hidden from the Ministry 我工作的一个重要部分就是不让部委发现我们", "value": "{\"index\": 4, \"rhs\": \"We need some drastic measures 我们需要一些激烈的措施\"},"}
+{"key": "Jag vet inte... har jag?\u0001But luckily they can't monitor everything at once 但幸运的是，他们无法同时监控一切", "value": "{\"index\": 5, \"rhs\": \"Yes! 是的！\"},"}
+{"key": "Ja\u0001The function is called Connect() 这个函数叫做 Connect()", "value": "{\"index\": 6, \"rhs\": \"Exactly 的确\"},"}
+{"key": "Nej\u0001What things can do that? 什么东西能做到这个？", "value": "{\"index\": 7, \"rhs\": \"I just don't know how we're supposed to fix things 我只是不知道我们该如何解决一切\"},"}
+{"key": "Det du beskriver låter som 'corruption'\u0001What you're describing sounds like 'corruption' 你所描述的听起来像'腐化'", "value": "```json"}
+{"key": "Jag har drabbats av det när jag varit ute på internet för länge\u0001Happened to me when I'd been on the internet for too long 当我在网上待得太久时就会发生在我身上", "value": "["}
+{"key": "Det brukar hjälpa att ta det lite lugnt sen, så går det över\u0001Taking it easy helps, it passes after a while 放松一下会有帮助，过段时间就好了", "value": "{\"index\": 0, \"rhs\": \"```json\"},"}
+{"key": "Jaha..?\u0001Oh...? 哦……？", "value": "{\"index\": 1, \"rhs\": \"[\"},"}
+{"key": "Jo men det har jag råkat ut för faktiskt\u0001Yeah that has actually happened to me 是的，这确实在我身上发生过", "value": "{\"index\": 2, \"rhs\": \"{\\\"index\\\": 0, \\\"rhs\\\": \\\"Maybe you can look around there and see if you find anything 也许你可以在那里四处看看，找找有什么发现\\\"},\"},"}
+{"key": "Att sova är bra, eller att dricka något sött\u0001Sleeping's good, so is drinking something sweet 睡觉很重要，喝点甜的也不错", "value": "{\"index\": 3, \"rhs\": \"{\\\"index\\\": 1, \\\"rhs\\\": \\\"If you think he's important in any way? 如果你觉得他有什么重要性的话？\\\"},\"},"}
+{"key": "OK, det ska jag komma ihåg\u0001OK, I'll remember that 好的，我会记住的", "value": "{\"index\": 4, \"rhs\": \"{\\\"index\\\": 2, \\\"rhs\\\": \\\"Yeah... I think so 是的……我觉得是\\\"},\"},"}
+{"key": "Vad brukar du göra på nätet?\u0001What do you usually do on the net? 你通常上网做什么？", "value": "{\"index\": 5, \"rhs\": \"{\\\"index\\\": 3, \\\"rhs\\\": \\\"OK, good tip 好的，好建议\\\"},\"},"}
+{"key": "En stor del av mitt jobb är att hålla oss dolda från Ministeriet\u0001An important part of my job is keeping us hidden from the Ministry 我工作的一个重要部分就是不让部委发现我们", "value": "{\"index\": 6, \"rhs\": \"{\\\"index\\\": 4, \\\"rhs\\\": \\\"Thanks, I'll do that! 谢谢，我会照做的！\\\"}\"},"}
+{"key": "De försöker hålla så mycket som möjligt av nätverket under kontroll\u0001They try to control as much of the network as possible 他们试图控制尽可能多的网络", "value": "{\"index\": 7, \"rhs\": \"]\"},"}
+{"key": "Med många kopplingar kan du nå många andra platser\u0001If you have a lot of connections you can reach many other places 如果你有很多连接，就能到达许多其他地方", "value": "```json"}
+{"key": "Wow\u0001Wow 哇", "value": "["}
+{"key": "OK, jag förstår\u0001OK, I get it 好的，我明白了", "value": "{\"index\": 0, \"rhs\": \"I'm looking for someone who knows about ghosts 我在找一个了解鬼魂的人\"},"}
+{"key": "Jag måste testa det här!\u0001I have to try this out! 我必须试试！", "value": "{\"index\": 1, \"rhs\": \"Mhm? 嗯？\"},"}
+{"key": "Var försiktig i så fall\u0001In that case, be careful 那样的话小心点", "value": "{\"index\": 2, \"rhs\": \"What you're describing sounds like 'corruption' 你所描述的听起来像'腐化'\"},"}
+{"key": "Ministeriet har extremt hög säkerhet kring de delar av internet som leder in i deras system\u0001The Ministry has extremely tight security around the parts of the internet that connect to their systems 部委在与他们的系统相连的网络部分周围有极其严密的安全措施", "value": "{\"index\": 3, \"rhs\": \"Happened to me when I'd been on the internet for too long 当我在网上待得太久时就会发生在我身上\"},"}
+{"key": "Vi har i princip inte hittat några kryphål\u0001We've found no loopholes, basically 我们基本上找不到漏洞", "value": "{\"index\": 4, \"rhs\": \"Taking it easy helps, it passes after a while 放松一下会有帮助，过段时间就好了\"},"}
+{"key": "Vilket är den största anledningen till att vi inte vet mer om deras organisation\u0001Which is the main reason we don't know more about their organization 这也是我们不了解他们组织更多内幕的主要原因", "value": "{\"index\": 5, \"rhs\": \"Yeah that has actually happened to me 是的，这确实在我身上发生过\"},"}
+{"key": "Jaha, oj\u0001Wow, OK 哇，好的", "value": "{\"index\": 6, \"rhs\": \"An important part of my job is keeping us hidden from the Ministry 我工作的一个重要部分就是不让部委发现我们\"},"}
+{"key": "Jag förstår\u0001I understand 我明白", "value": "{\"index\": 7, \"rhs\": \"But luckily they can't monitor everything at once 但幸运的是，他们无法同时监控一切\"},"}
+{"key": "Abstrakt...\u0001[", "value": "{\\\\\\\"index\\\\\\\": 3, \\\\\\\"rhs\\\\\\\": \\\\\\\"OK, good tip 好的，好建议\\\\\\\"},"}
+{"key": "Jaha..?\u0001```json", "value": "{\\\\\\\"index\\\\\\\": 0, \\\\\\\"rhs\\\\\\\": \\\\\\\"Maybe you can look around there and see if you find anything 也许你可以在那里四处看看，找找有什么发现\\\\\\\"},"}
+{"key": "Kleislipilar, om det säger dig något?\u0001[", "value": "{\\\\\\\"index\\\\\\\": 1, \\\\\\\"rhs\\\\\\\": \\\\\\\"If you think he's important in any way? 如果你觉得他有什么重要性的话？\\\\\\\"},"}
+{"key": "Hon verkar helt förstörd!\u0001```json", "value": "She seems completely devastated! 她看起来完全崩溃了"}
+{"key": "Jag hoppades att saker höll på att förbättras...\u0001```json", "value": "Which is the main reason we don't know more about their organization 这就是我们不了解他们组织更多信息的主要原因"}
+{"key": "Fan\u0001[", "value": "Oh, wow 哦，哇"}
+{"key": "Gör du det?\u0001```json", "value": "Oh, you've started learning about that stuff? 哦，你已经开始学那些东西了吗？"}
+{"key": "Vad menar du med spöken?\u0001[", "value": "Did you talk to Pixie after that thing with Ivan? 在那件事之后，你和 Pixie 说过话吗？"}
+{"key": "Det du beskriver låter som 'corruption'\u0001```json", "value": "But luckily they can't monitor everything at once 但幸运的是，他们无法同时监控一切"}
+{"key": "Jag har drabbats av det när jag varit ute på internet för länge\u0001[", "value": "The function is called Connect() 这个函数叫做 Connect()"}
+{"key": "Men de kan inte övervaka allting samtidigt, som tur är\u0001But luckily they can't monitor everything at once 但幸运的是，他们无法同时监控一切", "value": "What do you think happened to him? 你觉得他发生了什么？"}
+{"key": "Så jag ser till att våra datorer inte drar någon uppmärksamhet till sig\u0001So I make sure our computers don't attract any attention 所以我会确保我们的电脑不会引起任何注意", "value": "Maybe you can snoop around there and see if you find something 也许你可以在那里四处打探，看看能不能找到什么"}
+{"key": "Coolt\u0001Cool 酷", "value": "If you now think he is important in some way? 如果你现在觉得他在某些方面很重要？"}
+{"key": "Aha...\u0001Aha... 啊哈……", "value": "Yeah... I think so 是的……我想是的"}
+{"key": "Jag tror jag måste försöka utforska internet\u0001I think I have to go explore the internet 我想我得上网看看了", "value": "I read a great book about functional composition yesterday when I was about to sleep 我昨晚睡前读了一本关于函数式组合的好书"}
+{"key": "OK\u0001OK 好的", "value": "Couldn't put it down, so I'm a bit tired today 放不下书，所以今天有点累"}
+{"key": "Du får säga till om du hittar på något av intresse\u0001Let me know if you find anything interesting 如果你发现什么有趣的，告诉我", "value": "Sounds exciting 听起来很刺激"}
+{"key": "Ta det lugnt bara\u0001Just take it easy 别紧张", "value": "Haha, OK 哈哈，好的"}
+{"key": "Corruption är inte att leka med\u0001Corruption is no laughing matter 腐化不是闹着玩的", "value": "Abstract... 抽象的……"}
+{"key": "Yulian säger att han ibland inte kunnat ta sig ut ur internet\u0001Yulian says that he hasn't been able to leave the internet sometimes Yulian 说他有时候无法离开网络", "value": "Nonsense, yes! 胡说八道，没错！"}
+{"key": "På grund av corruption?\u0001Because of corruption? 因为腐化？", "value": "Hehe 嘿嘿"}
+{"key": "Ja...\u0001Yes... 是的……", "value": "Oh...? 哦……？"}
+{"key": "Precis\u0001Exactly 确实", "value": "Closures, if that means anything to you? 闭包，如果你懂这个的话？"}
+{"key": "Hon verkar helt förstörd!\u0001She seems completely devastated! 她看起来完全崩溃了", "value": "Did you know Albert who used to work here? 你认识以前在这里工作的阿尔伯特吗？"}
+{"key": "Mm\u0001[", "value": "Not really, I started here after he disappeared 不太熟，我是他消失后才来这里的"}
+{"key": "Jag hoppades att saker höll på att förbättras...\u0001Which is the main reason we don't know more about their organization 这就是我们不了解他们组织更多信息的主要原因", "value": "She seems completely devastated! 她看起来完全崩溃了"}
+{"key": "Gör du det?\u0001Oh, you've started learning about that stuff? 哦，你已经开始学那些东西了吗？", "value": "But luckily they can't monitor everything at once 但幸运的是，他们无法同时监控一切"}
+{"key": "Vad menar du med spöken?\u0001Did you talk to Pixie after that thing with Ivan? 在那件事之后，你和 Pixie 说过话吗？", "value": "The function is called Connect() 这个函数叫做 Connect()"}
+{"key": "Det du beskriver låter som 'corruption'\u0001But luckily they can't monitor everything at once 但幸运的是，他们无法同时监控一切", "value": "Oh, you've started learning about that stuff? 哦，你已经开始学那些东西了吗？"}
+{"key": "Jag har drabbats av det när jag varit ute på internet för länge\u0001The function is called Connect() 这个函数叫做 Connect()", "value": "Did you talk to Pixie after that thing with Ivan? 在那件事之后，你和 Pixie 说过话吗？"}
+{"key": "Men de kan inte övervaka allting samtidigt, som tur är\u0001What do you think happened to him? 你觉得他发生了什么？", "value": "OK, I understand 好的，我明白了"}
+{"key": "Så jag ser till att våra datorer inte drar någon uppmärksamhet till sig\u0001Maybe you can snoop around there and see if you find something 也许你可以在那里四处打探，看看能不能找到什么", "value": "I have to test this! 我必须测试这个！"}
+{"key": "Coolt\u0001If you now think he is important in some way? 如果你现在觉得他在某些方面很重要？", "value": "My head is sluggish 我脑袋有点迟钝"}
+{"key": "Aha...\u0001Yeah... I think so 是的……我想是的", "value": "Read an awesome book about functional composition yesterday when I was going to sleep 昨晚睡前读了一本关于函数式组合的超棒的书"}
+{"key": "Hur kommer man ut på nätet egentligen?\u0001How do you get online anyway? 你到底怎么上网的？", "value": "Couldn't put it down, so I'm a bit tired today 放不下手，所以今天有点累"}
+{"key": "Å, det finns flera sätt\u0001Oh, there are several ways to do it 哦，有几种方法可以做到这一点", "value": "Sounds exciting 听起来很刺激"}
+{"key": "Du måste hitta någonting som kan koppla upp sig mot andra saker\u0001You have to find something that can connect to other things 你必须找到可以连接到其他事物的东西", "value": "Haha, OK 哈哈，好吧"}
+{"key": "Connect() heter funktionen\u0001The function is called Connect() 这个函数叫做 Connect()", "value": "Abstract... 抽象……"}
+{"key": "Vilka saker kan det?\u0001What things can do that? 什么东西能做到这个？", "value": "Nonsense, yes! 胡说八道，没错！"}
+{"key": "De flesta datorer såklart...\u0001Most computers, of course... 大多数电脑，当然……", "value": "Hehe 嘿嘿"}
+{"key": "Ja nästan allting\u0001Well, almost everything 嗯，几乎所有东西", "value": "Oh really..? 哦真的吗……？"}
+{"key": "Aha\u0001Aha 啊哈", "value": "Kleislipilar, if that means anything to you? Kleislipilar，如果这对你有意义的话？"}
+{"key": "Jag tror jag måste försöka utforska internet\u0001I read a great book about functional composition yesterday when I was about to sleep 我昨晚睡前读了一本关于函数式组合的好书", "value": "I think I need to try exploring the internet 我想我需要尝试探索互联网"}
+{"key": "OK\u0001Couldn't put it down, so I'm a bit tired today 放不下书，所以今天有点累", "value": "OK 好的"}
+{"key": "Du får säga till om du hittar på något av intresse\u0001Sounds exciting 听起来很刺激", "value": "Let me know if you find anything interesting 如果你发现什么有趣的东西就告诉我"}
+{"key": "Ta det lugnt bara\u0001Haha, OK 哈哈，好的", "value": "Just take it easy 放松点就好"}
+{"key": "Corruption är inte att leka med\u0001Abstract... 抽象的……", "value": "It usually helps to take it easy afterwards, then it passes 之后放松一下通常会有帮助，然后就会过去"}
+{"key": "Yulian säger att han ibland inte kunnat ta sig ut ur internet\u0001Nonsense, yes! 胡说八道，没错！", "value": "Oh...? 哦……？"}
+{"key": "På grund av corruption?\u0001Hehe 嘿嘿", "value": "Yeah, but I've actually experienced that 是的，但我确实经历过"}
+{"key": "Ja...\u0001Oh...? 哦……？", "value": "Sleeping is good, or drinking something sweet 睡觉很好，或者喝点甜的"}
+{"key": "Precis\u0001Closures, if that means anything to you? 闭包，如果你懂这个的话？", "value": "OK, I'll remember that 好的，我会记住的"}
+{"key": "Oj\u0001Wow 哇", "value": "What do you usually do on the net? 你通常在网上做什么？"}
+{"key": "Läbbigt!\u0001Creepy! 好可怕！", "value": "A big part of my job is to keep us hidden from the Ministry 我工作的很大一部分是让我们不被部委发现"}
+{"key": "Värre än så\u0001It's worse than that 更糟", "value": "They try to keep as much of the network under control as possible 他们试图尽可能多地控制网络"}
+{"key": "Kan vi ta det lite senare, är du snäll?\u0001Could we deal with this later, please? 我们可以稍后讨论这件事吗？", "value": "But they can't monitor everything at the same time, luckily 但他们不能同时监控所有东西，幸好"}
+{"key": "Har du sett Yulian?\u0001Have you seen Yulian? 你看到 Yulian 了吗？", "value": "So I make sure our computers don't draw any attention to themselves 所以我确保我们的电脑不会引起任何注意"}
+{"key": "Hon verkar helt förstörd!\u0001Did you know Albert who used to work here? 你认识以前在这里工作的阿尔伯特吗？", "value": "But luckily they can't monitor everything at once 但幸运的是，他们无法同时监控一切"}
+{"key": "Mm\u0001Not really, I started here after he disappeared 不太熟，我是他消失后才来这里的", "value": "The function is called Connect() 这个函数叫做 Connect()"}
+{"key": "Jag hoppades att saker höll på att förbättras...\u0001She seems completely devastated! 她看起来完全崩溃了", "value": "Did you know Albert who used to work here? 你认识以前在这里工作的阿尔伯特吗？"}
+{"key": "Fan\u0001Oh, wow 哦，哇", "value": "Not really, I started here after he disappeared 不太熟，我是他消失后才来这里的"}
+{"key": "Gör du det?\u0001But luckily they can't monitor everything at once 但幸运的是，他们无法同时监控一切", "value": "Yes, almost everything 是的，几乎一切"}
+{"key": "Vad menar du med spöken?\u0001The function is called Connect() 这个函数叫做 Connect()", "value": "Aha 啊哈"}
+{"key": "Det du beskriver låter som 'corruption'\u0001Oh, you've started learning about that stuff? 哦，你已经开始学那些东西了吗？", "value": "Oh, you've started learning about that stuff? 哦，你已经开始学那些东西了吗"}
+{"key": "Jag har drabbats av det när jag varit ute på internet för länge\u0001Did you talk to Pixie after that thing with Ivan? 在那件事之后，你和 Pixie 说过话吗？", "value": "Did you talk to Pixie after that thing with Ivan? 在那件事之后，你和 Pixie 说过话吗"}
+{"key": "Men de kan inte övervaka allting samtidigt, som tur är\u0001OK, I understand 好的，我明白了", "value": "Which is the main reason we don't know more about their organization 这就是我们对他们的组织了解不多的主要原因"}
+{"key": "Så jag ser till att våra datorer inte drar någon uppmärksamhet till sig\u0001I have to test this! 我必须测试这个！", "value": "Oh, wow 哦，哇"}
+{"key": "Coolt\u0001My head is sluggish 我脑袋有点迟钝", "value": "But luckily they can't monitor everything at once 但幸运的是，他们无法同时监控一切"}
+{"key": "Aha...\u0001Read an awesome book about functional composition yesterday when I was going to sleep 昨晚睡前读了一本关于函数式组合的超棒的书", "value": "I think I need to try exploring the internet 我想我需要尝试探索互联网"}
+{"key": "Hur kommer man ut på nätet egentligen?\u0001Couldn't put it down, so I'm a bit tired today 放不下手，所以今天有点累", "value": "Let me know if you find anything interesting 如果你发现什么有趣的东西就告诉我"}
+{"key": "Å, det finns flera sätt\u0001Sounds exciting 听起来很刺激", "value": "Just take it easy 放松点就好"}
+{"key": "Du måste hitta någonting som kan koppla upp sig mot andra saker\u0001Haha, OK 哈哈，好吧", "value": "It usually helps to take it easy afterwards, then it passes 之后放松一下通常会有帮助，然后就会过去"}
+{"key": "Connect() heter funktionen\u0001Abstract... 抽象……", "value": "Oh...? 哦……？"}
+{"key": "Vilka saker kan det?\u0001Nonsense, yes! 胡说八道，没错！", "value": "Yeah, but I've actually experienced that 是的，但我确实经历过"}
+{"key": "De flesta datorer såklart...\u0001Hehe 嘿嘿", "value": "Sleeping is good, or drinking something sweet 睡觉很好，或者喝点甜的"}
+{"key": "Ja nästan allting\u0001Oh really..? 哦真的吗……？", "value": "OK, I'll remember that 好的，我会记住的"}
+{"key": "Aha\u0001Kleislipilar, if that means anything to you? Kleislipilar，如果这对你有意义的话？", "value": "What do you usually do on the net? 你通常在网上做什么？"}
+{"key": "Ja... och sen måste du anropa Slurp() då\u0001Yeah... and then you have to call Slurp() too 是的……然后你也需要调用 Slurp()", "value": "It usually helps to take it easy afterwards, then it passes 之后放松一下通常会有帮助，然后就会过去"}
+{"key": "Slurp?\u0001Slurp?", "value": "Oh...? 哦……？"}
+{"key": "Mm\u0001Mm 对", "value": "Yeah, but I've actually experienced that 是的，但我确实经历过"}
+{"key": "Vad gör den?\u0001What's that do? 那是做什么的？", "value": "Sleeping is good, or drinking something sweet 睡觉很好，或者喝点甜的东西"}
+{"key": "Slurp-funktionen tar dig ut på internet\u0001The Slurp function gets you online, onto the internet Slurp 功能可以让你接入网络", "value": "OK, I'll remember that 好的，我会记住"}
+{"key": "Sen beror det på vad du är uppkopplad mot\u0001Beyond that, depends on what you're connected to 除此之外，取决于你连接的是什么", "value": "What do you usually do online? 你通常在网上做什么？"}
+{"key": "Med många kopplingar kan du nå många andra platser\u0001```json", "value": "A big part of my job is keeping us hidden from the Ministry 我工作的很大一部分是让我们不被部委发现"}
+{"key": "Wow\u0001[", "value": "They try to keep as much of the network under control as possible 他们试图尽可能多地控制网络"}
+{"key": "Jag tror jag måste försöka utforska internet\u0001I think I need to try exploring the internet 我想我需要尝试探索互联网", "value": "Read an awesome book about functional composition yesterday when I was about to sleep 昨晚准备睡觉时读了一本关于函数式组合的超棒的书"}
+{"key": "OK\u0001OK 好的", "value": "Couldn't put it down, so I'm a bit tired today 放不下手，所以今天有点累"}
+{"key": "Du får säga till om du hittar på något av intresse\u0001Let me know if you find anything interesting 如果你发现什么有趣的东西就告诉我", "value": "Sounds exciting 听起来很刺激"}
+{"key": "Ta det lugnt bara\u0001Just take it easy 放松点就好", "value": "Haha, OK 哈哈，好吧"}
+{"key": "Corruption är inte att leka med\u0001It usually helps to take it easy afterwards, then it passes 之后放松一下通常会有帮助，然后就会过去", "value": "Abstract... 抽象……"}
+{"key": "Yulian säger att han ibland inte kunnat ta sig ut ur internet\u0001Oh...? 哦……？", "value": "Nonsense, yes! 胡说八道，没错！"}
+{"key": "På grund av corruption?\u0001Yeah, but I've actually experienced that 是的，但我确实经历过", "value": "Hehe 嘿嘿"}
+{"key": "Ja...\u0001Sleeping is good, or drinking something sweet 睡觉很好，或者喝点甜的", "value": "Oh really..? 哦真的吗……？"}
+{"key": "Precis\u0001OK, I'll remember that 好的，我会记住的", "value": "Kleislipilar, if that means anything to you? Kleislipilar，如果这对你有意义的话？"}
+{"key": "Hon verkar helt förstörd!\u0001But luckily they can't monitor everything at once 但幸运的是，他们无法同时监控一切", "value": "Oh...? 哦……？"}
+{"key": "Mm\u0001The function is called Connect() 这个函数叫做 Connect()", "value": "Kleislipilar, if that means anything to you? Kleislipilar，如果这对你有意义的话？"}
+{"key": "Jag hoppades att saker höll på att förbättras...\u0001Did you know Albert who used to work here? 你认识以前在这里工作的阿尔伯特吗？", "value": "Yes, almost everything 是的，几乎一切"}
+{"key": "Fan\u0001Not really, I started here after he disappeared 不太熟，我是他消失后才来这里的", "value": "Aha 啊哈"}
+{"key": "Gör du det?\u0001Yes, almost everything 是的，几乎一切", "value": "Oh, you've started learning about that stuff? 哦，你已经开始学那些东西了吗"}
+{"key": "Vad menar du med spöken?\u0001Aha 啊哈", "value": "Did you talk to Pixie after that thing with Ivan? 在那件事之后，你和 Pixie 说过话吗"}
+{"key": "Det du beskriver låter som 'corruption'\u0001Oh, you've started learning about that stuff? 哦，你已经开始学那些东西了吗", "value": "OK, I understand 好的，我明白了"}
+{"key": "Jag har drabbats av det när jag varit ute på internet för länge\u0001Did you talk to Pixie after that thing with Ivan? 在那件事之后，你和 Pixie 说过话吗", "value": "I have to try this! 我必须试试这个！"}
+{"key": "Men de kan inte övervaka allting samtidigt, som tur är\u0001Which is the main reason we don't know more about their organization 这就是我们对他们的组织了解不多的主要原因", "value": "Yes, almost everything 是的，几乎一切"}
+{"key": "Så jag ser till att våra datorer inte drar någon uppmärksamhet till sig\u0001Oh, wow 哦，哇", "value": "Aha 啊哈"}
+{"key": "Coolt\u0001But luckily they can't monitor everything at once 但幸运的是，他们无法同时监控一切", "value": "Be careful then 那要小心了"}
+{"key": "Aha...\u0001I think I need to try exploring the internet 我想我需要尝试探索互联网", "value": "The Ministry has extremely high security around the parts of the internet that lead into their systems 部委在他们系统所连接的互联网部分设置了极高的安全防护"}
+{"key": "Hur kommer man ut på nätet egentligen?\u0001Let me know if you find anything interesting 如果你发现什么有趣的东西就告诉我", "value": "We've basically found no loopholes 我们基本上没找到任何漏洞"}
+{"key": "Å, det finns flera sätt\u0001Just take it easy 放松点就好", "value": "Which is the main reason we don't know more about their organization 这就是我们对他们的组织了解不多的主要原因"}
+{"key": "Du måste hitta någonting som kan koppla upp sig mot andra saker\u0001It usually helps to take it easy afterwards, then it passes 之后放松一下通常会有帮助，然后就会过去", "value": "Oh, wow 哦，哇"}
+{"key": "Connect() heter funktionen\u0001Oh...? 哦……？", "value": "I understand 我明白了"}
+{"key": "Vilka saker kan det?\u0001Yeah, but I've actually experienced that 是的，但我确实经历过", "value": "I think I need to try exploring the internet 我想我需要尝试探索互联网"}
+{"key": "De flesta datorer såklart...\u0001Sleeping is good, or drinking something sweet 睡觉很好，或者喝点甜的", "value": "OK 好的"}
+{"key": "Ja nästan allting\u0001OK, I'll remember that 好的，我会记住的", "value": "Just take it easy 放松点就好"}
+{"key": "Aha\u0001What do you usually do on the net? 你通常在网上做什么？", "value": "Corruption is not to be messed with 腐化可不是闹着玩的"}
+{"key": "Jag tror jag måste försöka utforska internet\u0001Read an awesome book about functional composition yesterday when I was about to sleep 昨晚准备睡觉时读了一本关于函数式组合的超棒的书", "value": "OK, good tip 好的，好建议"}
+{"key": "OK\u0001Couldn't put it down, so I'm a bit tired today 放不下手，所以今天有点累", "value": "Thanks, I'll do that! 谢谢，我会的！"}
+{"key": "Ja...\u0001Oh really..? 哦真的吗……？", "value": "Oh really..? 哦真的吗……？"}
+{"key": "Precis\u0001Kleislipilar, if that means anything to you? Kleislipilar，如果这对你有意义的话？", "value": "Kleislipilar, if that means anything to you? Kleislipilar，如果这对你有意义的话？"}
+{"key": "Oj\u0001What do you usually do on the net? 你通常在网上做什么？", "value": "What do you usually do on the net? 你通常在网上做什么？"}
+{"key": "Läbbigt!\u0001A big part of my job is to keep us hidden from the Ministry 我工作的很大一部分是让我们不被部委发现", "value": "A big part of my job is to keep us hidden from the Ministry 我工作的很大一部分是让我们不被部委发现"}
+{"key": "Värre än så\u0001They try to keep as much of the network under control as possible 他们试图尽可能多地控制网络", "value": "They try to keep as much of the network under control as possible 他们试图尽可能多地控制网络"}
+{"key": "Kan vi ta det lite senare, är du snäll?\u0001But they can't monitor everything at the same time, luckily 但他们不能同时监控所有东西，幸好", "value": "But they can't monitor everything at the same time, luckily 但他们不能同时监控所有东西，幸好"}
+{"key": "Har du sett Yulian?\u0001So I make sure our computers don't draw any attention to themselves 所以我确保我们的电脑不会引起任何注意", "value": "So I make sure our computers don't draw any attention to themselves 所以我确保我们的电脑不会引起任何注意"}
+{"key": "Hmm, tror inte det\u0001Hmm, don't think so 嗯，我不这么认为", "value": "\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"Yeah, he was here just a second ago 是的，他刚刚还在这里\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\","}
+{"key": "Hon verkar helt förstörd!\u0001Oh...? 哦……？", "value": "Oh...? 哦……？"}
+{"key": "Mm\u0001Kleislipilar, if that means anything to you? Kleislipilar，如果这对你有意义的话？", "value": "Mm 嗯"}
+{"key": "Det du beskriver låter som 'corruption'\u0001OK, I understand 好的，我明白了", "value": "OK, I understand 好的，我明白了"}
+{"key": "Jag har drabbats av det när jag varit ute på internet för länge\u0001I have to try this! 我必须试试这个！", "value": "I have to try this! 我必须试试这个！"}
+{"key": "Gör du det?\u0001Oh, you've started learning about that stuff? 哦，你已经开始学那些东西了吗", "value": "Oh, you've started learning about that stuff? 哦，你已经开始学那些东西了吗？"}
+{"key": "Vad menar du med spöken?\u0001Did you talk to Pixie after that thing with Ivan? 在那件事之后，你和 Pixie 说过话吗", "value": "Did you talk to Pixie after that thing with Ivan? 在那件事之后，你和 Pixie 说过话吗？"}
+{"key": "Coolt\u0001Be careful then 那要小心了", "value": "Cool 酷"}
+{"key": "Aha...\u0001The Ministry has extremely high security around the parts of the internet that lead into their systems 部委在他们系统所连接的互联网部分设置了极高的安全防护", "value": "Aha... 啊哈…"}
+{"key": "Hur kommer man ut på nätet egentligen?\u0001We've basically found no loopholes 我们基本上没找到任何漏洞", "value": "How do you actually get out on the internet? 你到底怎么才能上互联网？"}
+{"key": "Å, det finns flera sätt\u0001Which is the main reason we don't know more about their organization 这就是我们对他们的组织了解不多的主要原因", "value": "Oh, there are several ways 哦，有好几种方法"}
+{"key": "Du måste hitta någonting som kan koppla upp sig mot andra saker\u0001Oh, wow 哦，哇", "value": "You have to find something that can connect to other things 你得找到能连接到其他东西的东西"}
+{"key": "Connect() heter funktionen\u0001I understand 我明白了", "value": "The function is called Connect() 这个函数叫 Connect()"}
+{"key": "Vilka saker kan det?\u0001I think I need to try exploring the internet 我想我需要尝试探索互联网", "value": "What things can do that? 哪些东西能做到？"}
+{"key": "De flesta datorer såklart...\u0001OK 好的", "value": "Most computers of course... 大多数电脑当然…"}
+{"key": "Ja nästan allting\u0001Just take it easy 放松点就好", "value": "Yes almost everything 是的几乎一切"}
+{"key": "Aha\u0001Corruption is not to be messed with 腐化可不是闹着玩的", "value": "Aha 啊哈"}
+{"key": "Men de kan inte övervaka allting samtidigt, som tur är\u0001Yes, almost everything 是的，几乎一切", "value": "But they can't monitor everything at the same time, fortunately 但他们不能同时监控一切，幸运的是"}
+{"key": "Så jag ser till att våra datorer inte drar någon uppmärksamhet till sig\u0001Aha 啊哈", "value": "So I make sure our computers don't draw any attention to themselves 所以我确保我们的电脑不会引起任何注意"}
+{"key": "Ja... och sen måste du anropa Slurp() då\u0001It usually helps to take it easy afterwards, then it passes 之后放松一下通常会有帮助，然后就会过去", "value": "Yes... and then you have to call Slurp() 是的……然后你必须调用 Slurp()"}
+{"key": "Slurp?\u0001Oh...? 哦……？", "value": "Slurp? Slurp？"}
+{"key": "Mm\u0001Yeah, but I've actually experienced that 是的，但我确实经历过", "value": "Mm 嗯"}
+{"key": "Vad gör den?\u0001Sleeping is good, or drinking something sweet 睡觉很好，或者喝点甜的东西", "value": "What does it do? 它是做什么的？"}
+{"key": "Slurp-funktionen tar dig ut på internet\u0001OK, I'll remember that 好的，我会记住", "value": "The Slurp function takes you out onto the internet Slurp 函数会把你带到互联网上"}
+{"key": "Sen beror det på vad du är uppkopplad mot\u0001What do you usually do online? 你通常在网上做什么？", "value": "Then it depends on what you're connected to 然后这取决于你连接到了什么"}
+{"key": "Med många kopplingar kan du nå många andra platser\u0001A big part of my job is keeping us hidden from the Ministry 我工作的很大一部分是让我们不被部委发现", "value": "With many connections you can reach many other places 通过许多连接你可以到达许多其他地方"}
+{"key": "Wow\u0001They try to keep as much of the network under control as possible 他们试图尽可能多地控制网络", "value": "Wow 哇"}
+{"key": "Jag tror jag måste försöka utforska internet\u0001OK, good tip 好的，好建议", "value": "I think I need to try exploring the internet 我想我需要尝试探索互联网"}
+{"key": "OK\u0001Thanks, I'll do that! 谢谢，我会的！", "value": "OK 好的"}
+{"key": "Du får säga till om du hittar på något av intresse\u0001Sounds exciting 听起来很刺激", "value": "Just take it easy 放松点就好"}
+{"key": "Ta det lugnt bara\u0001Haha, OK 哈哈，好吧", "value": "Corruption is not to be messed with 腐化可不是闹着玩的"}
+{"key": "Hmm, tror inte det\u0001\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"Yeah, he was here just a second ago 是的，他刚刚还在这里\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\",", "value": "Hmm, I don't think so 嗯，我不这么认为"}
+{"key": "Ja?\u0001\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"Yeah, he was here just a second ago 是的，他刚刚还在这里\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\",", "value": "Yes, he was here just a second ago 是的，他刚刚还在这里"}
+{"key": "Kände du Albert som jobbade här förut?\u0001\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"OK, thanks 好的，谢谢\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\",", "value": "OK, thanks 好的，谢谢"}
+{"key": "Inte direkt, jag började här efter att han försvann\u0001\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"Yes? 什么事？\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\",", "value": "Yes? 什么事？"}
+{"key": "Vad tror du hände honom?\u0001What do you think happened to him? 你觉得他发生了什么？", "value": "Did you know Albert who worked here before? 你认识以前在这里工作的阿尔伯特吗？"}
+{"key": "Jag är osäker\u0001I'm not sure 我不确定", "value": "Not really, I started here after he disappeared 不太熟，我是他消失后才来这里的"}
+{"key": "Men det var inte bra\u0001But it sure wasn't anything good 但肯定不是什么好事", "value": "What do you think happened to him? 你觉得他发生了什么？"}
+{"key": "Jaha...\u0001Oh... 哦……", "value": "You might snoop around there and see if you find anything 你或许可以在那里四处打探，看看能找到什么"}
+{"key": "Hon verkar helt förstörd!\u0001Oh...? 哦……？", "value": "If you have a lot of connections you can reach many other places 如果你有很多连接，就能到达许多其他地方"}
+{"key": "Gör du det?\u0001Oh, you've started learning about that stuff? 哦，你已经开始学那些东西了吗？", "value": "Kind of like apparitions... but square 有点像幽灵……不过是方形的"}
+{"key": "Vad menar du med spöken?\u0001Did you talk to Pixie after that thing with Ivan? 在那件事之后，你和 Pixie 说过话吗？", "value": "With different colors 有不同的颜色"}
+{"key": "Det du beskriver låter som 'corruption'\u0001OK, I understand 好的，我明白了", "value": "It usually helps to take it easy afterwards, then it passes 之后放松一下通常有帮助，然后就会过去"}
+{"key": "Jag har drabbats av det när jag varit ute på internet för länge\u0001I have to try this! 我必须试试这个！", "value": "Oh really? 哦，真的吗？"}
+{"key": "Jag hoppades att saker höll på att förbättras...\u0001Yes, almost everything 是的，几乎一切", "value": "I hoped things were getting better... 我曾希望事情正在好转……"}
+{"key": "Fan\u0001Aha 啊哈", "value": "Damn 该死"}
+{"key": "Om du nu tror att han är viktig på något sätt?\u0001[", "value": "If you think he's important in some way? 如果你觉得他在某些方面很重要？"}
+{"key": "Men de kan inte övervaka allting samtidigt, som tur är\u0001But they can't monitor everything at the same time, fortunately 但他们不能同时监控一切，幸运的是", "value": "But they can't monitor everything at the same time, fortunately 但他们不能同时监控一切，幸运的是"}
+{"key": "Så jag ser till att våra datorer inte drar någon uppmärksamhet till sig\u0001So I make sure our computers don't draw any attention to themselves 所以我确保我们的电脑不会引起任何注意", "value": "So I make sure our computers don't draw any attention to themselves 所以我确保我们的电脑不会引起任何注意"}
+{"key": "Coolt\u0001Cool 酷", "value": "Aha... 啊哈…"}
+{"key": "Aha...\u0001Aha... 啊哈…", "value": "How do you actually get out on the internet? 你到底怎么才能上互联网？"}
+{"key": "Hur kommer man ut på nätet egentligen?\u0001How do you actually get out on the internet? 你到底怎么才能上互联网？", "value": "Oh, there are several ways 哦，有好几种方法"}
+{"key": "Å, det finns flera sätt\u0001Oh, there are several ways 哦，有好几种方法", "value": "You have to find something that can connect to other things 你得找到能连接到其他东西的东西"}
+{"key": "Du måste hitta någonting som kan koppla upp sig mot andra saker\u0001You have to find something that can connect to other things 你得找到能连接到其他东西的东西", "value": "The function is called Connect() 这个函数叫 Connect()"}
+{"key": "Connect() heter funktionen\u0001The function is called Connect() 这个函数叫 Connect()", "value": "What things can do that? 哪些东西能做到？"}
+{"key": "Jag tror jag måste försöka utforska internet\u0001I think I need to try exploring the internet 我想我需要尝试探索互联网", "value": "Let me know if you find anything of interest 如果你发现什么有趣的东西就告诉我"}
+{"key": "OK\u0001OK 好的", "value": "Just take it easy 放松点就好"}
+{"key": "Du får säga till om du hittar på något av intresse\u0001Just take it easy 放松点就好", "value": "Corruption is not to be messed with 腐化可不是闹着玩的"}
+{"key": "Ta det lugnt bara\u0001Corruption is not to be messed with 腐化可不是闹着玩的", "value": "Hmm, I don't think so 嗯，我不这么认为"}
+{"key": "De flesta datorer såklart...\u0001Most computers of course... 大多数电脑当然…", "value": "Most computers of course... 大多数电脑当然…"}
+{"key": "Ja nästan allting\u0001Yes almost everything 是的几乎一切", "value": "Yes almost everything 是的几乎一切"}
+{"key": "Aha\u0001Aha 啊哈", "value": "Yes... and then you have to call Slurp() 是的……然后你必须调用 Slurp()"}
+{"key": "Ja... och sen måste du anropa Slurp() då\u0001Yes... and then you have to call Slurp() 是的……然后你必须调用 Slurp()", "value": "Slurp? Slurp？"}
+{"key": "Slurp?\u0001Slurp? Slurp？", "value": "What does it do? 它是做什么的？"}
+{"key": "Mm\u0001Mm 嗯", "value": "The Slurp function takes you out onto the internet Slurp 函数会把你带到互联网上"}
+{"key": "Vad gör den?\u0001What does it do? 它是做什么的？", "value": "Then it depends on what you're connected to 然后这取决于你连接到了什么"}
+{"key": "Slurp-funktionen tar dig ut på internet\u0001The Slurp function takes you out onto the internet Slurp 函数会把你带到互联网上", "value": "With many connections you can reach many other places 通过许多连接你可以到达许多其他地方"}
+{"key": "Hon verkar helt förstörd!\u0001If you have a lot of connections you can reach many other places 如果你有很多连接，就能到达许多其他地方", "value": "If you have a lot of connections you can reach many other places 如果你有很多连接，就能到达许多其他地方"}
+{"key": "Fan\u0001Damn 该死", "value": "Damn 该死"}
+{"key": "Jag hoppades att saker höll på att förbättras...\u0001I hoped things were getting better... 我曾希望事情正在好转……", "value": "I hoped things were getting better... 我曾希望事情正在好转……"}
+{"key": "Gör du det?\u0001Kind of like apparitions... but square 有点像幽灵……不过是方形的", "value": "Kind of like apparitions... but square 有点像幽灵……不过是方形的"}
+{"key": "Vad menar du med spöken?\u0001With different colors 有不同的颜色", "value": "With different colors 有不同的颜色"}
+{"key": "Det du beskriver låter som 'corruption'\u0001It usually helps to take it easy afterwards, then it passes 之后放松一下通常有帮助，然后就会过去", "value": "It usually helps to take it easy afterwards, then it passes 之后放松一下通常有帮助，然后就会过去"}
+{"key": "Jag har drabbats av det när jag varit ute på internet för länge\u0001Oh really? 哦，真的吗？", "value": "Oh really? 哦，真的吗？"}
+{"key": "Hur kommer man ut på nätet egentligen?\u0001Oh, there are several ways 哦，有好几种方法", "value": "Oh, there are several ways 哦，有好几种方法"}
+{"key": "Coolt\u0001Aha... 啊哈…", "value": "Cool 酷"}
+{"key": "Aha...\u0001How do you actually get out on the internet? 你到底怎么才能上互联网？", "value": "How do you actually get out on the internet? 你到底怎么才能上互联网？"}
+{"key": "Connect() heter funktionen\u0001What things can do that? 哪些东西能做到？", "value": "Connect() is the function Connect() 是这个函数"}
+{"key": "Du måste hitta någonting som kan koppla upp sig mot andra saker\u0001The function is called Connect() 这个函数叫 Connect()", "value": "The function is called Connect() 这个函数叫 Connect()"}
+{"key": "Vilka saker kan det?\u0001What things can do that? 哪些东西能做到？", "value": "What things can do that? 哪些东西能做到？"}
+{"key": "Å, det finns flera sätt\u0001You have to find something that can connect to other things 你得找到能连接到其他东西的东西", "value": "You have to find something that can connect to other things 你得找到能连接到其他东西的东西"}
+{"key": "Aha\u0001Yes... and then you have to call Slurp() 是的……然后你必须调用 Slurp()", "value": "Yes... and then you have to call Slurp() 是的……然后你必须调用 Slurp()"}
+{"key": "Ja... och sen måste du anropa Slurp() då\u0001Slurp? Slurp？", "value": "Slurp? Slurp？"}
+{"key": "Slurp?\u0001What does it do? 它是做什么的？", "value": "What does it do? 它是做什么的？"}
+{"key": "Mm\u0001The Slurp function takes you out onto the internet Slurp 函数会把你带到互联网上", "value": "The Slurp function takes you out onto the internet Slurp 函数会把你带到互联网上"}
+{"key": "Vad gör den?\u0001Then it depends on what you're connected to 然后这取决于你连接到了什么", "value": "Then it depends on what you're connected to 然后这取决于你连接到了什么"}
+{"key": "Slurp-funktionen tar dig ut på internet\u0001With many connections you can reach many other places 通过许多连接你可以到达许多其他地方", "value": "With many connections you can reach many other places 通过许多连接你可以到达许多其他地方"}
+{"key": "Med många kopplingar kan du nå många andra platser\u0001With many connections you can reach many other places 通过许多连接你可以到达许多其他地方", "value": "With many connections you can reach many other places 通过许多连接你可以到达许多其他地方"}
+{"key": "Sen beror det på vad du är uppkopplad mot\u0001Then it depends on what you're connected to 然后这取决于你连接到了什么", "value": "Then it depends on what you're connected to 然后这取决于你连接到了什么"}
+{"key": "OK\u0001Just take it easy 放松点就好", "value": "Just take it easy 放松点就好"}
+{"key": "Du får säga till om du hittar på något av intresse\u0001Corruption is not to be messed with 腐化可不是闹着玩的", "value": "Corruption is not to be messed with 腐化可不是闹着玩的"}
+{"key": "Jag tror jag måste försöka utforska internet\u0001Let me know if you find anything of interest 如果你发现什么有趣的东西就告诉我", "value": "Let me know if you find anything of interest 如果你发现什么有趣的东西就告诉我"}
+{"key": "Ta det lugnt bara\u0001Hmm, I don't think so 嗯，我不这么认为", "value": "Hmm, I don't think so 嗯，我不这么认为"}
+{"key": "Corruption är inte att leka med\u0001Abstract... 抽象……", "value": "Corruption is not to be trifled with 腐败可不是闹着玩的"}
+{"key": "Hmm, tror inte det\u0001Hmm, I don't think so 嗯，我不这么认为", "value": "Hmm, I don't think so 嗯，我不这么认为"}
+{"key": "Kände du Albert som jobbade här förut?\u0001OK, thanks 好的，谢谢", "value": "OK, thanks 好的，谢谢"}
+{"key": "Ja?\u0001Yes, he was here just a second ago 是的，他刚刚还在这里", "value": "Yes, he was here just a second ago 是的，他刚刚还在这里"}
+{"key": "Inte direkt, jag började här efter att han försvann\u0001Yes? 什么事？", "value": "Not really, I started here after he disappeared 不完全是，他消失后我才来到这里的"}
+{"key": "Men det var inte bra\u0001What do you think happened to him? 你觉得他发生了什么？", "value": "But it wasn't good 但这并不好"}
+{"key": "Vad tror du hände honom?\u0001Did you know Albert who worked here before? 你认识以前在这里工作的阿尔伯特吗？", "value": "What do you think happened to him? 你觉得他发生了什么事？"}
+{"key": "Jag är osäker\u0001Not really, I started here after he disappeared 不太熟，我是他消失后才来这里的", "value": "Not really, I started here after he disappeared 不太熟，我是他消失后才来这里的"}
+{"key": "Jaha...\u0001You might snoop around there and see if you find anything 你或许可以在那里四处打探，看看能找到什么", "value": "You might snoop around there and see if you find anything 你或许可以在那里四处打探，看看能找到什么"}
+{"key": "Om du nu tror att han är viktig på något sätt?\u0001If you think he's important in some way? 如果你觉得他在某些方面很重要？", "value": "If you think he's important in some way? 如果你觉得他在某些方面很重要？"}
+{"key": "Du kanske kan snoka runt där och se om du hittar något\u0001```json", "value": "You might be able to snoop around there and see if you find anything 你或许可以在那里四处打探，看看能不能发现什么"}
+{"key": "Hon verkar helt förstörd!\u0001If you have a lot of connections you can reach many other places 如果你有很多连接，就能到达许多其他地方", "value": "But shouldn't we do something?! 但我们难道不该做点什么吗？！"}
+{"key": "Mm\u0001Mm 嗯", "value": "Yeah... 是啊..."}
+{"key": "Jag hoppades att saker höll på att förbättras...\u0001I hoped things were getting better... 我曾希望事情正在好转……", "value": "\"I just don't know what! 我只是不知道要做什么！\","}
+{"key": "Fan\u0001Damn 该死", "value": "\"We've been fighting here for years, and now this happens 我们在这里奋斗了好几年，现在却发生这种事\","}
+{"key": "Gör du det?\u0001Kind of like apparitions... but square 有点像幽灵……不过是方形的", "value": "\"```json\","}
+{"key": "Vad menar du med spöken?\u0001With different colors 有不同的颜色", "value": "\"[\","}
+{"key": "Det du beskriver låter som 'corruption'\u0001It usually helps to take it easy afterwards, then it passes 之后放松一下通常有帮助，然后就会过去", "value": "Couldn't put it down, so I'm a bit tired today 放不下来，所以今天有点累"}
+{"key": "Jag har drabbats av det när jag varit ute på internet för länge\u0001Oh really? 哦，真的吗？", "value": "Sounds exciting 听起来很刺激"}
+{"key": "Connect() heter funktionen\u0001Connect() is the function Connect() 是这个函数", "value": "```json"}
+{"key": "Vilka saker kan det?\u0001What things can do that? 哪些东西能做到？", "value": "["}
+{"key": "De flesta datorer såklart...\u0001Most computers of course... 大多数电脑当然…", "value": "\"Connect() is the function Connect() 是这个函数\","}
+{"key": "Ja nästan allting\u0001Yes almost everything 是的几乎一切", "value": "\"OK, I understand 好的，我明白了\","}
+{"key": "Aha\u0001Yes... and then you have to call Slurp() 是的……然后你必须调用 Slurp()", "value": "\"I have to test this! 我得试试这个！\","}
+{"key": "Ja... och sen måste du anropa Slurp() då\u0001Slurp? Slurp？", "value": "\"Be careful in that case 那样的话要小心\","}
+{"key": "Slurp?\u0001What does it do? 它是做什么的？", "value": "\"The Ministry has extremely high security around the parts of the internet that lead into their systems 部委在通往他们系统的互联网区域设置了极高的安全防护\","}
+{"key": "Mm\u0001The Slurp function takes you out onto the internet Slurp 函数会把你带到互联网上", "value": "\"We basically haven't found any loopholes 我们基本上没找到任何漏洞\","}
+{"key": "Vad gör den?\u0001Then it depends on what you're connected to 然后这取决于你连接到了什么", "value": "\"Which is the main reason we don't know more about their organization 这就是我们对他们组织了解不多的主要原因\","}
+{"key": "Slurp-funktionen tar dig ut på internet\u0001With many connections you can reach many other places 通过许多连接你可以到达许多其他地方", "value": "\"Oh, wow 哦，哇\","}
+{"key": "Ja han var här i närheten nyss\u0001```json", "value": "```json"}
+{"key": "OK, tack\u0001[", "value": "["}
+{"key": "Ja?\u0001Yes, he was here just a second ago 是的，他刚刚还在这里", "value": "\"Yes, he was here nearby just now 是的，他刚才就在这附近\","}
+{"key": "Kände du Albert som jobbade här förut?\u0001OK, thanks 好的，谢谢", "value": "\"OK, thanks 好的，谢谢\","}
+{"key": "Inte direkt, jag började här efter att han försvann\u0001Not really, I started here after he disappeared 不完全是，他消失后我才来到这里的", "value": "\"Not really, I started here after he disappeared 不完全是，他消失后我才来到这里的\","}
+{"key": "Vad tror du hände honom?\u0001What do you think happened to him? 你觉得他发生了什么事？", "value": "\"What do you think happened to him? 你觉得他发生了什么事？\","}
+{"key": "Jag är osäker\u0001Not really, I started here after he disappeared 不太熟，我是他消失后才来这里的", "value": "\"But it wasn't good 但这情况不妙\","}
+{"key": "Men det var inte bra\u0001But it wasn't good 但这并不好", "value": "\"You might be able to snoop around there and see if you find anything 你或许可以在那里四处打探，看看能不能发现什么\","}
+{"key": "Jaha...\u0001You might snoop around there and see if you find anything 你或许可以在那里四处打探，看看能找到什么", "value": "\"Yes... I think so 是的...我觉得是这样\","}
+{"key": "Hon verkar helt förstörd!\u0001But shouldn't we do something?! 但我们难道不该做点什么吗？！", "value": "\"No, not really 没有，其实没有\","}
+{"key": "Mm\u0001Yeah... 是啊...", "value": "\"OK... 好吧...\","}
+{"key": "Jag hoppades att saker höll på att förbättras...\u0001\\\"I just don't know what! 我只是不知道要做什么！\\\",", "value": "\"I just don't know what! 我只是不知道要做什么！\","}
+{"key": "Fan\u0001\\\"We've been fighting here for years, and now this happens 我们在这里奋斗了好几年，现在却发生这种事\\\",", "value": "\"We've been fighting here for years, and now this happens 我们在这里奋斗了好几年，现在却发生这种事\","}
+{"key": "Gör du det?\u0001\\\"```json\\\",", "value": "\"There was something in my room 我房间里有什么东西\","}
+{"key": "Vad menar du med spöken?\u0001\\\"[\\\",", "value": "\"It looked like a ghost 看起来像个幽灵\","}
+{"key": "Det du beskriver låter som 'corruption'\u0001Couldn't put it down, so I'm a bit tired today 放不下来，所以今天有点累", "value": "What you're describing sounds like 'corruption' 你描述的情况听起来像是'腐化'"}
+{"key": "Jag har drabbats av det när jag varit ute på internet för länge\u0001Sounds exciting 听起来很刺激", "value": "I've been affected by that when I've been out on the internet too long 我在网上停留太久时也遭遇过这种情况"}
+{"key": "Men de kan inte övervaka allting samtidigt, som tur är\u0001But they can't monitor everything at the same time, fortunately 但他们不能同时监控一切，幸运的是", "value": "\"A big part of my job is keeping us hidden from the Ministry 我工作的很大一部分是确保我们不被部委发现\","}
+{"key": "Så jag ser till att våra datorer inte drar någon uppmärksamhet till sig\u0001So I make sure our computers don't draw any attention to themselves 所以我确保我们的电脑不会引起任何注意", "value": "\"They try to keep as much of the network under control as possible 他们试图将尽可能多的网络置于控制之下\","}
+{"key": "De flesta datorer såklart...\u0001\\\"Connect() is the function Connect() 是这个函数\\\",", "value": "Connect() is the function Connect() 是这个函数"}
+{"key": "Ja nästan allting\u0001\\\"OK, I understand 好的，我明白了\\\",", "value": "OK, I understand 好的，我明白了"}
+{"key": "Aha\u0001\\\"I have to test this! 我得试试这个！\\\",", "value": "I have to test this! 我得试试这个！"}
+{"key": "Ja... och sen måste du anropa Slurp() då\u0001\\\"Be careful in that case 那样的话要小心\\\",", "value": "Be careful in that case 那样的话要小心"}
+{"key": "Slurp?\u0001\\\"The Ministry has extremely high security around the parts of the internet that lead into their systems 部委在通往他们系统的互联网区域设置了极高的安全防护\\\",", "value": "The Ministry has extremely high security around the parts of the internet that lead into their systems 部委在通往他们系统的互联网区域设置了极高的安全防护"}
+{"key": "Mm\u0001\\\"We basically haven't found any loopholes 我们基本上没找到任何漏洞\\\",", "value": "```json"}
+{"key": "Vad gör den?\u0001\\\"Which is the main reason we don't know more about their organization 这就是我们对他们组织了解不多的主要原因\\\",", "value": "["}
+{"key": "Slurp-funktionen tar dig ut på internet\u0001\\\"Oh, wow 哦，哇\\\",", "value": "\"Mm 嗯\","}
+{"key": "Sen beror det på vad du är uppkopplad mot\u0001Then it depends on what you're connected to 然后这取决于你连接到了什么", "value": "\"What does it do? 它是做什么用的？\","}
+{"key": "Med många kopplingar kan du nå många andra platser\u0001With many connections you can reach many other places 通过许多连接你可以到达许多其他地方", "value": "\"The Slurp() function takes you out onto the internet Slurp() 函数能带你进入互联网\","}
+{"key": "Jag tror jag måste försöka utforska internet\u0001Let me know if you find anything of interest 如果你发现什么有趣的东西就告诉我", "value": "["}
+{"key": "OK\u0001Just take it easy 放松点就好", "value": "\"But luckily they can't monitor everything at once 但幸运的是，他们无法同时监控一切\","}
+{"key": "Du får säga till om du hittar på något av intresse\u0001Corruption is not to be messed with 腐化可不是闹着玩的", "value": "\"Corruption is not to be trifled with 腐败可不是闹着玩的\","}
+{"key": "Ta det lugnt bara\u0001Hmm, I don't think so 嗯，我不这么认为", "value": "\"Yes, he was here nearby just now 是的，他刚才就在这附近\","}
+{"key": "Vad tror du hände honom?\u0001\\\"What do you think happened to him? 你觉得他发生了什么事？\\\",", "value": "```json"}
+{"key": "Jag är osäker\u0001\\\"But it wasn't good 但这情况不妙\\\",", "value": "["}
+{"key": "Men det var inte bra\u0001\\\"You might be able to snoop around there and see if you find anything 你或许可以在那里四处打探，看看能不能发现什么\\\",", "value": "\"Yeah... I think so 是的...我想是的\","}
+{"key": "Jaha...\u0001\\\"Yes... I think so 是的...我觉得是这样\\\",", "value": "\"OK, good tip 好的，好建议\","}
+{"key": "Han bodde i en lägenhet uppe i Burrows\u0001He lived in an apartment up in Burrows 他住在 Burrows 区的公寓里", "value": "Thanks, I'll do that! 谢谢，我会的！"}

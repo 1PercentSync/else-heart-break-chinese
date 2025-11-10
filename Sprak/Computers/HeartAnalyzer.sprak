@@ -1,0 +1,8 @@
+
+var Heart = Connect("Heart")
+
+if GetUser() == "Monad"
+    Print("Energy level:  / 能量水平：" + Heart.EnergyLevel())
+else
+    #Heart.
+end

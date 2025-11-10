@@ -1,0 +1,41 @@
+############################################################
+# Goods database is connected to a permanent storage drive #
+# 货物数据库连接到永久存储驱动器
+# storing all the qualities of mined minerals.             #
+# 存储所有开采矿物的质量。
+############################################################
+
+string Register(string type, number quality)
+    if ValidType(type) == false
+        return "Invalid type: / 无效类型：" + type
+    end
+
+    if quality < 0 or quality > 10
+        return "Invalid quality: / 无效质量：" + quality
+    end
+
+    Print("")
+    Print("")
+    Print("Registered: / 已注册：" + type + " (" + quality + "/10)")
+
+    string key = type + "_" + GetHour() + ":" + GetMinute()
+
+    SaveMemory(key, quality)
+
+    return "Registration succeeded / 注册成功"
+end
+
+bool ValidType(string type)
+    var validTypes = ["ore", "gold", "silver", "crystal", "iron"]
+    loop validTypes
+        if type == @
+            return true
+        end
+    end
+
+    return false
+end
+
+Print("")
+var k = Input("Enter key: / 输入密钥：")
+Print(LoadMemory(k))

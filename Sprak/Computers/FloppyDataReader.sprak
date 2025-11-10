@@ -1,0 +1,20 @@
+
+ClearText()
+DisplayGraphics()
+Print("Floppy data reader / 软盘数据读取器")
+Print("==================")
+Sleep(1)
+
+if HasFloppy()
+    Print("")
+    Print("Data on floppy: / 软盘上的数据：")
+    Print("")
+    var allData = LoadData()
+    loop data in allData
+        Print(data)
+        Sleep(0.75)
+    end
+    Print("--------------")
+else
+    Print("Please insert floppy... / 请插入软盘...")
+end

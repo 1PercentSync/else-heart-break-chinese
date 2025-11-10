@@ -1,0 +1,17 @@
+# By Fib, 17 Jan 1995
+# 作者：Fib，1995年1月17日
+
+string baseName = "DorisGardens_East_Orchid1_"
+number NR_OF_ORCHIDS = 17
+
+loop
+    loop from 1 to NR_OF_ORCHIDS
+        TurnOn(baseName + @)
+    end
+    Sleep(1)
+    loop from 1 to NR_OF_ORCHIDS
+        TurnOff(baseName + @)
+    end
+    Sleep(1)
+end
+

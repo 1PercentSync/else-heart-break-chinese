@@ -1,0 +1,6 @@
+ClearText()
+Print("To the left: Factory Halls 1 & 2 / 左边：1号和2号工厂大厅")
+Print("To the right: Offices / 右边：办公室")
+Print("Through the fence: Leave the building / 穿过栅栏：离开大楼")
+Print("")
+Print("Have a good day! / 祝你今天过得愉快！")

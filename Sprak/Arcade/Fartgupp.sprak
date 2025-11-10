@@ -1,0 +1,347 @@
+# Prints title screen
+# 打印标题画面
+void printTitleScreen()
+    ClearText()
+    Print("")
+    Print("                                                      ")
+    Print("           Fartgupp                                   ")
+    Print("           ______         _                           ")
+    Print("           |  ___|       | |                          ")
+    Print("           | |_ __ _ _ __| |_ __ _ _   _ _ __  _ __   ")
+    Print("           |  _/ _` | '__| __/ _` | | | | '_ || '_ |  ")
+    Print("           | | |(_| | |  | | |(_| | |_| | |_) | |_) | ")
+    Print("           |_| |__,_|_|   |__|__, ||__,_| .__/| .__/  ")
+    Print("                              __/ |     | |   | |     ")
+    Print("                             |___/      |_|   |_|     ")
+    Print("                                                      ")
+    Print("                      Do you speak IKEA? / 你会说宜家语吗？              ")
+    Print("             Answer the 20 questions to find out! / 回答 20 个问题就知道了！     ")
+    Print("                                                      ")
+    Print("                                                      ")
+    Print("                                                      ")
+    Print("                                                      ")
+    Print("                                                      ")
+    Print("                       A quiz game by / 一个问答游戏，作者                 ")
+    Print("                  @IamHerrEmil & @IamVikiPapp         ")
+    Print("                                                      ")
+    Print("                                                      ")
+    Input("                     Press enter to start / 按 Enter 键开始             ")
+    ClearText()
+end
+
+# Clear screen when first launching the game
+# 首次启动游戏时清除屏幕
+ClearText()
+DisplayGraphics()
+
+# List of Swedish words, and what they are
+# 瑞典语单词列表，以及它们的含义
+array ord = []
+ord[0] =  ["Omsorg",        "an IKEA product / 一个宜家产品"]
+ord[1] =  ["Lighvan",       "a cheese / 一种奶酪"] 
+ord[2] =  ["Vintersorg",    "a Swedish metal band / 一支瑞典金属乐队"]
+ord[3] =  ["Freda",         "a Lord of The Rings character / 一个指环王角色"]
+ord[4] =  ["Bagis",         "an IKEA product / 一个宜家产品"]
+ord[5] =  ["Bitto",         "a cheese / 一种奶酪"] 
+ord[6] =  ["Narnia",        "a Swedish metal band / 一支瑞典金属乐队"]
+ord[7] =  ["Grimbold",      "a Lord of The Rings character / 一个指环王角色"]
+ord[8] =  ["Tysnes",        "an IKEA product / 一个宜家产品"]
+ord[9] =  ["Caravane",      "a cheese / 一种奶酪"] 
+ord[10] = ["Marduk",        "a Swedish metal band / 一支瑞典金属乐队"]
+ord[11] = ["Deagol",        "a Lord of The Rings character / 一个指环王角色"]
+ord[12] = ["Sigurd",        "an IKEA product / 一个宜家产品"]
+ord[13] = ["Saga",          "a cheese / 一种奶酪"] 
+ord[14] = ["Bathory",       "a Swedish metal band / 一支瑞典金属乐队"]
+ord[15] = ["Galdor",        "a Lord of The Rings character / 一个指环王角色"]
+ord[16] = ["Klappar haj",   "an IKEA product / 一个宜家产品"]
+ord[17] = ["Svecia",        "a cheese / 一种奶酪"] 
+ord[18] = ["Watain",        "a Swedish metal band / 一支瑞典金属乐队"]
+ord[19] = ["Grima",         "a Lord of The Rings character / 一个指环王角色"]
+
+bool IsUppercase(var c)
+ return CharToInt(c) >= -32 && CharToInt(c) <= -7
+end
+
+var ToLowercase(var text)
+ var res = ""
+ loop c in text
+  if IsUppercase(c)
+   res += IntToChar(CharToInt(c) + 32)
+  else
+   res += c
+  end
+ end
+ return res
+end
+
+# Check if player input is yes or no
+# 检查玩家输入是“是”还是“否”
+bool getPlayerResponse()
+    string input
+    # Loop in case fail input and try again
+    # 如果输入失败则循环重试
+    loop
+        input = Input("")
+        input = ToLowercase(input)
+        if input == "yes"
+            return true
+        else if input == "y"
+            return true
+        else if input == "yep"
+            return true
+        else if input == "yup"
+            return true
+        else if input == "yeah"
+            return true
+        else if input == "it is"
+            return true
+        else if input == "yepp"
+            return true
+        else if input == "aha"
+            return true
+        else if input == "ja"
+            return true
+        else if input == "sure"
+            return true
+        else if input == "certainly"
+            return true
+        else if input == "absolutely"
+            return true
+        else if input == "indeed"
+            return true
+        else if input == "affirmative"
+            return true
+        else if input == "aye"
+            return true
+        else if input == "yah"
+            return true
+        else if input == "uh-huh"
+            return true
+        else if input == "OK"
+            return true
+        else if input == "righto"
+            return true
+        else if input == "yea"
+            return true
+        else if input == "correct"
+            return true
+        else if input == "right"
+            return true
+        else if input == "true"
+            return true
+        else if input == "no"
+            return false
+        else if input == "false"
+            return false
+        else if input == "incorrect"
+            return false
+        else if input == "untrue"
+            return false
+        else if input == "inaccurate"
+            return false
+        else if input == "not"
+            return false
+        else if input == "negative"
+            return false
+        else if input == "never"
+            return false
+        else if input == "not really"
+            return false
+        else if input == "nae"
+            return false
+        else if input == "nope"
+            return false
+        else if input == "nah"
+            return false
+        else if input == "no way"
+            return false
+        else if input == "no siree"
+            return false
+        else if input == "nay"
+            return false
+        else if input == "naw"
+            return false
+        else if input == "n"
+            return false
+        else
+            Print("Cannot compute answer, is it or is it not? / 无法计算答案，是还是不是？")
+        end
+    end
+end
+
+string getRandomType()
+    number randomNumber
+    randomNumber = Random()
+    # Print("randomNumber: " + randomNumber)
+    if randomNumber < 0.25
+        return "a Swedish metal band / 一支瑞典金属乐队"
+    else if randomNumber > 0.25 and randomNumber < 0.5
+        return "an IKEA product / 一个宜家产品"
+    else if randomNumber > 0.5 and randomNumber < 0.75
+        return "a cheese / 一种奶酪"
+    else if randomNumber > 0.75
+        return "a Lord of The Rings character / 一个指环王角色"
+    else
+        # If by some small chance, the random number is exactly, 0.25, 0.5 or 0.75, just pick one of them
+        # 如果随机数恰好是 0.25、0.5 或 0.75，只需选择其中一个
+        return "a metal band / 一支金属乐队"
+    end
+end
+
+void printBadEnding()
+    ClearText()
+    Print("")
+    Print("                                                      ")
+    Print("    Herregud... / 我的天…                                       ")
+    Print("     _   _                                    _       ")
+    Print("    | | | |                                  | |      ")
+    Print("    | |_| | ___ _ __ _ __ ___  __ _ _   _  __| |      ")
+    Print("    |  _  |/ _ | '__| '__/ _ |/ _` | | | |/ _` |      ")
+    Print("    | | | |  __/ |  | | |  __/ (_| | |_| | (_| |_ _ _ ")
+    Print("    |_| |_/|___|_|  |_|  |___||__, ||__,_||__,_(_|_|_)")
+    Print("                               __/ |                  ")
+    Print("                              |___/                   ")
+    Print("                                                      ")
+    Print("                                                      ")
+    Print("        You did not get so many correct answers this / 这次你没有答对那么多题  ")
+    Print("             time, maybe you want to try again? / 也许你想再试一次？       ")
+    Print("                                                      ")
+    Print("                                                      ")
+    Print("                                                      ")
+    Print("                                                      ")
+    Print("                                                      ")
+    Print("                                                      ")
+    Print("                                                      ")
+    Print("                                                      ")
+    Input("                Press enter to play again. / 按 Enter 键再次游戏。            ")
+    ClearText()
+end
+
+void printOKEnding()
+    ClearText()
+    Print("")
+    Print("                                                      ")
+    Print("             Lagom. / 差不多。                                   ")
+    Print("              _                                       ")
+    Print("             | |                                      ")
+    Print("             | |     __ _  __ _  ___  _ __ ___        ")
+    Print("             | |    / _` |/ _` |/ _ || '_ ` _ |       ")
+    Print("             | |___| (_| | (_| | (_) | | | | | |_     ")
+    Print("             |_____/|__,_||__, ||___/|_| |_| |_(_)    ")
+    Print("                           __/ |                      ")
+    Print("                          |___/                       ")
+    Print("                                                      ")
+    Print("                                                      ")
+    Print("                    You have an approximate / 你对很多事情都有个大概的了解！           ")
+    Print("                   knowledge of many things!          ")
+    Print("                                                      ")
+    Print("          You know the difference between black death / 你知道黑死病金属和扁平包装家具的区别，所以你做到了")
+    Print("         metal and flatpack furniture, so you got that")
+    Print("                 going for you, which is nice. / 这对你来说是件好事。        ")
+    Print("                                                      ")
+    Print("                                                      ")
+    Print("                                                      ")
+    Print("                                                      ")
+    Input("                  Press enter to play again. / 按 Enter 键再次游戏。          ")
+    ClearText()
+end
+
+void printGoodEnding()
+    ClearText()
+    Print("")
+    Print("                                                      ")
+    Print("               Duktig! / 干得好！                                ")
+    Print("               ______       _    _   _       _        ")
+    Print("               |  _  |     | |  | | (_)     | |       ")
+    Print("               | | | |_   _| | _| |_ _  __ _| |       ")
+    Print("               | | | | | | | |/ / __| |/ _` | |       ")
+    Print("               | |/ /| |_| |   <| |_| | (_| |_|       ")
+    Print("               |___/  |__,_|_||_||__|_||__, (_)       ")
+    Print("                                        __/ |         ")
+    Print("                                       |___/          ")
+    Print("                                                      ")
+    Print("                     You do speak IKEA. / 你确实会说宜家语。               ")
+    Print("                                                      ")
+    Print("        You have been living inside an IKEA store for / 你已经在宜家商店里住了多年了。")
+    Print("        years now. You spend your days in an eternal / 你在永恒的“星期五的舒适”中度过你的日子，")
+    Print("         Fredagsmys, re-reading familiar tales about / 重读着关于中土世界的熟悉故事。")
+    Print("       Middle Earth. The personell have gotten used to / 工作人员已经习惯了")
+    Print("          the constant metal music and the smell of / 客厅区里持续不断的金属音乐和奶酪味。")
+    Print("             cheese in the living room section.       ")
+    Print("                                                      ")
+    Print("                                                      ")
+    Print("                                                      ")
+    Input("                  Press enter to play again. / 按 Enter 键再次游戏。          ")
+    ClearText()
+end
+
+
+
+# Main loop, restarts the game if you reach the end
+# 主循环，如果到达终点则重新开始游戏
+loop
+    printTitleScreen()
+    number correctAnswers = 0
+
+    # Game loop, loops through list of words
+    # 游戏循环，遍历单词列表
+    number numberOfWords = Count(ord)
+    loop x from 0 to (numberOfWords - 1)
+        ClearText()
+
+        # For every item, grab name and type
+        # 对于每个项目，获取名称和类型
+        array currentItem = ord[x]
+        string currentWord = currentItem[0]
+        string currentType = currentItem[1]
+        Print("")
+        Print("__________========== Question " + (x + 1) +  " / 问题 " + (x + 1) + " ==========__________")
+        Print("")
+
+        # Grab a random Type
+        # 获取一个随机类型
+        string randomType
+        randomType = getRandomType()
+
+        # Ask player the question
+        # 问玩家问题
+        Print("Is " + currentWord + " " + randomType + "? / " + currentWord + " 是 " + randomType + " 吗？")
+
+        # Get player input
+        # 获取玩家输入
+        bool playerThinksYes
+        playerThinksYes = getPlayerResponse()
+
+        # Check if player guessed correctly
+        # 检查玩家是否猜对
+        Print("")
+        if currentType == randomType
+            if playerThinksYes
+                Print("CORRECT, " + currentWord + " is " + currentType + "! / 正确，" + currentWord + " 是 " + currentType + "！")
+                correctAnswers += 1
+            else
+                Print("WRONG, " + currentWord + " is " + currentType + "! / 错误，" + currentWord + " 是 " + currentType + "！")
+            end
+        else
+            if playerThinksYes
+                Print("WRONG, " + currentWord + " is " + currentType + "! / 错误，" + currentWord + " 是 " + currentType + "！")
+            else
+                Print("CORRECT, " + currentWord + " is " + currentType + "! / 正确，" + currentWord + " 是 " + currentType + "！")
+                correctAnswers += 1
+            end
+        end
+        # Pause before displaying next question
+        # 在显示下一个问题之前暂停
+        Input("")
+    end
+
+    # Game Over screens
+    # 游戏结束画面
+    if correctAnswers < 10
+        printBadEnding()
+    else if correctAnswers < 18
+        printOKEnding()
+    else
+        printGoodEnding()
+    end
+end

@@ -1,0 +1,9 @@
+
+if GetUser() == "Monad"
+    Say("Good morning, Dr Monad. One second! / 早上好，莫纳德博士。请稍等！")
+    GotoFloor(1)
+end
+
+void OnHack(string name)
+     Say("Illegal hacking identified. / 发现非法入侵。")
+end

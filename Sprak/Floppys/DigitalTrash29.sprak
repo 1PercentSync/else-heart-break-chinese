@@ -1,0 +1,5 @@
+
+(defun fun (f)
+    (if (f)
+        (fun (f))
+        (not-fun)))

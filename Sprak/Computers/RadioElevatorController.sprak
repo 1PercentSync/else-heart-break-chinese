@@ -1,0 +1,11 @@
+
+void SwapFloor()
+
+    Connect("RadioStationElevator_Door")
+
+    if GetFloor() == 0
+        GotoFloor(1)
+    else
+        GotoFloor(0)
+    end
+end

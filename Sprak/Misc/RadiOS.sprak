@@ -1,0 +1,23 @@
+﻿# RadiOS by Rasput1n, 1992 / RadiOS by Rasput1n, 1992
+# This complete program is run when the wheel is turned / 转动滚轮时运行此完整程序
+
+# Next channel / 下一个频道
+var channel = GetChannel()
+channel++
+
+# Wrap around / 循环
+if(channel > 4)
+    channel = 0
+end
+
+if(channel == 0)
+    TurnOffSound()
+else
+    # Radio should only be connected to one channel / 收音机应仅连接到一个频道
+    DisconnectAll()
+    Connect("RadioStation_Channel" + channel)
+    TurnOnSound()
+end
+
+# Store the channel for later / 存储频道以备后用
+SetChannel(channel)

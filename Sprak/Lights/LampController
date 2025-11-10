@@ -1,0 +1,6 @@
+var answer = Input("Do you want to turn the lamp on or off?")
+if answer == "on"
+ TurnOn("ComputerLamp")
+else
+ TurnOff("ComputerLamp")
+end

@@ -1,0 +1,43 @@
+
+# Used by the Fence and other systems
+# when granting access to the factory
+# facilities.
+# 围栏和其他系统在授予工厂设施访问权限时使用。
+
+bool HasAccess(string name)
+    var authorized = []
+
+    Append(authorized, "Jorgen")
+    Append(authorized, "Work")
+    Append(authorized, "Monad")
+    Append(authorized, "George")
+    Append(authorized, "Mats")
+    Append(authorized, "Glenn")
+    Append(authorized, "Dave")
+
+	loop authorized
+		if @ == name
+			return true
+		end
+	end
+
+	return false
+end
+
+# MAIN
+# 主要
+
+loop
+    Print("FACTORY ACCESS MAIN FRAME / 工厂访问主框架")
+    Print("-------------------------")
+    Print("Check authorization for / 检查授权")
+    string name = Input("person with name:  / 姓名：")
+    Print("")
+    if HasAccess(name)
+        Print(name + " is authorized! / 已授权！")
+    else
+        Print("Not authorized. / 未授权。")
+    end
+    Print("")
+    Sleep(2)
+end

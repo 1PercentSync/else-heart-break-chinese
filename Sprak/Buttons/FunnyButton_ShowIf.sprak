@@ -1,0 +1,6 @@
+
+if GetUser() == "Hank"
+	PlaySound("Bird")
+else
+	PlaySound("Boop")
+end

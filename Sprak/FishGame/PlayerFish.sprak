@@ -1,0 +1,31 @@
+
+void PerformMove(string name)
+	#Print(GetMoveNr())
+	if(name == "Forward")
+		Move()
+	else if(name == "Left")
+		TurnLeft()
+	else if(name == "Right")
+		TurnRight()
+	else if(name == "Wait")
+		Print("Waiting... / 等待中...")
+	else
+		Print("Can't understand move / 无法理解的移动 " + name)
+	end
+	Sleep(0.5)
+	CallFunctionOnEnemyFishes("Ai", 0.5)
+end
+
+void Restart()
+	CallFunctionOnEnemyFishes("Restart", 0.1)
+	Reset()
+	Sleep(1.5)
+end
+
+void CallFunctionOnEnemyFishes(string functionName, number sleepTime)
+	loop from 1 to 3
+		var id = Connect("Lodge_Underwater_FishGameEvilFish_" + @)
+		RemoteFunctionCall(id, functionName, [])
+		Sleep(sleepTime)
+	end
+end

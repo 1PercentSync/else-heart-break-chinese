@@ -1,0 +1,109 @@
+ClearText()
+
+Print("Welcome to PLAY STATION / 欢迎来到游戏站")
+Print("-----------------------")
+Print("")
+Print("The latest in home entertainment / 最新的家庭娱乐")
+Print("")
+Input("Press enter to start... / 按回车键开始...")
+Sleep(1)
+PlaySound("Powerup 4")
+
+StartGame()
+
+# Game loop
+# 游戏循环
+loop
+    string command = Input("> ")
+    if command == "look"
+        PlaySound("Blip 3")
+        Look()
+    else if command == "think"
+        PlaySound("Blip 3")
+        Think()
+    else if command == "use"
+        PlaySound("Blip 3")
+        Use()
+    else if command == "exit"
+        PlaySound("Shoot 4")
+        break
+    else
+        PlaySound("Shoot 3")
+        Help()
+    end
+end
+
+ExitGame()
+
+
+
+# FUNCTIONS
+# 函数
+
+void StartGame()
+    Fx()
+    Lock("BetweenFelixAndLongson_Door1")
+    ClearText()
+    SetPosition("PlayWife", "BetweenFelixAndLongson_Trigger_1")
+    Help()
+end
+
+
+void Help()
+    Print(" - AVAILABLE COMMANDS -  /  - 可用命令 - ")
+    Print("'think' - get information / '思考' - 获取信息")
+    Print("'look' - list things in room / '查看' - 列出房间里的东西")
+    Print("'use' - use something in the room / '使用' - 使用房间里的东西")
+    Print("'exit' - turn off the game / '退出' - 关闭游戏")
+    Print(" ---------------------- ")
+end
+
+
+void Think()
+    var pos = GetPosition("PlayWife")
+    Print(pos)
+    var action = GetAction("PlayWife")
+    if action == ""
+        action = "Doing nothing. / 什么也不做。"
+    end
+    Print("Action: " + action + " / 行动：" + action)
+end
+
+void Look()
+    string roomName = GetRoom("PlayWife")
+    array stuff = GetThingsInRoom(roomName)
+    number i = 0
+    loop stuff
+        Print(i + ": " + @)
+        i++
+    end
+end
+
+void Use() 
+    Look()
+    Print("Use what item? / 使用什么物品？")
+    number nr = Input("nr:  / 编号：")
+    string roomName = GetRoom("PlayWife")
+    array stuff = GetThingsInRoom(roomName)
+    if nr >= 0 and nr < Count(stuff)
+        var obj = stuff[nr]
+        InteractWith("PlayWife", obj)
+    else
+        Print("Invalid nr / 无效编号")
+    end
+end
+
+void ExitGame()
+    SetPosition("PlayWife", "CharacterRoom_Point")
+    Unlock("BetweenFelixAndLongson_Door1")
+end
+
+
+void Fx()
+    ClearText()
+    loop from 1 to 30
+        Print("* * * * * * * * * * * * * * * * * * ")
+        Print(" * * * * * * * * * * * * * * * * * *")
+    end
+    ClearText()
+end

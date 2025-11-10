@@ -1,0 +1,8 @@
+
+loop x from 1 to 10
+    SetPitch(x * 0.25)
+    PlaySound("Blip 1")
+    Sleep(0.1)
+end
+
+Stop()

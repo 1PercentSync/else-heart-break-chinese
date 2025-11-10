@@ -1,0 +1,5 @@
+if IsPlaying()
+    Stop()
+else
+    PlayLoop("Fumes")
+end

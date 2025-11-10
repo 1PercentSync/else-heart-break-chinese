@@ -1,0 +1,3 @@
+
+number doorId = Connect("RadioElevatorController")
+doorId.SwapFloor()

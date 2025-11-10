@@ -1,0 +1,54 @@
+ClearText()
+
+Print("***************")
+Print("* MOON LANDER / 月球着陆器 *")
+Print("***************")
+Print("")
+Print("Can you land / 你能安全降落")
+Print("safely on the moon? / 在月球上吗？")
+Print("")
+Sleep(2)
+
+number gas = 10000
+number altitude = 100.0 + Random() * 300.0
+number speed = -10.0
+
+loop
+    PrintStats()
+    number x = Input("How much fuel to use? / 使用多少燃料？")
+    if x > gas
+        Print("Not enough fuel! / 燃料不足！")
+        x = gas 
+    end
+
+    gas -= x
+    speed += gas
+    altitude += speed
+    speed -= 1.6
+
+    gas = Round(gas)
+    altitude = Round(altitude)
+
+    if altitude < 0
+        Print("You crashed! / 你坠毁了！")
+        PlaySound("Explosion 1")
+        break
+    else if altitude < 5 and speed > -50.0
+        Print("You landed safely / 你安全着陆了")
+        Print("on the moon! / 在月球上！")
+        Print("")
+        Print("GOOD JOB / 干得好")
+        break
+    else
+        Print("")
+        Print(" * * * * * * * * * ")
+        Print("")
+    end
+end
+
+
+void PrintStats()
+    Print("Fuel: " + gas + " / 燃料: " + gas)
+    Print("Altitude: " + altitude + " / 高度: " + altitude)
+    Print("Speed: " + speed + " / 速度: " + speed)
+end

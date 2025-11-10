@@ -1,0 +1,17 @@
+===================================
+THE BEGINNER'S GUIDE TO THE MODIFIER / 修饰符入门指南
+===================================
+
+*** Chapter 4: Errors *** / *** 第4章：错误 ***
+
+When errors are detected, either / 当检测到错误时，无论是
+during compilation (see floppy 4) / 在编译期间（参见软盘4）
+or when the program is running, / 还是在程序运行时，
+execution will stop and the error / 执行将停止，错误将
+will be presented in the "help area", / 显示在“帮助区域”，
+the lower part of the modifier window. / 即修改器窗口的下部。
+
+In case of a runtime error it's / 如果发生运行时错误，
+possible to start the program again, / 可以再次启动程序，
+either by activating the object / 或者通过激活对象
+or by compiling the code again. / 或者再次编译代码。

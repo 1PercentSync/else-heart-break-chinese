@@ -1,0 +1,16 @@
+
+number h = GetHour()
+
+if h < 4
+    SetChannel("Anime")
+else if h < 6
+    SetChannel("TestScreen")
+else if h < 7
+    SetChannel("Bergman")
+else if h < 18
+    SetChannel("Talkshow")
+else if h < 22
+    SetChannel("News")
+else
+    SetChannel("Terminator")
+end

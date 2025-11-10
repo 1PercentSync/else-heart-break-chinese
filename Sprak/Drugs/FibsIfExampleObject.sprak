@@ -1,0 +1,6 @@
+
+if 2 > 5
+    TurnRight()
+else
+    TurnLeft()
+end

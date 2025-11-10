@@ -1,0 +1,21 @@
+
+Connect("TestComputer1")
+Connect("TestComputer2")
+Connect("OrganComputer")
+
+#Connect("Pixie")
+#连接("小精灵")
+#Connect("Babcia")
+#连接("芭西亚")
+#Connect("Hank")
+#连接("汉克")
+#Connect("Sebastian")
+#连接("塞巴斯蒂安")
+
+ClearText()
+
+
+loop
+	var a = Input("Say something:  / 说点什么：")
+	Print("You said:  / 你说：" + a)
+end

@@ -1,0 +1,11 @@
+ClearText()
+
+Print(" ** EMAIL CLIENT **  / ** 电子邮件客户端 **")
+Sleep(1)
+
+if GetUser() == "Frank"
+    Connect("Frank_Room_MediumComputer1_1")
+    Slurp()
+else
+    Print("(unfinished) / （未完成）")
+end

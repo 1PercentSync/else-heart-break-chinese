@@ -1,0 +1,22 @@
+
+# - This is Computer7 -
+# - 这是计算机7 -
+
+# Basic structure for a REPL
+# REPL 的基本结构
+# or command line interface
+# 或命令行界面
+
+ClearText()
+var computer = Connect("Fibonacci")
+
+Print("Connected to Fibonacci / 已连接到斐波那契")
+Print("computer at id: " + computer + " / 计算机 ID: " + computer)
+Print("")
+
+loop
+    number n = Input("Enter number:  / 输入数字：")
+    number answer = computer.Fib(n)
+    Print("Answer received. / 已收到答案。")
+    Print("Fibonacci nr " + n + " = " + answer + " / 斐波那契数 " + n + " = " + answer)
+end

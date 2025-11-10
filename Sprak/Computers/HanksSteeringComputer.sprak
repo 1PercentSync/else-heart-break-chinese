@@ -1,0 +1,15 @@
+
+# TODO: finish this code
+# TODO：完成此代码
+
+void Greeting()
+	Print("Hello! / 你好！")
+end
+
+void Place()
+	Print("World / 世界")
+end
+
+
+Greeting()
+Place()

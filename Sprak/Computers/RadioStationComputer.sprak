@@ -1,0 +1,52 @@
+# RadioStationComputer
+# 广播电台计算机
+
+ClearText()
+var n = Input("Connect to channel (1 - 4):  / 连接到频道 (1 - 4)：")
+var id = Connect("RadioStation_Channel" + n)
+
+loop
+    if id > -1    
+        Print("Commands / 命令")
+        Print("--------")
+        Print("PLAY / 播放")
+        Print("STOP / 停止")
+        Print("SET / 设置")
+        Print("--------")
+
+        var cmd = ToUppercase(Input("> "))
+
+        if cmd == "STOP"
+            id.Stop()
+            Print("Stopped channel " + n + " / 已停止频道 " + n)
+        else if cmd == "PLAY"
+            id.Play()
+            Print("Started playing on channel " + n + " / 已在频道 " + n + " 上开始播放")
+        else if cmd == "SET"
+            var name = Input("Enter song name:  / 输入歌曲名称：")
+            id.PlayLoop(name)
+            Print("Set song to " + name + " on channel " + n + " / 已将歌曲设置为 " + name + " 在频道 " + n + " 上")
+        else
+            Print("Can't understand command. / 无法理解命令。")
+        end
+    else
+        Print("Failed to connect. / 连接失败。")
+    end
+end
+
+
+var ToUppercase(var text)
+ var res = ""
+ loop c in text
+  if IsLowercase(c)
+   res += IntToChar(CharToInt(c) - 32)
+  else
+   res += c
+  end
+ end
+ return res
+end
+
+bool IsLowercase(var c)
+ return CharToInt(c) >= 0 && CharToInt(c) <= 25
+end

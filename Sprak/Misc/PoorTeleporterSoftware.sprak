@@ -1,0 +1,3 @@
+string msg = SetWorldPosition("Hotel_Exterior", 41, 35)
+
+Print(msg)

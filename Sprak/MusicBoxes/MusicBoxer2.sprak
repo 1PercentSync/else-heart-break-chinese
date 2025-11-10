@@ -1,0 +1,9 @@
+# THEREMIN / 泰勒明
+
+loop x from 1 to 64
+    PlaySound("ThereminSound")
+    SetPitch(0.5 + 3.0 * Random())
+    Sleep(0.2)
+end
+
+Stop()

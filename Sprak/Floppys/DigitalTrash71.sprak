@@ -1,0 +1,36 @@
+
+
+I've been tracking these… "Ministry" dudes, / 我一直在追踪这些…“部门”的家伙，
+and I think I'm on to something.. / 我想我发现了一些线索…
+This is what I've learned: / 这就是我所学到的：
+
+All computers and crazy machines in the city / 城市里所有的电脑和疯狂的机器
+is tapped by the ministry. / 都被部门窃听了。
+My tests and analysis shows different messages / 我的测试和分析显示了不同的信息
+hidden in the sounds they are making. / 隐藏在它们发出的声音中。
+The ones I've collected and experimented on are: / 我收集并试验过的有：
+
+Electricity 1
+Electricity 2   (This one is evil..) / （这个是邪恶的…）
+
+Guardian         (Guarding the you know what.. the www) / 守护者（守护着你知道的…万维网）
+
+ComputerSound 1
+ComputerSound 2
+ComputerSound 3  (Cant figure this one out..) / （这个搞不懂…）
+ComputerSound 4 
+
+Thunder 1
+Thunder 2
+
+Atmosphere 1   
+(Don't know if this is the work of the Ministry) / （不知道这是不是部门的杰作）
+
+Atmosphere 2
+
+You can run them on any playable object / 你可以在任何可以
+that you can hack. / 破解的可玩对象上运行它们。
+Just remember that they may have altered / 只要记住，它们可能已经改变了
+the pitch of the object in itself... / 对象本身的音高…
+So it might not play at its normal speed. / 所以它可能不会以正常速度播放。
+Just type PlaySound("SoundName") / 只需键入 PlaySound("SoundName")

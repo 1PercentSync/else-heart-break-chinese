@@ -1,0 +1,10 @@
+
+var sum = 0
+
+loop
+    Print(sum)
+    sum = sum + 1
+    if sum > 5000
+        sum = 0
+    end
+end

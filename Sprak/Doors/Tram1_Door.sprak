@@ -1,0 +1,16 @@
+
+var id = Connect("Tram1")
+
+bool canGetOff = RemoteFunctionCall(id, "IsAtStationHook", [])
+
+Say("Can get off: " + canGetOff)
+
+if(canGetOff)
+	string targetRoom = GetTargetRoom()
+	number targetX = GetTargetX()
+	number targetY = GetTargetY()
+	TeleportUser(targetRoom, targetX, targetY)
+else
+	Say("Tram is moving, can't get out right now.")
+	StopUser()
+end

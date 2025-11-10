@@ -1,0 +1,51 @@
+
+# (C) Hank
+# (C) 汉克
+
+# TODO: Create a database in the basement for this
+# TODO：为此在地下室创建一个数据库
+var guests = ["Siri", "Sebastian", "Bower", "Bernd"]
+
+
+loop
+    ClearText()
+    Print("Enter command / guest: / 输入命令/客人：")
+    string name = Input("")
+    if name == "door" or name == "Door"
+        Print("Unlock door: / 解锁门：")
+        var doorName = Input("")
+        Unlock(doorName)
+    else
+        LookupPerson(name)
+    end
+    Sleep(3)
+end
+
+
+# Hotel_Office_DoorToBasement
+# Hotel_Lobby_DoorToHotelExterior
+# 酒店_办公室_通往地下室的门
+# 酒店_大堂_通往酒店外部的门
+
+
+
+bool InDatabase(string name)
+    loop guests
+        if @ == name
+            return true
+        end
+    end
+    return false
+end
+
+
+void LookupPerson(string name)
+    if InDatabase(name)
+        Print(name + " is a guest / 是客人")
+    else 
+        Print("Not a guest / 不是客人")
+    end
+    Print("-------------------")
+end
+
+

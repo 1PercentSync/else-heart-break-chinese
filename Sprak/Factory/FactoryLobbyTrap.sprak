@@ -1,0 +1,17 @@
+
+void OnIntruder(string name)
+    Print("Something entered Factory Lobby: / 有东西进入了工厂大厅：" + name)
+end
+
+void OnHack(string name)
+    Print("WARNING! Detected hacker: / 警告！检测到黑客：" + name)
+    Print("Initiating defense mechanisms... / 启动防御机制...")
+    
+    var light = Connect("FactoryEmergencyLight")
+    light.StartBlinking() # will lock until call is done...
+    
+    ZapPerson(name)
+    
+    RestoreCode("Fence")
+    RestoreCode("Factory_Lobby_FlatScreen_FlatComputerScreen_4")
+end

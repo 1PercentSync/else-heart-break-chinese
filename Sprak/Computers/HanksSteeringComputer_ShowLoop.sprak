@@ -1,0 +1,53 @@
+
+ClearText()
+
+
+
+loop x from 1 to 10
+    SlowPrint(x)
+end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+DisplayGraphics()
+
+
+#### HELPER FUNCTIONS ####
+#### 辅助函数 ####
+
+void RandomLine(number x)
+    SetRandomColor()
+    var y = x * 20
+    Line(x * 50, 0, x, y)
+end
+
+void SetRandomColor()
+    var r = Random()
+    var g = Random()
+    var b = Random()
+    Color(r, g, b)
+end
+
+void SlowPrint(string x)
+    Print(x)
+    Sleep(0.5)
+end

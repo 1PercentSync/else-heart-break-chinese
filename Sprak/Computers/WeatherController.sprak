@@ -1,0 +1,24 @@
+
+ClearText()
+
+var mode = Input("Set mode (1 - 4):  / 设置模式 (1 - 4)：")
+
+if mode == 1
+	Print("Sunny / 晴天")
+	SetRain(0)
+end
+
+if mode == 2
+	Print("Drizzle / 毛毛雨")
+	SetRain(25)
+end
+
+if mode == 3
+	Print("Rain / 下雨")
+	SetRain(100)
+end
+
+if mode == 4
+	Print("Storm! / 暴风雨！")
+	SetRain(200)
+end

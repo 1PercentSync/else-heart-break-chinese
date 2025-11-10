@@ -1,0 +1,13 @@
+
+void StartBlinking()
+    
+
+    loop from 1 to 9
+        PlaySound("Alarm")
+        TurnOn()
+        Sleep(0.3)
+        TurnOff()
+        Sleep(0.3)
+    end
+
+end

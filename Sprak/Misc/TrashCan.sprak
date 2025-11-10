@@ -1,0 +1,12 @@
+
+# THIS CODE RUNS WHEN AN ITEM IS THROWN INTO THE TRASH / 当物品被扔进垃圾桶时，此代码运行
+
+string trashType = GetType()
+
+#Say("Type: " + trashType)
+
+if trashType == "floppy" or trashType == "key"
+	MoveToRoom("MonadsApartment")
+else
+	Delete()
+end

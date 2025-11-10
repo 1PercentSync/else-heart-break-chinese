@@ -1,0 +1,23 @@
+
+array letters = "abcdefghijklmnopqrstuvxyz1234567890-.*+/ ?"
+number letterCount = Count(letters)
+
+string RandomChar()
+    number i = Int(Random() * letterCount)
+    return letters[i]
+end
+
+var oldCode = GetCode()
+var newCode = ""
+
+
+loop c in oldCode
+    if Random() < 0.1
+        newCode += RandomChar()
+    else
+        newCode += c
+    end
+end
+
+ClearCode()
+AppendCode(newCode)

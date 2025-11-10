@@ -1,0 +1,4 @@
+
+Connect("Internet_Internet_MediumComputer_8")
+Slurp()
+ClearText()

@@ -1,0 +1,4 @@
+
+Connect("Plaza_CurcuitLocker_4")
+Slurp()
+ClearText()

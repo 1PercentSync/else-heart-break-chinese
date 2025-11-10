@@ -1,0 +1,35 @@
+
+var bank = Connect("FinanceComputer")
+
+var user = GetUser()
+var balance = bank.GetBalanceForPerson(user)
+
+if balance < 10
+    Say("You don't have enough money to play. / 你的钱不够玩。")
+    return # exit program
+    # 退出程序
+end
+
+Say("Cost: $10 / 费用：10美元")
+bank.ChangeBalance(user, -10)
+Sleep(1.5)
+PlaySound("CasinoSpinn")
+Sleep(1.5)
+
+if Random() > 0.995
+    PlaySound("CasinoWin")
+    bank.ChangeBalance(user, 100)
+    Say("You won $1000! / 你赢了1000美元！")
+else if Random() > 0.97
+    PlaySound("CasinoWin")
+    bank.ChangeBalance(user, 10)
+    Say("You won $100 / 你赢了100美元")
+else if Random() > 0.8
+    PlaySound("CasinoWin")
+    bank.ChangeBalance(user, 2)
+    Say("You won $20 / 你赢了20美元")
+else 
+    Sleep(2)
+    PlaySound("CasinoLost")
+    Say("You won nothing / 你什么都没赢")
+end

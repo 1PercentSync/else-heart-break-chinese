@@ -1,0 +1,38 @@
+
+# An infinite loop that takes input commands and executes them
+# 一个无限循环，接收输入命令并执行它们
+loop
+	var command = Menu()
+	ExecuteCommand(command)
+end
+
+void Menu()
+	ClearText()
+	Print(" - MENU -  /  - 菜单 - ")
+	Print("1. Control fountain in diner / 1. 控制餐厅喷泉")
+	Print("2. Switch lights in lobby / 2. 切换大堂灯光")
+	Print("3. Switch lights in basement / 3. 切换地下室灯光")
+	Print("")
+	return Input("Enter menu option:  / 输入菜单选项：")
+end
+
+void ExecuteCommand(number command)
+	if(command == 1)
+
+	else if(command == 2)
+		Switch("Hotel_Lobby_Light")
+	else if(command == 3)
+		Switch("Hotel_Basement_Light")
+	else
+		Print("Can't understand command " + command + " / 无法理解命令 " + command)
+		Sleep(1)
+	end
+end
+
+
+
+
+#loop
+# Switch("Hotel_Lobby_Light")
+# Sleep(3)
+#end

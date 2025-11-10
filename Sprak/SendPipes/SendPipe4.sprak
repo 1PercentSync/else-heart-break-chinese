@@ -1,0 +1,2 @@
+var id = Connect("SendPipe2")
+Send(id)

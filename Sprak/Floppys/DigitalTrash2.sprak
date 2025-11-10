@@ -1,0 +1,20 @@
+rNow < _fovTimerGoal) rGoal) {
+        {
+
+nOutSine(_fovStart, _fovGoal, (_fovT
+            _fovTimerNow += Time.deltaTime;
+            if (_fovTimerNow >= _fovTime
+                _fovTimerS                  tart = _f
+    ovTimerNow = _fovTimerGoal;
+                SetFov(_fovStart = _fovGoal);
+            }
+_fovTimerGoal - _fovTimerStart)));else {
+                SetFov(iTween.easeI
+            }
+        }
+        else {
+            _fovTimerStart = _fovTim
+        }
+    }
+
+imerNow - _fovTimerStart) / (   erNow = _fovTimerGoal;

@@ -1,0 +1,54 @@
+
+ClearText()
+DisplayGraphics()
+
+Print("Image viewer / 图像查看器")
+Print("============")
+Sleep(2)
+
+if HasFloppy()
+    Print("Data on floppy / 软盘上的数据")
+    Print("--------------")
+    var allData = LoadData()
+    loop data in allData
+        Print(data)
+    end
+    Print("--------------")
+    Input("")
+    ClearText()
+    DisplayDataAsImage(allData) 
+else
+    Print("Please insert floppy... / 请插入软盘...")
+end
+
+
+
+void DisplayDataAsImage(array data)
+    if Count(data) < 2
+        Print("Not enough data / 数据不足")
+    end
+
+    Color(0,1,1)
+
+    var x = data[0]
+    var y = data[1]
+    
+    number i = 2
+    loop
+        if i >= Count(data)
+            break
+        end
+
+        var x2 = data[i]
+        var y2 = data[i + 1]
+
+        Line(x, y, x2, y2)
+        
+        x = x2
+        y = y2
+        
+        i += 2
+    end
+    
+    DisplayGraphics()
+end

@@ -1,0 +1,3 @@
+var door = Connect("Lodge_Room1_DoorToRoom2")
+
+door.Say("Hello!")

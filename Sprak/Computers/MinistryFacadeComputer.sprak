@@ -1,0 +1,9 @@
+
+########################################
+
+void Relay(string msg, number priority)
+    var id = Connect("Hugin")
+    id.OnMessage(msg, priority)
+end
+
+########################################

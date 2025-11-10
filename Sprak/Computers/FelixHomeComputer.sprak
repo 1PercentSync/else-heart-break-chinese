@@ -1,0 +1,25 @@
+Color(0,0,0)
+
+number midx = 128
+number midy = 64
+number t = 0
+
+loop
+    number prevx = 0
+    number prevy = 0
+            
+    loop i from 1 to 7
+        number tt = i * t
+        var x = midx + 60 * Cos(tt)
+        var y = midy + 60 * Sin(tt)
+        if i > 1
+            Line(prevx, prevy, x, y)
+        end
+        prevx = x
+        prevy = y
+    end
+    
+    DisplayGraphics()
+    
+    t += 0.2
+end

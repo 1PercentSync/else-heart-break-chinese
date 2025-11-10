@@ -1,0 +1,9 @@
+
+# Connect to PowerTap / 连接到PowerTap
+number powerTap = Connect("PowerTap")
+
+# What's my name? / 我叫什么名字？
+string name = GetName()
+
+# Send name to PowerTap / 将名称发送到PowerTap
+powerTap.Tap(name)

@@ -1,0 +1,66 @@
+var password = "abc123"
+
+ClearText()
+Print("-- WELLSPRING SODA INC. -- / -- 好泉苏打公司 --")
+Print("This program may only be used by authorized personnel. / 本程序仅限授权人员使用。")
+Print("Enter command and then press RETURN, type H for help. / 输入命令后按回车键，输入 H 获取帮助。")
+Print("")
+
+loop
+	string s = Input("> ")
+	
+	if s == "h" or s == "H"
+		Help()
+	else if s == "lock"
+		Print("locking... / 正在锁定...")
+		Lock("HarborWest_DoorToSodaStorage")
+	else if s == "unlock"
+		loop
+			var input = Input("Enter password:  / 输入密码：")
+			if input == password
+				Print("Unlocking door... / 正在解锁门...")
+				Unlock("HarborWest_DoorToSodaStorage")
+				break
+			else
+				Print("Invalid password! Try again:  / 密码无效！请重试：")
+			end
+		end
+	else if s == "register"
+		Print("Register sales / 登记销售")
+		Print("--------------")
+		var input = Input("Enter password:  / 输入密码：")
+		if input == password
+			var name = GetUser()
+			var amount = Input("Enter amount of money earned: / 输入赚取的金额：")
+			
+			if amount < 0
+				amount = -amount
+			end
+
+			var wellspringer = Connect("Wellspringer")
+			wellspringer.RegisterSeller(name, amount)
+
+			var financeComputer = Connect("FinanceComputer")
+			financeComputer.ChangeBalance(name, -amount)
+
+			Print("Registered sales for " + name + ": $" + amount + " / " + name + " 的登记销售额：$" + amount)
+		else
+			Print("Invalid password / 密码无效")
+		end
+	else
+		Print("")
+		Print("Can't understand what that means / 无法理解其含义")
+		Print("")
+		Help()
+	end
+
+end
+
+void Help()
+	Print("AVAILABLE COMMANDS: / 可用命令：")
+	Print("lock / 锁定")
+	Print("unlock / 解锁")
+	Print("register / 登记")
+	Print("")
+	Print("Enter the command, followed by return key. / 输入命令，然后按回车键。")
+end

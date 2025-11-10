@@ -1,0 +1,41 @@
+### STAY AWAY CRACKERS AND CYPHER KIDS ###
+### 黑客和密码小子们，离远点 ###
+
+Connect("Plaza_CurcuitLocker_1")
+Connect("Plaza_CurcuitLocker_2")
+Connect("Plaza_CurcuitLocker_3")
+Connect("Plaza_CurcuitLocker_4")
+
+LookUpPeople() # Main entry point
+# 主入口点
+
+void LookUpPeople()
+	loop
+		Print("")
+		Print("Enter name of person / 输入人员姓名")
+		var name = Input("")
+		var balance = LoadMemory(name)
+		Print("Balance: / 余额：" + balance)
+	end
+end
+
+void ChangeBalance(string person, number amount)
+	var msg = "Changing balance for " + person + " by amount " + amount
+	Print(msg)
+	var oldBalance = 0
+	if HasMemory(person)
+	    oldBalance = LoadMemory(person)
+	end
+	Print("Old balance: / 旧余额：" + oldBalance)
+	var newBalance = oldBalance + amount
+	SaveMemory(person, newBalance)
+	Print("Changed balance for " + person + " from " + oldBalance + " to " + newBalance + " / 已将 " + person + " 的余额从 " + oldBalance + " 更改为 " + newBalance)
+end
+
+number GetBalanceForPerson(string name)
+	var msg = "Checking balance for person " + name
+	Print(msg)
+	var balance = LoadMemory(name)
+	Print("Returning balance: / 返回余额：" + balance)
+	return balance
+end

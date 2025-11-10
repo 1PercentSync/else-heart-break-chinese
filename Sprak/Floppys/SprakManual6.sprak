@@ -1,0 +1,83 @@
+#####################################
+# SPRAK PROGRAMMING LANGUAGE MANUAL #
+# SPRAK 编程语言手册 #
+#####################################
+
+Chapter 6 --- Arrays
+# 第 6 章 --- 数组
+====================
+
+Arrays are a way of combining several values into
+# 数组是一种将多个值组合成
+one structure that can be manipulated and passed
+# 一个可以作为一个单元来操作和传递的结构的方法。
+around as a single unit. It's very handy!
+# 它非常方便！
+
+Here's one way to create an array:
+# 这是创建数组的一种方法：
+
+array numbers = [10, 5, 7, 123]
+
+The '[' and ']' surround the numbers or whatever
+# '[' 和 ']' 包围着数字或任何
+you want to put into the array, kind of like the 
+# 你想放入数组的东西，有点像
+sides of a box or something...
+# 一个盒子的边或其他东西...
+
+This array (called 'numbers') now contains the
+# 这个数组（名为'numbers'）现在包含
+four numbers 10, 5, 7 and 123. We can get them out 
+# 四个数字10、5、7和123。我们可以使用
+of the variable by using the indexing operator,
+# 索引操作符从变量中取出它们，
+which looks like this:
+# 看起来像这样：
+
+Print(numbers[0])
+Print(numbers[1])
+Print(numbers[2])
+Print(numbers[3])
+
+This will print each one of the "slots" in the array,
+# 这将打印数组中每个“槽”的内容，
+starting with the '10' in the first slot and ending with
+# 从第一个槽中的'10'开始，到
+'123' in the last one. Note that the indexing of the
+# 最后一个槽中的'123'结束。请注意，
+array starts at 0 and ends at 3. This is a weird standard
+# 数组的索引从0开始，到3结束。这是一个奇怪的标准，
+that most programming languages follow and you just 
+# 大多数编程语言都遵循这个标准，你只需要
+need to accept that it feels a bit strange.
+# 接受它感觉有点奇怪。
+
+The indexing operator can also be used to assign new values
+# 索引操作符也可以用来给数组中的某个位置赋新值：
+to somewhere in the array:
+# (此为上一句的延续)
+
+numbers[1] = 666
+
+Now the 'numbers' variable will contain [10, 666, 7, 123]
+# 现在'numbers'变量将包含[10, 666, 7, 123]
+Be careful with this so you don't create bugs! Manipulating
+# 小心使用，以免产生bug！以这种方式操作
+arrays in this way can be tricky.
+# 数组可能很棘手。
+
+There is a function called 'Count' that 
+# 有一个名为'Count'的函数，
+counts how many things there are in an array. 
+# 它可以计算数组中有多少个东西。
+Just pass the array to 'Count' like this:
+# 只需像这样将数组传递给'Count'：
+
+Count(numbers)   # the function returns 4 in this case
+# Count(numbers)   # 在这种情况下，函数返回4
+
+There are more tricks and functions that use
+# 还有更多使用数组的技巧和函数，
+arrays but this is a good start.
+# 但这是一个好的开始。

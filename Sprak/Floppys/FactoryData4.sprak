@@ -1,0 +1,12 @@
+
+Refining process / 精炼过程
+================
+
+The goods can be refined in 16 / 货物可以在16个
+unique positions. / 独特的位置进行精炼。
+
+Currently the refine function / 目前，精炼函数
+has a 25% chance of error / 有25%的出错几率
+which will reset the goods' quality / 这将重置货物在当前位置的质量
+at the current position to / 为
+'u', 'v', 'w', 'x', 'y' or 'z' / 'u'、'v'、'w'、'x'、'y'或'z'

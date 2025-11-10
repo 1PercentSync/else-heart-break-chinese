@@ -1,0 +1,9 @@
+
+# Check if GetUser() EQUALS the string "Pixie"
+# 检查 GetUser() 是否等于字符串 "Pixie"
+
+if GetUser() == "Pixie"
+    Print("Hello Pixie / 你好，皮克希")
+else
+    Print("Hello not Pixie / 你好，不是皮克希")
+end

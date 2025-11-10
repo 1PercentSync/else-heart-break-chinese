@@ -1,0 +1,15 @@
+
+# This program is complete nonsense
+# Please delete it someone
+# 这个程序完全是胡说八道
+# 谁来删掉它
+
+var x = 10
+var y = 20
+var z = 30
+
+loop
+	x = y
+	y = 
+	z = x
+end

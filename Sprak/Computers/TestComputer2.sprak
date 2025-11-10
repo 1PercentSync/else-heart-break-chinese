@@ -1,0 +1,15 @@
+
+loop
+	Input("")
+end
+
+Connect("TestComputer1")
+Connect("Beer_Testroom_2")
+Connect("FinanceComputer")
+
+var i = 0
+loop
+	Print(i)
+	i = i + 1
+	Sleep(10)
+end

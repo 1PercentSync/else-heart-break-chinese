@@ -1,0 +1,15 @@
+
+# CONTROLLED BY COMPUTER
+# 由计算机控制
+
+# Available functions
+# 可用函数
+
+# Play()
+# 播放()
+# Stop()
+# 停止()
+# PlaySound(name)
+# 播放声音(名称)
+# IsPlaying() -> bool
+# 正在播放() -> 布尔值

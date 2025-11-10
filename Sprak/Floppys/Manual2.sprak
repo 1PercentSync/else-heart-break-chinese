@@ -1,0 +1,21 @@
+===================================
+THE BEGINNER'S GUIDE TO THE MODIFIER / 修饰符入门指南
+===================================
+
+*** Chapter 5: Autocomplete *** / *** 第5章：自动完成 ***
+
+The section at the lower part of your / 你修改器下方的部分
+modifier ("help area") has a list of / （“帮助区域”）有一个
+functions available to you when programming. / 编程时可用的函数列表。
+
+Start writing the name of a function / 开始编写函数名
+to limit the number of options and / 以限制选项数量并
+find it in the list of suggestions. / 在建议列表中找到它。
+
+If you press the TAB key, the highlighted / 如果你按下TAB键，高亮的
+option will be inserted into the code / 选项将被插入到代码中
+with a starting parenthesis: ( / 并带有一个起始括号：（
+
+When entering arguments to a function / 当输入函数的参数时
+the help area will show documentation / 帮助区域将显示
+for each argument. / 每个参数的文档。

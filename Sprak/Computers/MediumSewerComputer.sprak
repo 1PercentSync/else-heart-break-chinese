@@ -1,0 +1,16 @@
+ClearText()
+
+var server = Connect("MeteorologyServer")
+
+number samples = 10
+number sum = 0
+
+loop from 1 to samples
+    var humidity = server.ReadHumidity()
+    Print("Humidity sample: " + humidity + " / 湿度样本：" + humidity)
+    sum += humidity
+end
+
+Print("")
+number average = sum / samples
+Print("Average humidity: " + Round(average) + "% / 平均湿度：" + Round(average) + "%")    

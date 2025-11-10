@@ -1,0 +1,14 @@
+
+# SAVE ENERGY FOR NOW, DON'T RUN THESE
+# 暂时节省能源，不要运行这些
+
+#void OnIntruder(string name)
+    #number hugin = Connect("Hugin")
+    #hugin.LogIntruder(name, "Ministry")
+#end
+
+#void OnHack(string name)
+    #number hugin = Connect("Hugin")
+    #hugin.LogHack(name, "Ministry")
+#end
+

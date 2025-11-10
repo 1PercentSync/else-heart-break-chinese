@@ -1,0 +1,5 @@
+
+Connect("MonadsApartment_Internet_PoleComputer_1")
+Connect("MonadsApartment_Internet_PoleComputer_2")
+
+Slurp()

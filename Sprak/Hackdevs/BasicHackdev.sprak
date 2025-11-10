@@ -1,0 +1,8 @@
+
+# The allow function returns true/false / allow函数返回true/false
+# depending on if you're allowed to / 取决于你是否被允许
+# modify the target or not. / 修改目标。
+
+bool Allow(string target, number level)
+    return level == 0
+end

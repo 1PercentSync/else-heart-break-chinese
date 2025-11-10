@@ -1,0 +1,2 @@
+10 PRINT "HELLO WORLD" / 10 打印 "你好世界"
+20 GOTO 10 / 20 跳转到 10

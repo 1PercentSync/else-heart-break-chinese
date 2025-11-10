@@ -1,0 +1,23 @@
+
+var ivanId = Connect("Ivan")
+
+
+loop
+    Sleep(1.0)
+    if GetNumericData("Ivan", "corruption") < 10
+        Sleep(4.0)
+        ZapPersonGently("Ivan")
+        Sleep(1.0)
+        SetNumericData("Ivan", "corruption", 100)
+    end
+
+    if Random() < 0.1
+        ZapPersonGently("Ivan")
+    end
+end
+
+
+
+number EnergyLevel()
+    return 47622201
+end

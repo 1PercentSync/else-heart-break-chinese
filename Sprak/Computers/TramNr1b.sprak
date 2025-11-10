@@ -1,0 +1,28 @@
+var tram = Connect("Tram1b")
+
+loop
+	Print("Let's go / 我们走吧")
+	tram.SetSpeed(10)
+	Sleep(1)
+
+	loop
+		if tram.IsAtStation() == false
+			Print("Left station / 离开车站")
+			break
+		end
+		Sleep(0.25)
+	end
+
+	loop
+		if tram.IsAtStation()
+			tram.SetSpeed(0)
+			Print("Let passengers enter / 让乘客进入")
+			Sleep(15) # let passengers enter / 让乘客进入
+			Print("Done sleeping / 睡眠完成")
+			break
+		else
+			Print("Not at station yet... / 还没到站...")
+		end
+		Sleep(0.25)
+	end
+end

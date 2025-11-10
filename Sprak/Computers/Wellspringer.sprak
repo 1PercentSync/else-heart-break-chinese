@@ -1,0 +1,28 @@
+
+void Trace(string name, string room)
+	Print(GetHour() + ":" + GetMinute() + " " + name + " drank a soda in " + room + " / " + GetHour() + ":" + GetMinute() + " " + name + " 在 " + room + " 喝了一瓶苏打水")
+end
+
+void RegisterSeller(string name, number amount)
+	Print(name + " sold for $" + amount + " / " + name + " 卖了 $" + amount)
+end
+
+loop
+    Print("")
+    Print("")
+    string command = Input("> ")
+    if command == "cls"
+        ClearText()
+    else if command == "count"
+        # Todo
+        # 待办事项
+        # Count number of soda cans in world
+        # 计算世界上的苏打水罐数量
+    else if command == "empty_all"
+        # Todo
+        # 待办事项
+        # Empty all soda cans in world
+        # 清空世界上的所有苏打水罐
+    end
+    Print("")
+end

@@ -1,0 +1,9 @@
+
+var r = Round(Random() * 4 + 1)
+
+if r == 5
+  r = 4
+end
+
+var id = Connect("SendPipe" + r)
+Send(id)

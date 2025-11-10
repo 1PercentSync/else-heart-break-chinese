@@ -1,0 +1,25 @@
+
+ClearText()
+Print("*****************")
+
+var bank = Connect("FinanceComputer")
+var customer = Input("Customer:  / 顾客：")
+
+var sales = Input("Register sales ($): / 登记销售额（美元）：")
+var seller = GetUser()
+
+loop
+    var input = Input("Enter password:  / 输入密码：")
+    if input == "passw00rd"
+        break
+    else
+        Print("Invalid password! Try again... / 密码无效！请重试...")
+    end
+end
+
+bank.ChangeBalance(customer, -sales)
+bank.ChangeBalance(seller, sales)
+
+Print("Transaction completed. / 交易完成。")
+Print("*****************")
+Print("")

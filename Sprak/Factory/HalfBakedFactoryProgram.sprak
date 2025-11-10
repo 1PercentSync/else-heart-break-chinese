@@ -1,0 +1,12 @@
+# Return the absolute number / 返回绝对值
+number Abs(number x)
+    if x >= 0
+        return x
+    else
+        return -x
+    end
+end
+
+Print("UNFINISHED PROGRAM / 未完成的程序")
+
+

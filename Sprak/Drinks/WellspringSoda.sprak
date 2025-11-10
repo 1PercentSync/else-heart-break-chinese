@@ -1,0 +1,5 @@
+
+Sleepiness(-5)
+
+var server = Connect("Wellspringer")
+server.Trace(GetUser(), GetRoom())

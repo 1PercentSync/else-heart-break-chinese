@@ -1,0 +1,6 @@
+
+void Tap(string name)
+    Print("Tapped by: " + name + " / 由 " + name + " 点击")
+    # todo: save last tapper and return it to the next one
+    # 待办事项：保存最后一个点击者并将其返回给下一个
+end

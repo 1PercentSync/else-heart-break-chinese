@@ -1,0 +1,11 @@
+# MissingPersonFinder
+# 失踪人员查找器
+
+loop
+    ClearText()
+    Print("MissingPersonFinder / 失踪人员查找器")
+    Print("===================")
+    var name = Input("Enter name:  / 输入姓名：")
+    Print(GetPosition(name))
+    Sleep(1)
+end

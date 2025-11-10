@@ -1,0 +1,25 @@
+# Calculate the n:th Fibonacci number
+# 计算第 n 个斐波那契数
+
+number Fib(number n)
+	
+	if n == 0
+		return 0
+	end
+	
+	if n == 1
+		return 1
+	end
+
+	var a = 0
+	var b = 1
+	var c = a + b
+
+	loop from 1 to n - 1
+		c = a + b
+		a = b
+		b = c
+	end
+	
+	return c
+end

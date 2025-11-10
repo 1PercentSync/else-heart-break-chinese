@@ -1,0 +1,8 @@
+
+void LogNormal(string name)
+    Print("PERSON:  / 人员：" + name)
+end
+
+void LogIntruder(string name)
+    Print("INTRUDER:  / 入侵者：" + name)
+end

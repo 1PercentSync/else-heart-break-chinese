@@ -1,0 +1,15 @@
+
+var db = Connect("GoodsDatabase")
+
+loop
+    ClearText()
+    Print("Register Goods / 注册商品")
+    Print("==============")
+    string goodsType = Input("Type: / 类型：")
+    string quality = Input("Quality (1-10): / 质量 (1-10)：")
+    string msg = db.Register(goodsType, quality)
+    Print(msg)
+    Print("==============")
+    Print("")
+    Sleep(3)
+end

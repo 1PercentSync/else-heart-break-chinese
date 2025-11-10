@@ -1,0 +1,8 @@
+if GetUser() == "Elsa"
+    Connect("Heart")
+    Connect("Miman")
+    Connect("Outpost")
+    Slurp()
+else
+  Print("Hello " + GetUser() + ", you are not authorized. / 你好 " + GetUser() + "，你未经授权。")
+end

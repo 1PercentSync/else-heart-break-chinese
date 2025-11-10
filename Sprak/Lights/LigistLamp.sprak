@@ -1,0 +1,7 @@
+
+loop
+  SetColor(10, 0, 0)
+  Sleep(2)
+  SetColor(0, 10, 0)
+  Sleep(2)
+end

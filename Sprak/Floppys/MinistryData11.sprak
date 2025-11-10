@@ -1,0 +1,19 @@
+# ILLEGAL! / # 非法！
+
+ClearText()
+var machine = Connect("FactoryMachineA")
+
+loop
+    Print(machine.Analyze())
+    var s = machine.Analyze()
+    loop i from 0 to 15
+        if CharToInt(s[i]) > 4
+            Print("Will refine '" + s[i] + "' at index " + i + ".")
+            machine.Refine(i)
+            s = machine.Analyze()
+            Print("Result: '" + s[i] + "'")
+        else
+            Print("Will not refine '" + s[i] + "', it's good enough.")
+        end
+    end
+end

@@ -1,0 +1,62 @@
+
+# operating system for computers in the cityscape
+# 城市景观中计算机的操作系统
+
+loop
+    ClearText()
+    Print("==========================")
+    Sleep(0.5)
+    Print("Hello and welcome to / 您好，欢迎使用")
+    Print("The Dorisburg Pedestrian OS / 多丽丝堡行人操作系统")
+    Sleep(0.5)
+    Print("Where do you want to walk to? / 您想走到哪里？")
+    Print("Please enter destination: / 请输入目的地：")
+    var dest = ToLowercase(Input(""))
+
+    string target = ""
+
+    if dest == "hotel" or dest == "devotchka"
+        target = "Hotel_Lobby_Point"
+    else if dest == "cafe"
+        target = "Cafe_Room1_Point"
+    else if dest == "plaza"
+        target = "Plaza_Point"
+    else if dest == "ministry"
+        target = "Ministry_Lobby_Point1"
+    else if dest == "harbour"
+        target = "HarborEast_Point"
+    else if dest == "police"
+        target = "PoliceOfficeInterior_Trigger_1"
+    else if dest == "wellspring"
+        target = "SodaStorage_Point"
+    end
+
+    Print("Please wait... / 请稍候...")
+    var path = FindPath(GetUser(), target)
+
+    Print("==========================")
+    Print("Suggested route: / 建议路线：")
+    number i = 1
+    loop room in path
+        Print(i + ". " + room)
+        i++
+    end
+    Print("==========================")
+    Input("Press enter to continue... / 按回车键继续...")
+end
+
+string ToLowercase(var text)
+    string res = ""
+    loop c in text
+        if IsUppercase(c)
+            res += IntToChar(CharToInt(c) + 32)
+        else
+            res += c
+        end
+    end
+    return res
+end
+
+bool IsUppercase(var c)
+    return CharToInt(c) >= -32 && CharToInt(c) <= -7
+end

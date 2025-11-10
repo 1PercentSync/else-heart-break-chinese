@@ -1,0 +1,22 @@
+
+void OnButtonPressed(number x)
+
+	Connect("PoorDesolateBuilding1_Elevator_Door")
+
+	if x == 4
+		GotoFloor(3)
+	end
+
+	if x == 3
+		GotoFloor(2)
+	end
+
+	if x == 2
+		GotoFloor(2)
+	end
+
+	if x == 1
+		GotoFloor(0)
+	end
+	
+end

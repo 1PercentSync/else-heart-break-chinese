@@ -1,0 +1,108 @@
+#####################################
+# SPRAK PROGRAMMING LANGUAGE MANUAL #
+# SPRAK 编程语言手册 #
+#####################################
+
+Chapter 1 --- Introduction to problem solving
+# 第 1 章 --- 解决问题的介绍
+=============================================
+
+How do you solve a problem? This is a tricky question
+# 你如何解决一个问题？这确实是个棘手的问题。
+for sure. After all, every problem is unique and
+# 毕竟，每个问题都是独特的，
+needs its own unique solution. Or does it?
+# 需要它自己独特的解决方案。或者真的是这样吗？
+
+A lot of similar, related problems in programming
+# 在编程中，许多相似、相关的问题
+come up again and again. An experienced programmer
+# 会一次又一次地出现。一个有经验的程序员
+might not have to think consciously at all about
+# 可能根本不需要有意识地去思考
+how to solve such situations. The right answer just
+# 如何解决这些情况。正确的答案
+appears in her or his head and can be typed into 
+# 就出现在他或她的脑海里，并且可以毫不费力地
+the computer without much thought at all.
+# 输入到电脑里。
+
+But how does one learn how to perform such a feat?
+# 但是，一个人如何学会这样的壮举呢？
+"Read code!" is an oft-repeated mantra for
+# “读代码！”是年轻和缺乏经验的程序员
+the young and inexperienced programmer. This tip
+# 经常重复的口头禅。这个建议
+is very good, naturally, but can be hard to follow
+# 当然非常好，但在实践中可能很难遵循。
+in practice. Many real-world solutions are both messy 
+# 许多现实世界的解决方案既混乱
+and poorly structured, with many strange details that
+# 又结构不良，有许多奇怪的细节
+make them both hard to read and reason about.
+# 使它们难以阅读和理解。
+
+Without guidance a page of code might be almost
+# 没有指导，一页代码对于除了作者之外的任何人
+impossible to understand for anyone except its author
+# 几乎是不可能理解的
+(and sometimes even her or him). Still, it IS very much
+# （有时甚至包括作者本人）。尽管如此，
+worthwhile trying to understand other people's code and 
+# 尝试理解别人的代码并从中学习
+pick up little things here and there, trying to find
+# 零碎的知识，试图找到
+patterns and exploring another person's solutions.
+# 模式并探索另一个人的解决方案，这仍然是非常值得的。
+
+A very good trick indeed can be to rewrite someone
+# 一个非常好的技巧确实是重写某人
+else's code with your own style and improvements.
+# 的代码，用你自己的风格和改进。
+This helps tremendously with understanding the flow
+# 这极大地有助于理解
+and connections in the written code.
+# 书面代码中的流程和联系。
+
+But back to problem solving! The main method of
+# 但回到解决问题！解决问题的主要方法，
+solving a problem, in programming and otherwise,
+# 无论是在编程中还是在其他方面，
+is to DECONSCTRUCT the problem and solve each
+# 都是解构问题并单独解决每个
+component individually. This simple method has proven
+# 组件。这个简单的方法已经被证明
+to be incredibly effective and lies at the heart
+# 非常有效，并且是函数式组合（见第5章）
+of both functional composition (see Chapter 5) and
+# 和面向对象（见第9章）的核心。
+object orientation (see Chapter 9).
+# (此为上一句的延续)
+
+By breaking things down into smaller and smaller 
+# 通过将事物分解成越来越小的
+pieces, something big and tangled can become quite
+# 部分，一个庞大而纠结的东西可以变得相当
+small and manageable. How to do this well is something
+# 小而易于管理。如何做好这一点是我们
+we will touch upon again and again throughout this
+# 在本文中将反复提及的。通过分析手头的问题，
+text. By analyzing the problem at hand and then trying
+# 然后尝试将其拆解并用你将在后续章节中学到的
+to take it apart and putting it together with the
+# 不同结构将其重新组合，
+different constructs you will learn in the following
+# 希望你也能成为解决问题的大师！
+chapters, hopefully you too can become a master of
+# (此为上一句的延续)
+problem solving!
+# (此为上一句的延续)
+
+Finally, if nothing works and a solution completely
+# 最后，如果什么都不起作用，一个解决方案完全
+eludes you - take a nap, walk away from your machine,
+# 让你束手无策——打个盹，离开你的机器，
+go for a walk or grab a sandwich. Nothing helps 
+# 去散步或者吃个三明治。没有什么比睡眠和
+problem solving as much as sleep and some fresh air.
+# 新鲜空气更能帮助解决问题了。

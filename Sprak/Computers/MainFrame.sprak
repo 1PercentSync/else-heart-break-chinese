@@ -1,0 +1,22 @@
+
+ClearText()
+
+loop from 1 to 30
+	loop from 1 to 13
+		if Random() > 0.5
+			PrintS(">><>>")
+		else
+			PrintS("<<<><")
+		end
+	end
+	Print("")
+end
+
+Print("")
+
+var names = GetPeople()
+
+loop
+	var name = Input("Enter name to look up:  / 输入要查找的姓名：")
+	Print(GetPosition(name))
+end

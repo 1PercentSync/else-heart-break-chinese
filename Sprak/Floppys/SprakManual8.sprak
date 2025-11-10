@@ -1,0 +1,59 @@
+#####################################
+# SPRAK PROGRAMMING LANGUAGE MANUAL #
+# SPRAK 编程语言手册 #
+#####################################
+
+Chapter 8 --- Manipulating text
+# 第 8 章 --- 操作文本
+===============================
+
+SPRAK's tools for manipulating text
+# SPRAK 操作文本的工具
+are few and kind of simplistic. It's still
+# 很少，而且有点简单。不过，
+important to know them though. Without
+# 了解它们仍然很重要。没有
+good textual output and input a lot of
+# 好的文本输出和输入，很多
+programs would suffer from very poor usability.
+# 程序会因可用性非常差而受到影响。
+
+The most important operation is representing 
+# 最重要的操作是将不同种类的数据表示为文本。
+different kinds of data as text.
+# (此为上一句的延续)
+This is usually automatically done whenever
+# 这通常在函数需要文本时自动完成。
+a function needs text. For example
+# 例如，打印函数：
+the print function:
+# (此为上一句的延续)
+
+Print(10)
+
+This will output the text "10", just as expected.
+# 这将输出文本“10”，正如预期的那样。
+Somewhat more interesting is the '+' operator
+# 更有趣的是'+'运算符，
+which can be used to put together longer
+# 它可以用来组合更长的字符串：
+strings:
+# (此为上一句的延续)
+
+Print("X has the value " + X)
+
+This will automatically convert X to a
+# 这将自动将X转换为字符串，
+string and print something like 
+# 并打印出类似“X has the value 42”的内容，
+"X has the value 42", if X has the value 42.
+# 如果X的值是42。
+
+You can also print arrays but if they are
+# 你也可以打印数组，但如果它们很长，
+long they might get cut off half-way through
+# 它们可能会被中途截断，
+to fit on the screen and not create
+# 以适应屏幕，而不是创建
+enormous strings.
+# 巨大的字符串。

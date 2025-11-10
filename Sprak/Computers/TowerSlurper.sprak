@@ -1,0 +1,12 @@
+ClearText()
+var sure = Input("Are you sure? y/n  / 您确定吗？y/n ")
+if sure == "y" or sure == "Y" or sure == "yes"
+    Print("Connecting... / 正在连接...")
+    var id = Connect("ZarahsTv")
+    Sleep(2)
+    Print("Here we go... / 开始了...")
+    Sleep(2)
+    Slurp()
+else
+    Print("OK, can't blame you. / 好的，不怪你。")
+end

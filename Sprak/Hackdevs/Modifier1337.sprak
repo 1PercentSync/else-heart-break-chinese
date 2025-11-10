@@ -1,0 +1,5 @@
+
+bool Allow(string target, number level)
+    return true
+end
+

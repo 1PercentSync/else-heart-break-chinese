@@ -1,0 +1,6 @@
+
+var x = Input("")
+
+if x == 10
+   Print("Yes! / 是的！")
+end

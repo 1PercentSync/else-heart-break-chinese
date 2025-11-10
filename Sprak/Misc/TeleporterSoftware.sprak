@@ -1,0 +1,4 @@
+﻿Print(Position())
+
+# string e = Teleport(50, 30)
+# Print(e)

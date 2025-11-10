@@ -1,0 +1,69 @@
+PlaySound("FiveBlips")
+var playerFish = StartNewGame()
+
+# Each time your fish moves, the enemy fish gets to move too
+# 你的鱼每移动一次，敌人的鱼也会移动一次
+# Add instructions below:
+# 在下方添加指令：
+
+Forward()
+Left()
+Forward()
+Forward()
+Wait()
+Right()
+
+# TODO: add more code here...
+# TODO：在此处添加更多代码...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+##############################################
+############# Helper functions ###############
+############# 辅助函数 ###############
+##############################################
+
+void StartNewGame()
+	var id = Connect("PlayerFish")
+	RemoteFunctionCall(id, "Restart", [])
+    Sleep(2)
+	return id
+end
+
+void Forward()
+	RemoteFunctionCall(playerFish, "PerformMove", ["Forward"])
+end
+
+void Left()
+	RemoteFunctionCall(playerFish, "PerformMove", ["Left"])
+end
+
+void Right()
+	RemoteFunctionCall(playerFish, "PerformMove", ["Right"])
+end
+
+void Wait()
+	RemoteFunctionCall(playerFish, "PerformMove", ["Wait"])
+end

@@ -1,0 +1,57 @@
+#####################################
+# SPRAK PROGRAMMING LANGUAGE MANUAL #
+# SPRAK 编程语言手册 #
+#####################################
+
+Programming, what a wonderful thing! 
+# 编程，多么美妙的事情！
+Ah... the joy of controlling everything and 
+# 啊... 单单通过代码的魔法咒语就能控制一切的乐趣。
+anything through the magical spells of code alone.
+# (此为上一句的延续)
+
+This manual will teach you all you need to
+# 本手册将教你所有你需要知道的，
+know to become a sorcerer of bits, a
+# 让你成为比特的巫师，
+a master of logic and the ruler of both 
+# 逻辑的大师，以及数据和函数的统治者。
+data and functions.
+# (这几句是连贯的)
+
+There are 10 chapters and we recommend
+# 共有10个章节，我们建议
+you read them all in order, since
+# 你按顺序阅读，因为
+the later chapters build upon previous material.
+# 后面的章节内容会建立在前面章节的基础上。
+Here's an overview of what we will go through:
+# 以下是我们将要学习的内容概览：
+
+------------------------
+1.  Introduction to problem solving
+# 1.  解决问题的介绍
+2.  Variables
+# 2.  变量
+3.  Math
+# 3.  数学运算
+4.  Functions
+# 4.  函数
+5.  If-statements
+# 5.  If语句
+6.  Arrays
+# 6.  数组
+7.  Loops
+# 7.  循环
+8.  Handling text
+# 8.  处理文本
+9.  Objects and methods
+# 9.  对象和方法
+------------------------
+
+The language you will learn is called SPRAK.
+# 你将要学习的语言叫做 SPRAK。
+We hope that you will find it fun and 
+# 我们希望你会觉得它用起来既有趣又有启发！
+enlightening to use!
+# (此为上一句的延续)

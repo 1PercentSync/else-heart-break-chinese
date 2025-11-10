@@ -1,0 +1,43 @@
+
+void OnIntruder(string name)
+    Connect("Ministry_Elevator1_Door1")
+
+    if name == "Monad"
+        Say("Good evening Dr Monad, one second please / 晚上好，莫纳德博士，请稍等")
+        if(GetFloor() == 3)
+            GotoFloor(0)
+        else
+            GotoFloor(3)
+        end
+    else if StringContains(name, "Typer")
+        Say("Hello and welcome to the Ministry. / 您好，欢迎来到部门。")
+        if(GetFloor() == 0)
+            GotoFloor(2)
+        else
+            GotoFloor(0)
+        end
+    else if name == "Bower"
+        Say("Good evening Mr Bower, one second please / 晚上好，鲍尔先生，请稍等")
+        if(GetFloor() == 0)
+            GotoFloor(1)
+        else
+            GotoFloor(0)
+        end
+    else
+        GotoFloor(0)
+    end
+end
+
+
+# If the elevator is activated manually
+# 如果电梯是手动激活的
+
+if GetUser() == "Pixie"
+    Say("We have been expecting you. Second door on the right when you get off. / 我们一直在等您。下车后右边第二个门。")
+    GotoFloor(1)
+end
+
+
+void OnHack(string name)
+     Say("Illegal hacking identified. / 发现非法黑客行为。")
+end

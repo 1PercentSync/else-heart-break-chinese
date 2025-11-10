@@ -1,0 +1,25 @@
+string targetRoom = GetTargetRoom()
+number targetX = GetTargetX()
+number targetY = GetTargetY()
+
+if Authorized()
+  TeleportUser(targetRoom, targetX, targetY)
+else
+  Say("You are unauthorized. / 您未被授权。")
+end
+
+bool Authorized()
+    if StringContains(GetUser(), "Typer")
+      return true
+    else if GetUser() == "Monad"
+      return true
+    else if GetUser() == "Svante"
+      return true
+    else if GetUser() == "Receptionist"
+      return true
+    else if GetUser() == "Bower"
+      return true
+    else
+      return false
+    end
+end

@@ -1,0 +1,325 @@
+# Elliot (8) & Mattias (old) made this 2014
+# Elliot (8岁) 和 Mattias (老人) 于 2014 年制作
+
+var game = [];
+    game["x"] = 0;
+    game["y"] = 24;
+    game["w"] = 512;
+    game["h"] = 256;
+    game["horizon"] = 64;
+
+var tiles = [];
+    tiles["x"] = 4;
+    tiles["y"] = 4;
+    tiles["w"] = game["w"] / tiles["x"];
+    tiles["h"] = game["h"] / tiles["y"];
+
+var session = [];
+    session["score"] = 0;
+    session["lives"] = 3;
+    session["dt"] = 0;
+    session["lt"] = Time();
+    session["state"] = "play";
+
+var spawn = [];
+    spawn["time"] = 0;
+    spawn["delay"] = 2;
+    spawn["decrease"] = 0.1;
+    spawn["min"] = 0.5;
+    spawn["items"] = 6;
+    
+var hero = [];
+    hero["x"] = game["w"] / 2;
+    hero["y"] = game["h"] / 2;
+    hero["sx"] = 500;
+    hero["sy"] = 160;
+    
+var bar = [];
+    bar["w"] = 20;
+    bar["h"] = 4;
+    bar["time"] = 3;
+    bar["descrease"] = 0.1;
+    bar["min"] = 1;
+    
+var explosion = [];
+    explosion["x"] = 100;
+    explosion["y"] = 100;
+    explosion["life"] = 0;
+    
+var enemies = [];
+
+
+loop
+    session["dt"] = Time() - session["lt"];
+    session["lt"] = Time();
+
+    DrawBackground((session["lives"] <= 0));
+    
+    if(session["state"] == "play")
+        UpdateEnemies();
+        UpdatePlayer();
+        UpdateExplosion();
+        DrawCrosshair(hero["x"], hero["y"]);
+    else
+
+    end
+    
+    ClearText();
+    DrawText();
+    DisplayGraphics();
+end
+
+void UpdatePlayer()
+    
+    if(IsKeyPressed("left"))
+        hero["x"] = hero["x"] - (hero["sx"] * session["dt"]);
+    else if(IsKeyPressed("right"))
+        hero["x"] = hero["x"] + (hero["sx"] * session["dt"]);
+    end
+
+    if(IsKeyPressed("up"))
+        hero["y"] = hero["y"] - (hero["sy"] * session["dt"]);
+    else if(IsKeyPressed("down"))
+        hero["y"] = hero["y"] + (hero["sy"] * session["dt"]);
+    end
+
+    hero["x"] = Repeat(hero["x"], game["w"]);
+    hero["y"] = Repeat(hero["y"], game["h"]);
+    
+    if(IsKeyPressed("space"))
+        Shoot(CalculateTile(hero["x"], hero["y"]));
+    end
+
+end
+
+void UpdateEnemies()
+
+    loop i in GetIndexes(enemies)
+
+        var enemy = enemies[i];
+
+        enemy["time"] = enemy["time"] - session["dt"];
+
+        DrawEnemy(enemy);
+        
+        if(enemy["time"] <= 0)
+            enemy["time"] = bar["time"];
+            ShootPlayer();
+        end
+    end
+   
+    if(Count(GetIndexes(enemies)) < spawn["items"])
+
+        spawn["time"] = spawn["time"] + session["dt"];
+
+        if(spawn["time"] >= spawn["delay"])
+            SpawnEnemy();
+        end
+        
+    end
+    
+end
+
+
+
+void DrawCrosshair(number pX, number pY)
+   
+   var w = 24;
+   var h = 12;
+   
+    Color(1, 1, 1);
+    Line(pX - w, pY, pX + w, pY);
+    Line(pX, pY - h, pX, pY + h);
+
+    DrawRect(pX, pY, 16, 8);
+    Color(1, 0, 0);
+    DrawRect(pX, pY, 8, 3);
+    
+end
+
+void DrawRect(var x, var y, var sx, var sy)
+   Rect(x - sx/2, y - sy/2, x + sx/2, y + sy/2);
+end
+
+
+
+array CalculateTile(var pX, var pY)
+    var tile = [];
+    tile["x"] = Int(pX / tiles["w"]);
+    tile["y"] = Int(pY / tiles["h"]);
+    
+   return tile; 
+end
+
+array CalculateTilePosition(array tile)
+    var pos = [];
+        pos["x"] = (tile["x"] * tiles["w"]);
+        pos["x"] = pos["x"] + (tiles["w"] / 2);
+        pos["y"] = (tile["y"] * tiles["h"]);
+        pos["y"] = pos["y"] + (tiles["h"] / 2);
+    return pos;
+end
+
+void Shoot(var tile)
+
+    loop i in GetIndexes(enemies)
+        var enemy = enemies[i];
+        var pos = enemy["pos"];
+
+        if(tile["x"] == pos["x"] && tile["y"] == pos["y"])
+            CreateExplosion(CalculateTilePosition(pos));
+            Remove(enemies, i);
+            
+            if(Count(GetIndexes(enemies)) == 0)
+                enemies = [];
+            end
+            
+            PlaySound("Explosion 1");
+            session["score"] = session["score"] + 1;
+            break;
+        end
+    end
+end
+
+bool MatchTiles(var tile1, var tile2)
+    var m1 = tile1["x"] == tile2["x"];
+    var m2 = tile1["y"] == tile2["y"];
+    return m1 && m2;
+end
+
+void DrawText()
+   PrintS("SUBSH00TERS / 潜艇射手");
+   PrintS(" | ");
+   PrintS("SCORE: " + session["score"] + " / 分数: " + session["score"]);
+   PrintS(" | ");
+   PrintS("LIVES: " + session["lives"] + " / 生命: " + session["lives"]);
+   PrintS(" | ");
+end
+
+
+void ShootPlayer()
+
+    PlaySound("Laser 1");
+   
+    session["lives"] = session["lives"] - 1;
+    
+    if(session["lives"] == 1)
+        PlaySound("Warning");
+    end
+   
+    if(session["lives"] <= 0)
+        session["state"] = "fail";  
+        PlaySound("Fail");
+    end
+end
+
+
+void DrawBackground(bool isDead)
+    
+    #sky
+    if(isDead)
+        Color(Random(), 0, 0);
+    else
+        Color(0, 0.8, 1);
+    end
+    
+    Rect(game["x"], game["y"], game["w"], game["h"]);
+    
+    #sun
+    if(isDead)
+        Color(Random(), 0, 0);
+    else
+        Color(1, 1, 0);
+    end
+
+    DrawRect(game["w"] / 3, game["horizon"] - 15, 140, 30);
+    DrawRect(game["w"] / 3, game["horizon"] - 10, 170, 20);
+    DrawRect(game["w"] / 3, game["horizon"] - 5, 185, 10);
+    
+    #water
+    if(isDead)
+        Color(Random(), 0, 0);
+    else
+        Color(0, 0.5, 1);
+    end
+
+    Rect(game["x"], game["horizon"], game["w"], game["h"]);
+end
+
+void DrawEnemy(var enemy)
+    
+    var pos = CalculateTilePosition(enemy["pos"]);
+    var p = enemy["time"] / bar["time"];
+
+    var newY = pos["y"] + (Sin(Time() * 2) * 6);
+    
+    #scope   
+    Color(0, 0, 0);
+    DrawRect(pos["x"], newY, 20, 30);
+    DrawRect(pos["x"] - 10, newY - 10, 20, 10);
+    Color(0.1, 0.3, 0.3);
+    DrawRect(pos["x"] - 10, newY - 10, 10, 5);
+    
+    # bar
+    if(p < 0.4)
+        Color(1, 0, 0);
+    else
+        Color(0, 0, 0);
+    end
+
+    DrawRect(pos["x"] - 0, newY - 20, p * bar["w"], bar["h"]);
+    
+    #mask
+    Color(0, 0.5, 1);
+    DrawRect(pos["x"], pos["y"] + 20, 50, 12);
+end
+
+void SpawnEnemy()
+   
+    var posX = Random() * game["w"];
+    var posY = Random() * (game["h"] - tiles["h"]);
+        posY = posY + tiles["h"];
+    var tile = CalculateTile(posX, posY);
+    
+    loop i in GetIndexes(enemies)
+        var e = enemies[i];
+        if(MatchTiles(tile, e["pos"]))
+            return;
+        end
+    end
+    
+    var enemy = [];
+        enemy["pos"] = tile;
+        enemy["time"] = bar["time"];
+
+    Append(enemies, enemy);
+    
+    spawn["delay"] = spawn["delay"] - spawn["decrease"];
+    
+    if(spawn["delay"] < spawn["min"])
+        spawn["delay"] = spawn["min"];
+    end
+    
+    spawn["time"] = 0;
+end
+
+void CreateExplosion(var pos)
+  explosion["x"] = pos["x"];
+  explosion["y"] = pos["y"];
+  explosion["life"] = 0.3;
+end
+
+void UpdateExplosion()
+    if(explosion["life"] > 0)
+        explosion["life"] = explosion["life"] - session["dt"];
+    else
+        return;
+    end
+
+    loop i from 1 to 4
+        Color(Random(), Random(), 0);
+        var posX = explosion["x"] + (Random() * 10) - 5;
+        var posY = explosion["y"] + (Random() * 10) - 5;
+        DrawRect(posX, posY, 4 + Random() * 32, 4 + Random() * 32);
+    end
+end

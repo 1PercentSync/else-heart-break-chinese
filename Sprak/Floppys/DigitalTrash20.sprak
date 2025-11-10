@@ -1,0 +1,28 @@
+
+Three gods, A, B, and C are called, 
+/ 三个神，A、B 和 C，被称为，
+in no particular order, True, False, and Random. 
+/ 顺序不分先后，分别是“真”、“假”和“随机”。
+
+True always speaks truly, False always speaks falsely, 
+/ “真”总是说真话，“假”总是说假话，
+but whether Random speaks truly or falsely is a 
+/ 但“随机”说真话还是假话是
+completely random matter. 
+/ 一个完全随机的事情。
+
+Your task is to determine the identities of A, B, and C 
+/ 你的任务是通过问三个“是”或“否”的问题来确定
+by asking three yes-no questions; each question 
+/ A、B 和 C 的身份；每个问题
+must be put to exactly one god. The gods understand 
+/ 必须只问一个神。神们懂
+English, but will answer all questions in 
+/ 英语，但会用他们自己的语言回答所有问题，
+their own language, in which the words for yes 
+/ 在他们的语言中，“是”和“否”的词是
+and no are da and ja, in some order. 
+/ “da”和“ja”，顺序不定。
+
+You do not know which word means which.
+/ 你不知道哪个词是什么意思。

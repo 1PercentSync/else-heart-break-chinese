@@ -1,0 +1,34 @@
+
+ClearText()
+
+Print("---")
+Print("Enter command / 输入命令")
+Print("followed by Enter / 然后按回车键")
+Print("")
+Print("'h' for help / 'h' 获取帮助")
+Print("---")
+Print("")
+
+loop
+	var command = Input("> ")
+	Dispatch(command)
+end
+
+void Dispatch(string command)
+	if command == "h" or command == "H" or command == "help"
+        Print("boot - Boot from floppy disk / 从软盘启动")
+		Print("net - connect to computer / 连接到计算机")
+        Print("info - System information / 系统信息")
+    else if command == "boot"
+        BootFromFloppy()
+    else if command == "net"
+        var target = Input("Target:  / 目标：")
+        var id = Connect(target)
+        Print("Connection id: " + id + " / 连接 ID：" + id)
+    else if command == "info"
+        Info()
+	else
+		Print("Can't understand command '" + command + "' / 无法理解命令 '" + command + "'")
+        Print("Enter 'h' for help / 输入 'h' 获取帮助")
+	end
+end

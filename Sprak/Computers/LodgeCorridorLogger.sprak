@@ -1,0 +1,19 @@
+
+ClearText()
+Print("")
+Print("Hello and welcome to / 您好，欢迎来到")
+Print("the shoe store storage. / 鞋店储藏室。")
+Sleep(1)
+Print("Unauthorized individuals / 未经授权的人员")
+Print("are advised to leave. / 建议离开。")
+Print("")
+Sleep(3)
+ClearText()
+
+void OnIntruder(string name)
+    
+end
+
+void OnHack(string name)
+    
+end

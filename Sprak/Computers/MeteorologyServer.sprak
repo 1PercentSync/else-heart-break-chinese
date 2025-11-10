@@ -1,0 +1,32 @@
+
+# Returns humidity in % between 0 - 100
+# 以 % 为单位返回湿度，范围为 0 - 100
+number ReadHumidity()
+    number humidity = (GetRain() / 250.0) * 100
+    Print("Reading requested, humidity is " + humidity + " / 请求读取，湿度为 " + humidity)
+    return humidity
+end
+
+Print("")
+Print("")
+number mode = Input("Set weather (1 - 4):  / 设置天气 (1 - 4)：")
+
+if mode == 1
+    Print("Sunny / 晴天")
+    SetRain(0)
+end
+
+if mode == 2
+    Print("Drizzle / 毛毛雨")
+    SetRain(25)
+end
+
+if mode == 3
+    Print("Rain / 下雨")
+    SetRain(100)
+end
+
+if mode == 4
+    Print("Storm! / 暴风雨！")
+    SetRain(200)
+end

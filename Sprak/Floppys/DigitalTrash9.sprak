@@ -1,0 +1,7 @@
+Any effectively generated theory capable of
+expressing elementary arithmetic cannot be both 
+consistent and complete. In particular, for any 
+consistent, effectively generated formal theory
+that proves certain basic arithmetic truths, 
+there is an arithmetical statement that is true, 
+but not provable in the theory.

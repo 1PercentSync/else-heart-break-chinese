@@ -1,0 +1,23 @@
+
+ClearText()
+
+var cart = Connect("MineCart")
+
+Print("--------------------")
+Print("Leaving station / 离开车站")
+Lock("MineCart_Interior_Door2_1")
+number speed = 10
+cart.SetSpeed(speed)
+Print("Speed = " + speed + " / 速度 = " + speed)
+Sleep(2)
+Print("--------------------")
+
+loop
+	Sleep(0.25)
+	if cart.IsAtStation()
+        Print("At station, will stop / 在车站，将停止")
+        Unlock("MineCart_Interior_Door2_1")
+		cart.SetSpeed(0)
+		break
+	end
+end

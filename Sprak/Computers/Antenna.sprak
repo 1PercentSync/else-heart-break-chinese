@@ -1,0 +1,13 @@
+
+void OnIntruder(string name)
+    number hugin = Connect("Hugin")
+    hugin.LogIntruder(name, "Hotel Devotchka / 德沃奇卡酒店")
+end
+
+
+
+void OnHack(string name)
+    number hugin = Connect("Hugin")
+    hugin.LogHack(name, "Hotel Devotchka / 德沃奇卡酒店")
+end
+

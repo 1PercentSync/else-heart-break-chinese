@@ -1,0 +1,12 @@
+
+
+void OnHack(string name)
+    Print("Hacker: " + name + " / 黑客：" + name)
+end
+
+
+
+void OnIntruder(string name)
+    Print("Intruder: " + name + " / 入侵者：" + name) 
+end
+

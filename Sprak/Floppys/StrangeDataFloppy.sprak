@@ -1,0 +1,65 @@
+
+###############
+###############
+
+###############
+
+###############
+###############
+###############
+
+
+    end
+    var hugin = Connect("Hugin")
+    hugin.Print("Sum calculation result: " + sum)
+    return sum
+end
+
+number PRODUCT(array a)
+    var sum = 0
+    loop x in a
+        sum *= x
+    end
+
+
+
+###################
+#
+#
+#
+#
+var a = Input("Enter rain amount:")
+SetRain(a)
+###########################
+############
+
+
+
+
+
+
+var name = Input("Enter name of target: ")
+var personId = Connect(name)
+
+
+loop
+    Sleep(1.0)
+    if GetNumericData(name, "corruption") < 10
+        Sleep(4.0)
+        ///REDACTED CODE///(name)
+        Sleep(1.0)
+        SetNumericData(name, "corruption", 100)
+    end
+
+    if Random() < 0.1
+        ///REDACTED CODE///(name)
+    end
+end
+
+
+
+
+#########
+
+
+##########

@@ -1,0 +1,18 @@
+
+void BroadcastMessage(string msg, array args)
+    array servers = []
+
+    Append(servers, "Hotel_ServerBasement_LargeComputerL3_LargeComputerL3_1")
+    Append(servers, "HarbWestHouseLobby_HugeComputer_HugeComputer_1")
+    Append(servers, "Factory_ServerRoom_LargeComputer1_LargeComputer1_1")
+
+    loop s in servers
+        var id = Connect(s)
+        
+        if id > -1
+            RemoteFunctionCall(id, msg, args)
+        else
+            Print("Invalid connection! / 无效连接！")
+        end
+    end    
+end

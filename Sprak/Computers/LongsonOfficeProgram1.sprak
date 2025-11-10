@@ -1,0 +1,28 @@
+loop
+    PrintLedger()
+
+    var s = Input("Enter section to edit:  / 输入要编辑的部分：")
+
+    if s > 0 and s < 6
+        var amount = LoadMemory(s)
+        Print("Current budget: $" + amount + " / 当前预算：$" + amount)
+        var new = Input("Enter new budget amount ($):  / 输入新的预算金额 ($)：")
+        SaveMemory(s, new)
+        Print("New budget amount saved. / 新的预算金额已保存。")
+        Sleep(2)
+    else
+        Print("Can't understand command. / 无法理解命令。")
+        Print("Enter a section between 1 - 5. / 输入 1 - 5 之间的部分。")
+    end
+end
+
+void PrintLedger()
+    ClearText()
+    Print("CITY BUDGET PLANNER 7.0 / 城市预算规划器 7.0")
+    Print("-----------------------")
+    Print("1. School / 1. 学校")
+    Print("2. Public transportation / 2. 公共交通")
+    Print("3. Health / 3. 健康")
+    Print("4. Police / 4. 警察")
+    Print("5. Computer science / 5. 计算机科学")
+end

@@ -1,0 +1,38 @@
+Connect("CentralServer")
+ClearText()
+Print("Connected to CentralServer / 已连接到中央服务器")
+
+Print("COMMANDS / 命令")
+Print("1. Connect / 1. 连接")
+Print("2. Read floppy data / 2. 读取软盘数据")
+Print("3. Slurp / 3. 吸收")
+
+var cmd = Input("$ ")
+
+if cmd == "1"
+    var name = Input("Connect to:  / 连接到：")
+    var id = Connect(name)
+    Print("Connection id = " + id + " / 连接 ID = " + id)
+else if cmd == "2"
+    ClearText()
+    DisplayGraphics()
+    Print("Floppy data reader / 软盘数据读取器")
+    Print("==================")
+    Sleep(1)
+    if HasFloppy()
+        Print("Data on floppy / 软盘上的数据")
+        Print("--------------")
+        var allData = LoadData()
+        loop data in allData
+            Print(data)
+            Sleep(1)
+        end
+        Print("--------------")
+    else
+        Print("Please insert floppy... / 请插入软盘...")
+    end
+else if cmd == "3"
+    Slurp()
+end
+
+Print("Program terminated, please restart. / 程序已终止，请重新启动。")

@@ -1,0 +1,5 @@
+if GetUser() == "Pixie" / 如果 GetUser() == "Pixie"
+    Charisma(20) / 魅力(20)
+else / 否则
+    Smelliness(20) / 臭味(20)
+end / 结束

@@ -1,0 +1,20 @@
+ClearText()
+number cycles = Input("Enter number of refinement cycles:  / 输入精炼周期数：")
+
+Print("Starting... / 开始...")
+loop i from 1 to cycles
+    PrintS("Cycle " + i + " / 周期 " + i)
+    EvenlyRefine()
+    Print("")
+end
+Print("Done! / 完成！")
+
+
+
+void EvenlyRefine()
+    var machine = Connect("FactoryMachineA")
+    loop i from 0 to 15
+        machine.Refine(i)
+        PrintS(".")
+    end
+end

@@ -1,0 +1,16 @@
+Connect("CentralServer")
+Connect("Heart")
+Connect("PowerTap")
+Connect("Wellspringer")
+
+var conns = GetConnections()
+loop c in conns
+    Print(c)
+end
+
+Print("Press enter to enter the computer / 按回车键进入计算机")
+Input("")
+Print("3")
+Print("2")
+Print("1")
+Slurp()

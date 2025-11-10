@@ -1,0 +1,8 @@
+
+void LogIntruder(string s)
+    Print("Intruder: " + s + " / 入侵者：" + s)
+end
+
+void LogHacker(string s)
+    Print("Hacker: " + s + " / 黑客：" + s)
+end

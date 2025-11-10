@@ -1,0 +1,19 @@
+
+void OnIntruder(string name)
+    Connect("PandaElevator_Door")
+
+    Sleep(2)
+
+    if(GetFloor() == 1)
+        GotoFloor(0)
+    else
+        GotoFloor(1)
+    end    
+end
+
+
+
+
+void OnHack(string name)
+     # do nothing...
+end

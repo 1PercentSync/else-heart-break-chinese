@@ -1,0 +1,24 @@
+ClearText()
+
+Print("GUARD INSTRUCTIONS / 守卫说明")
+
+Sleep(1)
+Print("1. Only ever let  / 1. 只允许")
+Print("   George through the /    乔治通过")
+Print("   door into the /    门进入")
+Print("   mayor's apartment. /    市长的公寓。")
+
+Sleep(1)
+Print("2. Never leave  / 2. 永远不要离开")
+Print("   your position! /    你的岗位！")
+Sleep(1)
+
+Print("3. Make sure the  / 3. 确保")
+Print("   doors on ALL sides /    建筑物所有侧面的门")
+Print("   of the building  /    都已上锁。")
+Print("   are locked. Don't forget /    不要忘记")
+Print("   the one in the back! /    后面的那个！")
+Sleep(1)
+
+Print("4. Never slouch. / 4. 永远不要懒散。")
+Sleep(1)
